@@ -1,20 +1,12 @@
+#ifdef DEBUGROBOT
+		#include <iostream>
+#endif // DEBUGROBOT
+
 #include "Robot.h"
-#include <iostream>
 
-Robot::Robot(int angle, int xrobot, int yrobot, int xblikje, int yblikje,
-		int xgarage, int ygarage, bool grab) {
-	this->setPositieRobot(xrobot, yrobot, angle);
-	this->setPositieBlikje(xblikje, yblikje);
-	this->setPositieGarage(xgarage, ygarage);
-	this->setGrabbedItem(grab);
-}
+Robot::Robot()
+{
 
-bool Robot::grabbedItem() {
-	return this->grabbed;
-}
-
-void Robot::setGrabbedItem(bool val) {
-	this->grabbed = val;
 }
 
 Positie Robot::getPositieRobot() {
@@ -57,76 +49,52 @@ void Robot::setPositieGarage(int x, int y) {
 	this->posGarage.setY(y);
 }
 
-void Robot::berekenRoute() {
-	double cornerDest = 0;
-	double cornerRobot = this->posRobot.getAngle();
-
-#ifdef DEBUG
-	std::cout << "Berekenen van de route" << std::endl;
-	std::cout << "\tPositie::    x:" << this->posRobot.getX() << " y:" << this->posRobot.getY() << " angle:" << cornerRobot << std::endl;
-	//std::cout << "\tBestemming:: x:" << this->getDestination().getX() << " y:" << this->getDestination().getY() << " angle:" << cornerDest << std::endl;
-#endif // DEBUG
-	/* Draaien */
-	if (cornerDest < cornerRobot) {
-		this->turnClock(cornerRobot - cornerDest);
-	} else if (cornerDest > cornerRobot) {
-		this->turnAntiClock(cornerDest - cornerRobot);
-	} else // Niet nodig om te draaien
-	{
-#ifdef DUMMY
-		this->vooruit(100.0);
-#else
-		// beslis waar robot naartoe moet met welke snelheid
-#endif // DUMMY
-	}
-
-}
-
 /* Driving */
 
 void Robot::vooruit(double speed) {
-#ifdef DEBUG
-	std::cout << "r2d2 rijdt vooruit met snelheid:" << speed << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot rijdt vooruit met snelheid:" << speed << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::achteruit(double speed) {
-#ifdef DEBUG
-	std::cout << "r2d2 rijdt achteruit met snelheid:" << speed << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot rijdt achteruit met snelheid:" << speed << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::turnClock(double corner) {
-#ifdef DEBUG
-	std::cout << "r2d2 draait clockwise over " << corner << " graden" << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot draait clockwise over " << corner << " graden" << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::turnAntiClock(double corner) {
-#ifdef DEBUG
-	std::cout << "r2d2 draait anticlockwise over " << corner << " graden" << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot draait anticlockwise over " << corner << " graden" << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::stop() {
-#ifdef DEBUG
-	std::cout << "r2d2 stopt" << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot stopt" << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::grab() {
-#ifdef DEBUG
-	std::cout << "r2d2 neemt blikje vast" << std::endl;
-#endif // DEBUG
+	#ifdef DEBUGROBOT
+		std::cout << "Robot:\t Robot neemt blikje vast" << std::endl;
+	#endif // DEBUGROBOT
 }
 
 void Robot::print() {
-	std::cout << "robotx:" << this->getPositieRobot().getX() << std::endl;
-	std::cout << "roboty:" << this->getPositieRobot().getY() << std::endl;
-	std::cout << "robothoek:" << this->getPositieRobot().getAngle()
-			<< std::endl;
-	std::cout << "blikjex:" << this->getPositieBlikje().getX() << std::endl;
-	std::cout << "blikjey:" << this->getPositieBlikje().getY() << std::endl;
-	std::cout << "garagax:" << this->getPositieGarage().getX() << std::endl;
-	std::cout << "garagey:" << this->getPositieGarage().getY() << std::endl;
+	#ifdef DEBUGROBOT
+		std::cout << "robotx:" << this->getPositieRobot().getX() << std::endl;
+		std::cout << "roboty:" << this->getPositieRobot().getY() << std::endl;
+		std::cout << "robothoek:" << this->getPositieRobot().getAngle()	<< std::endl;
+		std::cout << "blikjex:" << this->getPositieBlikje().getX() << std::endl;
+		std::cout << "blikjey:" << this->getPositieBlikje().getY() << std::endl;
+		std::cout << "garagax:" << this->getPositieGarage().getX() << std::endl;
+		std::cout << "garagey:" << this->getPositieGarage().getY() << std::endl;
+	#endif // DEBUGROBOT
 }

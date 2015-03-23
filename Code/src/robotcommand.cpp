@@ -1,13 +1,11 @@
 #include "robotcommand.h"
-//#include <string>
-//#include <iostream>
 
 using namespace std;
 
 // ---------------------------------------------------------------------------
 // Destructor
 robotcommand::~robotcommand() {
-
+	//delete RobotSerialPort;
 }
 
 // ---------------------------------------------------------------------------
@@ -29,6 +27,40 @@ robotcommand::robotcommand(string port) {
 
 int robotcommand::turnRoundOwnAxis(char direction, int angle) {
 	return turnRoundOwnAxis(direction, angle, TURNSPEED);
+}
+
+int robotcommand::turnDirection(char direction,int speed)
+{
+		string strCmd;
+
+		if (speed > 100)
+			speed = 100; 	//clamp speed to 100 if larger
+
+		switch (direction) {
+		case 'R':
+		case 'r':
+			strCmd = "q " + intToString(speed) + ' ' + intToString((-1) * speed);
+			break;
+
+		case 'L':
+		case 'l':
+			strCmd = "q " + intToString((-1) * speed) + ' ' + intToString(speed);
+			break;
+
+		default:
+			cout << "turnOwnAxis Wrong Direction" << endl;
+		}
+
+		cout << "turnOwnAxis command START: ' " << strCmd << " '" << endl;
+		if (0 > RobotSerialPort->sWrite(strCmd)) {
+			cout << "ERROR: turnOwnAxis Failed\n";
+			return -1;
+		}
+		drivestate = 3;
+		//sleep(ut_rotation);
+		//stop();
+		return 0;
+
 }
 
 int robotcommand::turnRoundOwnAxis(char direction, int angle, int speed) {

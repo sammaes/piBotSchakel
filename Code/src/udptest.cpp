@@ -15,15 +15,17 @@
 #include "Robot.h"
 #include "Hoek.h"
 #include "robotcommand.h"
-
+#define SPEED 10
+#define GROTEAFSTAND 70
 Robot t;
 
 robotcommand* NieuwCommand;
 
 void stopRobot(int signum) {
-#ifdef DEBUG
-	std::cout << "\nSignaal (" << signum << ") ontvangen" << std::endl;
-#endif
+	#ifdef DEBUG
+		std::cout << "\nSignaal (" << signum << ") ontvangen" << std::endl;
+	#endif
+	sleep(1);
 	NieuwCommand->stop();
 
 	exit(signum);
@@ -38,6 +40,8 @@ int main() {
 
 	Server s(3200, 'b');
 	Hoek NieuweHoek;
+	int missionPhase = 1;
+
 	NieuwCommand = new robotcommand("/dev/ttyUSB0");
 
 	for (;;) {
@@ -47,51 +51,87 @@ int main() {
 					s.getInfo().robothoek);
 			t.setPositieBlikje(s.getInfo().blikx, s.getInfo().bliky);
 			t.setPositieGarage(s.getInfo().garagex, s.getInfo().garagey);
-#ifdef DEBUG
-			std::cout << "Valid!" << std::endl;
-			t.print();
-#endif
+			#ifdef DEBUG
+				std::cout << "Valid!" << std::endl;
+				t.print();
+			#endif
 
+			if (missionPhase == 1)
+			{
 			NieuweHoek.BepaalHoek(t.getPositieRobot().getX(),
 					t.getPositieRobot().getY(), t.getPositieBlikje().getX(),
 					t.getPositieBlikje().getY(),
 					t.getPositieRobot().getAngle());
+			NieuweHoek.BepaalAfstand(t.getPositieRobot().getX(),
+									t.getPositieRobot().getY(), t.getPositieBlikje().getX(),
+									t.getPositieBlikje().getY());
+			}
+			else
+			{
+				NieuweHoek.BepaalHoek(t.getPositieRobot().getX(),
+									t.getPositieRobot().getY(), t.getPositieGarage().getX(),
+									t.getPositieGarage().getY(),
+									t.getPositieRobot().getAngle());
+				NieuweHoek.BepaalAfstand(t.getPositieRobot().getX(),t.getPositieRobot().getY(), t.getPositieGarage().getX(),t.getPositieGarage().getY());
+			}
+
 			if (NieuweHoek.getAngle() == 0) {
-				NieuweHoek.BepaalAfstand(t.getPositieRobot().getX(),
-						t.getPositieRobot().getY(), t.getPositieBlikje().getX(),
-						t.getPositieBlikje().getY());
-#ifdef DEBUG
-				cout<<"Afstand = "<<NieuweHoek.getAfstand()<<endl;
-#endif
-				NieuweHoek.BepaalSnelheid();
+				#ifdef DEBUG
+					cout<<"Afstand = "<<NieuweHoek.getAfstand()<<endl;
+				#endif
+				//NieuweHoek.BepaalSnelheid();
 				//NieuwCommand->driveForward(NieuweHoek.getSpeed());
-				if (NieuweHoek.getAfstand() <= 220) {
+				if ( (NieuweHoek.getAfstand() <= 40) && (missionPhase==1) ) { // BLikje zit in de grijper -> grijp!
 					NieuwCommand->stop();
-					NieuwCommand->gripClose();
-				} else {
-					if (NieuweHoek.getAfstand() >= 250) {
-						//NieuwCommand->driveForward(MAXSPEED);
-					} else {
-						//NieuwCommand->driveForward(MINSPEED);
+					if(1 != NieuwCommand->getGripState())
+					{
+						NieuwCommand->gripClose(); // Blikje vast
+						sleep(1); 				   // Even rusten
+						missionPhase *= -1;
+
 					}
 				}
-			} else {
-				NieuwCommand->stop();
-				NieuwCommand->turnRoundOwnAxis(NieuweHoek.getDirection(),
-						NieuweHoek.getAngle());
+				else if ( (NieuweHoek.getAfstand() <= 40) && (missionPhase==-1) ) { // Bij garage -> blikje afzetten
+					NieuwCommand->stop();
+					if(0 != NieuwCommand->getGripState())
+					{
+						NieuwCommand->gripOpen(); // Blikje open
+						NieuwCommand->driveReverse(40);
+						sleep(1); 				   // Even rusten
+						missionPhase *= -1;
+					}
+				}
+				else { // We zijn er nog niet.
+					if (NieuweHoek.getAfstand() >= GROTEAFSTAND) {
+						NieuwCommand->driveForward(MAXSPEED);
+					} else {
+						NieuwCommand->driveForward(MINSPEED);
+					}
+				}
+			} else { // Hoek != 0 -> draaien
+				if ( NieuweHoek.getAfstand() < GROTEAFSTAND)
+				{
+					NieuwCommand->driveReverse(40);
+				}
+				else
+				{
+					if ((NieuweHoek.getAngle() > 10) && (NieuweHoek.getAfstand() >= GROTEAFSTAND))
+						NieuwCommand->turnDirection(NieuweHoek.getDirection(),40);
+					else
+						NieuwCommand->turnDirection(NieuweHoek.getDirection(),SPEED);
+				}
 			}
-			sleep(1);
 
-#ifdef DEBUG
-			cout << "Main waarden:" << endl;
-			cout << "Hoek = " << NieuweHoek.getAngle() << endl;
-			cout << "Richting = " << NieuweHoek.getDirection() << endl;
-			cout << "Snelheid = " << NieuweHoek.getSpeed() << endl;
-#endif
+			#ifdef DEBUG
+				cout << "Main waarden:" << endl;
+				cout << "Hoek = " << NieuweHoek.getAngle() << endl;
+				cout << "Richting = " << NieuweHoek.getDirection() << endl;
+				cout << "Snelheid = " << NieuweHoek.getSpeed() << endl;
+			#endif
 		} else {
-#ifdef DEBUG
-			std::cout << "Niet valid!" << std::endl;
-#endif
+			#ifdef DEBUG
+				std::cout << "Niet valid!" << std::endl;
+			#endif
 		}
 
 	}

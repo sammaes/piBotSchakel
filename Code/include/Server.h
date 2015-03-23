@@ -6,17 +6,15 @@
 #include <iostream>
 #include <cstring>
 #include <functional>
+#include "Package.h"
 
 #define STANDAARDGROEP 'b'
 #define STANDAARDPOORT 3200
 
-#include "Package.h"
-
 class Server
 {
     public:
-			 	 	 	Server(int port, char c);
-			 	 	 	Server();
+			 	 	 	Server(int port = STANDAARDPOORT, char c = STANDAARDGROEP);
         void 			setup();
         void 			listen();
         void 			setPoort(int port);
