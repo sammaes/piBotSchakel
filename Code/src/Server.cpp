@@ -1,5 +1,11 @@
 #include "Server.h"
 
+Server::~Server()
+{
+	//TODO: INCLUDE voor close() in ~Server
+	//close(sockfd);
+}
+
 Server::Server(int port, char c) {
 	this->setGroep(c);
 	this->setPoort(port);
@@ -15,7 +21,7 @@ void Server::setup() {
 	serveraddr.sin_port = htons(udp_port);
 
 	if (bind(sockfd, (struct sockaddr *) &serveraddr, sizeof(serveraddr)) == -1) {
-		std::cerr << "Server:\t Error binding UDP socket" << std::endl;
+		std::cerr << "Server:\tERROR: Error binding UDP socket" << std::endl;
 		return;
 	}
 	#ifdef DEBUGSERVER

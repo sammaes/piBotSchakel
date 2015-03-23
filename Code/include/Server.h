@@ -6,6 +6,8 @@
 #include <iostream>
 #include <cstring>
 #include <functional>
+
+#include "debug.h"
 #include "Package.h"
 
 #define STANDAARDGROEP 'b'
@@ -14,7 +16,9 @@
 class Server
 {
     public:
+						~Server();
 			 	 	 	Server(int port = STANDAARDPOORT, char c = STANDAARDGROEP);
+
         void 			setup();
         void 			listen();
         void 			setPoort(int port);

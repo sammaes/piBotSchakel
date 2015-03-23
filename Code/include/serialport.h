@@ -11,6 +11,8 @@
 #include 	<sys/types.h>
 #include 	<sys/stat.h>
 
+#include 	"debug.h"
+
 #define 	PORT "/dev/ttyUSB0"
 //#define 	PORT "/dev/ttyS1"
 #define 	DATABITS 8
@@ -32,8 +34,8 @@ private:
 
 public:
     		~serialport();
-    		serialport();
-    		serialport(string port);
+    		serialport(string port = PORT);
+
     		void clearBuffer();
     		int sWrite(string);
     		int sRead(char *);

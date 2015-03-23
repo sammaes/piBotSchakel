@@ -10,6 +10,7 @@
 #include 		<stdlib.h>		//Use this to process Ctype string atoi()
 
 //User Includes
+#include 		"debug.h"
 #include 		"serialport.h"
 
 #define 		TURNSPEED	100
@@ -35,6 +36,7 @@ public:
 				~robotcommand();
 				robotcommand();
 				robotcommand(string port);
+
 	int 		turnRoundOwnAxis(char direction, int angle);
 	int 		turnDirection(char direction, int speed);
 	int 		driveForward(int speed);

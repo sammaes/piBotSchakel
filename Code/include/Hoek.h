@@ -6,9 +6,12 @@
 #include 	<stdlib.h>		//Use this to process Ctype string atoi()
 #include 	<math.h>
 
+#include 	"debug.h"
+
 #define 	PI          3.14159265
 #define 	MAXSPEED	100
 #define 	MINSPEED	50
+#define 	TRESLOW 3
 
 using namespace std;
 

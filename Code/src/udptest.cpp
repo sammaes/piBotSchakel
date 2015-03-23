@@ -11,22 +11,21 @@
 #include <cstdlib>
 #include <math.h>
 
+#include "debug.h"
 #include "Server.h"
 #include "Robot.h"
 #include "Hoek.h"
 #include "robotcommand.h"
 #define SPEED 10
 #define GROTEAFSTAND 70
-Robot t;
-
-robotcommand* NieuwCommand;
+Robot t(3200,"/dev/ttyUSB0",'b');
 
 void stopRobot(int signum) {
-	#ifdef DEBUG
+	#ifdef DEBUGMAIN
 		std::cout << "\nSignaal (" << signum << ") ontvangen" << std::endl;
-	#endif
-	sleep(1);
-	NieuwCommand->stop();
+	#endif // DEBUGMAIN
+	sleep(2);
+	t.stop();
 
 	exit(signum);
 }
@@ -38,102 +37,101 @@ int main() {
 	signal(SIGHUP, stopRobot);  // Terminal disconnected
 	signal(SIGTERM, stopRobot); // Termination request sent to the program
 
-	Server s(3200, 'b');
-	Hoek NieuweHoek;
-	int missionPhase = 1;
-
-	NieuwCommand = new robotcommand("/dev/ttyUSB0");
+	bool missionPhase = true; 	// True: naar blikje rijden, False: naar garage rijden
+	int hoek;
+	int afstand;
 
 	for (;;) {
-		s.listen();
-		if (s.dataValid()) {
-			t.setPositieRobot(s.getInfo().robotx, s.getInfo().roboty,
-					s.getInfo().robothoek);
-			t.setPositieBlikje(s.getInfo().blikx, s.getInfo().bliky);
-			t.setPositieGarage(s.getInfo().garagex, s.getInfo().garagey);
-			#ifdef DEBUG
-				std::cout << "Valid!" << std::endl;
-				t.print();
-			#endif
+		t.listen();
+		if (t.dataValid()) {
+			t.updatePosities();
 
-			if (missionPhase == 1)
+			#ifdef DEBUGMAIN
+				std::cout << "Main:\t" << (missionPhase ? " Naar blikje rijden" : " Naar garage rijden") << std::endl;
+			#endif // DEBUGMAIN
+
+			if (missionPhase)
 			{
-			NieuweHoek.BepaalHoek(t.getPositieRobot().getX(),
-					t.getPositieRobot().getY(), t.getPositieBlikje().getX(),
-					t.getPositieBlikje().getY(),
-					t.getPositieRobot().getAngle());
-			NieuweHoek.BepaalAfstand(t.getPositieRobot().getX(),
-									t.getPositieRobot().getY(), t.getPositieBlikje().getX(),
-									t.getPositieBlikje().getY());
+				t.bepaalHoekBlikje();
+				t.bepaalAfstandBlikje();
+				hoek = t.getAngle();		//TODO: Mogelijk om afstand en hoek te laten returnen door de bepaalfuncties?
+				afstand = t.getAfstand();
 			}
 			else
 			{
-				NieuweHoek.BepaalHoek(t.getPositieRobot().getX(),
-									t.getPositieRobot().getY(), t.getPositieGarage().getX(),
-									t.getPositieGarage().getY(),
-									t.getPositieRobot().getAngle());
-				NieuweHoek.BepaalAfstand(t.getPositieRobot().getX(),t.getPositieRobot().getY(), t.getPositieGarage().getX(),t.getPositieGarage().getY());
+				t.bepaalHoekGarage();
+				t.bepaalAfstandGarage();
+				hoek = t.getAngle();
+				afstand = t.getAfstand();
 			}
 
-			if (NieuweHoek.getAngle() == 0) {
-				#ifdef DEBUG
-					cout<<"Afstand = "<<NieuweHoek.getAfstand()<<endl;
-				#endif
-				//NieuweHoek.BepaalSnelheid();
-				//NieuwCommand->driveForward(NieuweHoek.getSpeed());
-				if ( (NieuweHoek.getAfstand() <= 40) && (missionPhase==1) ) { // BLikje zit in de grijper -> grijp!
-					NieuwCommand->stop();
-					if(1 != NieuwCommand->getGripState())
-					{
-						NieuwCommand->gripClose(); // Blikje vast
-						sleep(1); 				   // Even rusten
-						missionPhase *= -1;
+			#ifdef DEBUGMAIN
+				std::cout << "Main:\t Main waarden:" << std::endl;
+				std::cout << "     \t Hoek = " << hoek << std::endl;
+				std::cout << "     \t Afstand = " << afstand <<endl;
+			#endif // DEBUGMAIN
 
-					}
+			if (hoek == 0) {
+
+				if ( (afstand <= 40) && (missionPhase) ) { // Blikje zit in de grijper -> grijp!
+					t.stop();
+					t.gripClose(); // Blikje vast
+					#ifdef DEBUGMAIN
+						std::cout << "Main:\t Blikje vastgegrepen" << std::endl;
+					#endif // DEBUGMAIN
+					sleep(1); 				   // Even rusten
+					missionPhase = !missionPhase;
 				}
-				else if ( (NieuweHoek.getAfstand() <= 40) && (missionPhase==-1) ) { // Bij garage -> blikje afzetten
-					NieuwCommand->stop();
-					if(0 != NieuwCommand->getGripState())
-					{
-						NieuwCommand->gripOpen(); // Blikje open
-						NieuwCommand->driveReverse(40);
-						sleep(1); 				   // Even rusten
-						missionPhase *= -1;
-					}
+				else if ( (afstand <= 40) && (!missionPhase) ) { // Bij garage -> blikje afzetten
+					t.stop();
+					t.gripOpen(); // Blikje open
+					t.driveReverse(40);
+					#ifdef DEBUGMAIN
+						std::cout << "Main:\t Blikje afgeleverd" << std::endl;
+					#endif // DEBUGMAIN
+					sleep(5); 				   // Even rusten
+					missionPhase = !missionPhase;
 				}
 				else { // We zijn er nog niet.
-					if (NieuweHoek.getAfstand() >= GROTEAFSTAND) {
-						NieuwCommand->driveForward(MAXSPEED);
+					if (afstand >= GROTEAFSTAND) {
+						t.driveForward(MAXSPEED);
+						#ifdef DEBUGMAIN
+							std::cout << "Main:\t Ver weg van blikje met 0 hoek -> MAXSPEED vooruit" << std::endl;
+						#endif // DEBUGMAIN
 					} else {
-						NieuwCommand->driveForward(MINSPEED);
+						t.driveForward(MINSPEED);
+						#ifdef DEBUGMAIN
+							std::cout << "Main:\t Vlakbij blikje met 0 hoek -> MINSPEED vooruit" << std::endl;
+						#endif // DEBUGMAIN
 					}
 				}
 			} else { // Hoek != 0 -> draaien
-				if ( NieuweHoek.getAfstand() < GROTEAFSTAND)
+				if ( afstand < GROTEAFSTAND) // We zijn er bijna maar gaan blikje omver rijden
 				{
-					NieuwCommand->driveReverse(40);
+					t.driveReverse(MINSPEED);
+					#ifdef DEBUGMAIN
+						std::cout << "Main:\t Vlakbij blikje met hoek != 0 -> MINSPEED achteruit" << std::endl;
+					#endif // DEBUGMAIN
 				}
-				else
+				else // We zijn er nog niet bijna
 				{
-					if ((NieuweHoek.getAngle() > 10) && (NieuweHoek.getAfstand() >= GROTEAFSTAND))
-						NieuwCommand->turnDirection(NieuweHoek.getDirection(),40);
+					if (hoek > 10)
+					{
+						t.turnDirection(t.getDirection(),40);
+						#ifdef DEBUGMAIN
+							std::cout << "Main:\t Ver weg van blikje met GROTE hoek -> snel draaien" << std::endl;
+						#endif // DEBUGMAIN
+					}
 					else
-						NieuwCommand->turnDirection(NieuweHoek.getDirection(),SPEED);
+					{
+						#ifdef DEBUGMAIN
+							std::cout << "Main:\t Ver weg van blikje met KLEINE hoek -> traag draaien" << std::endl;
+						#endif // DEBUGMAIN
+						t.turnDirection(t.getDirection(),SPEED);
+					}
 				}
 			}
-
-			#ifdef DEBUG
-				cout << "Main waarden:" << endl;
-				cout << "Hoek = " << NieuweHoek.getAngle() << endl;
-				cout << "Richting = " << NieuweHoek.getDirection() << endl;
-				cout << "Snelheid = " << NieuweHoek.getSpeed() << endl;
-			#endif
-		} else {
-			#ifdef DEBUG
-				std::cout << "Niet valid!" << std::endl;
-			#endif
 		}
-
 	}
 
 	return 0;

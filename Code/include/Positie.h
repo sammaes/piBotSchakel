@@ -1,11 +1,14 @@
 #ifndef POSITIE_H
 #define POSITIE_H
 
+#include "debug.h"
+
 class Positie
 {
     public:
                             Positie();
                             Positie(int newX, int newY, int cor);
+
                 int		    getX() const;
                 void        setX(int val);
                 int      	getY() const;

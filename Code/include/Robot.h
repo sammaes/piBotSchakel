@@ -1,12 +1,18 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
+#include				<string>
+#include 				"debug.h"
 #include 				"Positie.h"
+#include				"Server.h"
+#include				"robotcommand.h"
+#include				"Hoek.h"
 
-class Robot
+class Robot: public Server, public robotcommand, public Hoek
 {
     public:
-                        Robot();
+                        Robot(int udpPoort,string serialPoort, char groep);
+
         Positie         getPositieRobot();
         void            setPositieRobot(Positie val);
         void            setPositieRobot(int x, int y, int angle);
@@ -16,15 +22,14 @@ class Robot
         Positie         getPositieGarage();
         void            setPositieGarage(Positie val);
         void            setPositieGarage(int x, int y);
-        void            stop();
-        void            grab();
+
         void			print();
 
-        /* Driving */
-       void       		vooruit(double speed);
-       void        		achteruit(double speed);
-       void        		turnClock(double corner);
-       void        		turnAntiClock(double corner);
+        void			updatePosities();
+        void			bepaalHoekBlikje();
+        void			bepaalHoekGarage();
+        void			bepaalAfstandBlikje();
+        void			bepaalAfstandGarage();
 
     private:
         int      		angle;

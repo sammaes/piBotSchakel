@@ -2,29 +2,28 @@
 
 using namespace std;
 
-// ---------------------------------------------------------------------------
-// Destructor
 robotcommand::~robotcommand() {
+	// TODO: Checken of delete hier moet
 	//delete RobotSerialPort;
 }
 
-// ---------------------------------------------------------------------------
-// constructor
 robotcommand::robotcommand() {
 	//Open the serialport via the dedicated class
 	RobotSerialPort = new serialport();
 
 	gripOpen();	//Init Grip
-	gripstate = 0;
+	//gripstate = 0; //TODO: Gebeurt al in gripOpen()
 
 	stop();
-	drivestate = 0;
+	//drivestate = 0; // TODO: Gebeurt al in stop();
 }
 
+// TODO: Verschil tussen deze 2 constructors ?
 robotcommand::robotcommand(string port) {
 	RobotSerialPort = new serialport(port);
 }
 
+// TODO: Wordt dit nog gebruikt?
 int robotcommand::turnRoundOwnAxis(char direction, int angle) {
 	return turnRoundOwnAxis(direction, angle, TURNSPEED);
 }
@@ -48,12 +47,15 @@ int robotcommand::turnDirection(char direction,int speed)
 			break;
 
 		default:
-			cout << "turnOwnAxis Wrong Direction" << endl;
+			cerr << "Robotcommand:\tERROR: turnDirection Wrong Direction" << endl;
 		}
 
-		cout << "turnOwnAxis command START: ' " << strCmd << " '" << endl;
+		#ifdef DEBUGROBOTCOMMAND
+			cout << "Robotcommand:\t turnDirection command START: ' " << strCmd << " '" << endl;
+		#endif // DEBUGROBOTCOMMAND
+
 		if (0 > RobotSerialPort->sWrite(strCmd)) {
-			cout << "ERROR: turnOwnAxis Failed\n";
+			cerr << "Robotcommand:\tERROR: turnDirection Failed" << endl;
 			return -1;
 		}
 		drivestate = 3;
@@ -63,6 +65,7 @@ int robotcommand::turnDirection(char direction,int speed)
 
 }
 
+// TODO: Wordt dit nog gebruikt?
 int robotcommand::turnRoundOwnAxis(char direction, int angle, int speed) {
 	string strCmd;
 	unsigned int ut_rotation;
@@ -82,16 +85,18 @@ int robotcommand::turnRoundOwnAxis(char direction, int angle, int speed) {
 		break;
 
 	default:
-		cout << "turnOwnAxis Wrong Direction" << endl;
+		cerr << "Robotcommand:\tERROR: turnRoundOwnAxis Wrong Direction" << endl;
 	}
 
 	ut_rotation = (abs(angle) * DEGMULT) / DEGPERSEC; //multiply by factor to get larger time to seconds
 
-	cout << "turnOwnAxis command START: ' " << strCmd << " '" << endl;
-	cout << "turnOwnAxis command TIME: " << intToString(ut_rotation) << " s"
-			<< endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t turnOwnAxis command START: ' " << strCmd << " '" << endl;
+		cout << "Robotcommand:\t turnOwnAxis command TIME: " << intToString(ut_rotation) << " s" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: turnOwnAxis Failed\n";
+		cerr << "Robotcommand:\tERROR: turnOwnAxis Failed" << endl;
 		return -1;
 	}
 	drivestate = 3;
@@ -104,9 +109,11 @@ int robotcommand::testStartTurn() {
 	string strCmd;
 	strCmd = "q 100 -100";
 
-	cout << "turnOwnAxis command START: ' " << strCmd << " '" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t testStartTurn command START: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: turnOwnAxis Failed\n";
+		cerr << "Robotcommand:\tERROR: turnOwnAxis Failed" << endl;
 		return -1;
 	}
 	drivestate = 3;
@@ -120,9 +127,12 @@ int robotcommand::driveForward(int speed) {
 		speed = 100; //clamp speed to 100 if larger 
 	strCmd = "q " + intToString(speed) + ' ' + intToString(speed);
 
-	cout << "driveForward command: ' " << strCmd << " '" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t driveForward command: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: driveForwardCommand Failed\n";
+		cerr << "Robotcommand:\tERROR: driveForwardCommand Failed" << endl;
 		return -1;
 	}
 	drivestate = 1;
@@ -136,9 +146,12 @@ int robotcommand::driveReverse(int speed) {
 		speed = 100; //clamp speed to 100 if larger 
 	strCmd = "q " + intToString((-1) * speed) + ' ' + intToString((-1) * speed);
 
-	cout << "driveReverse command: ' " << strCmd << " '" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t driveReverse command: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: driveReverseCommand Failed\n";
+		cerr << "Robotcommand:\tERROR: driveReverseCommand Failed" << endl;
 		return -1;
 	}
 	drivestate = 2;
@@ -149,9 +162,12 @@ int robotcommand::stop() {
 	string strCmd;
 	strCmd = "q 0 0";
 
-	cout << "Stop command: ' " << strCmd << " '" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t Stop command: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: Stop Command Failed\n";
+		cerr << "Robotcommand:\tERROR: Stop Command Failed" << endl;
 		return -1;
 	}
 	drivestate = 0;
@@ -163,27 +179,47 @@ int robotcommand::getDriveState() {
 }
 
 int robotcommand::gripOpen() {
-	string strCmd = "g 0";
+	if (gripstate != 0)
+	{
+		string strCmd = "g 0";
 
-	cout << "Grip Open command:" << endl;
-	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: Grip Open Command Failed\n";
-		return -1;
+		#ifdef DEBUGROBOTCOMMAND
+			cout << "Robotcommand:\t Grip Open command: ' " << strCmd << " '" << endl;
+		#endif // DEBUGROBOTCOMMAND
+
+		if (0 > RobotSerialPort->sWrite(strCmd)) {
+			cerr << "Robotcommand:\tERROR: Grip Open Command Failed" << endl;
+			return -1;
+		}
+		gripstate = 0;
+		return 0;
 	}
-	gripstate = 0;
-	return 0;
+	else
+	{
+		return 0; // TODO: mss andere waarde kiezen?
+	}
 }
 
 int robotcommand::gripClose() {
-	string strCmd = "g 1";
+	if (gripstate != 0)
+	{
+		string strCmd = "g 1";
 
-	cout << "Grip Close command:" << endl;
-	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: Grip Close Command Failed\n";
-		return -1;
+		#ifdef DEBUGROBOTCOMMAND
+			cout << "Robotcommand:\t Grip Close command: ' " << strCmd << " '" << endl;
+		#endif // DEBUGROBOTCOMMAND
+
+		if (0 > RobotSerialPort->sWrite(strCmd)) {
+			cerr << "Robotcommand:\tERROR: Grip Close Command Failed" << endl;
+			return -1;
+		}
+		gripstate = 1;
+		return 0;
 	}
-	gripstate = 1;
-	return 0;
+	else
+	{
+		return 0; // TODO: mss andere waarde kiezen?
+	}
 }
 
 int robotcommand::getGripState() {
@@ -195,9 +231,12 @@ int robotcommand::readDistance() {
 	char c_strRead[16];
 	int distance;
 
-	cout << "Read Distance command:" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t Read Distance command: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: Read Distance Command Failed\n";
+		cerr << "Robotcommand:\tERROR: Read Distance Command Failed" << endl;
 		return -1;
 	} else {
 		//sleep(1);				//sleep if serial port needs time to answer
@@ -213,9 +252,12 @@ int robotcommand::readVoltage() {
 	char c_strRead[16];				//Ctype string
 	int voltage;
 
-	cout << "Read Distance command:" << endl;
+	#ifdef DEBUGROBOTCOMMAND
+		cout << "Robotcommand:\t Read Distance command: ' " << strCmd << " '" << endl;
+	#endif // DEBUGROBOTCOMMAND
+
 	if (0 > RobotSerialPort->sWrite(strCmd)) {
-		cout << "ERROR: Read Distance Command Failed\n";
+		cerr << "Robotcommand:\tERROR: Read Distance Command Failed" << endl;
 		return -1;
 	} else {
 		//sleep(1);				//sleep if serial port needs time to answer
@@ -227,18 +269,18 @@ int robotcommand::readVoltage() {
 }
 
 string robotcommand::intToString(int number) {
-	string Result;          		// string which will contain the result
-	ostringstream convert;   		// stream used for the conversion
-	convert << number; // insert the textual representation of 'Number' in the characters in the stream
+	string 			Result; 	// string which will contain the result
+	ostringstream 	convert;	// stream used for the conversion
+	convert << number; 			// insert the textual representation of 'Number' in the characters in the stream
 	return convert.str(); 		// set 'Result' to the contents of the stream
 }
 
 int robotcommand::stringToInt(string txt) {
-	int res;          			//number which will contain the result
-	istringstream convert(txt); // stringstream used for the conversion constructed with the contents of 'Text' 
-								// ie: the stream will start containing the characters of 'Text'
+	int 			res;          	//number which will contain the result
+	istringstream 	convert(txt); 	// stringstream used for the conversion constructed with the contents of 'Text'
+									// ie: the stream will start containing the characters of 'Text'
 	if (!(convert >> res))
-		res = 0;//give the value to 'Result' using the characters in the stream
+		res = 0;					//give the value to 'Result' using the characters in the stream
 	return res;
 }
 

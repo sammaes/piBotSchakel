@@ -3,17 +3,8 @@
 #include <iostream>
 using namespace std;
 
-// ---------------------------------------------------------------------------
-// Destructor for port
 serialport::~serialport() {
-	// Close the filedescriptor
-	close (fd);
-}
-
-// ---------------------------------------------------------------------------
-// constructor for port
-serialport::serialport() {
-	serialport (PORT);
+	close (fd); // Close the filedescriptor
 }
 
 // constructor for port
@@ -23,67 +14,61 @@ serialport::serialport(string port) {
 	int err_tst;
 
 	//open port serial port
-#ifdef DEBUG
-	printf("Open serial port: ");
-#endif
+	#ifdef DEBUGSERIALPORT
+		cout << "Serialport:\t Open serial port: ";
+	#endif // DEBUGSERIALPORT
 	if ((this->fd = open(port.c_str(), O_RDWR | O_NOCTTY | O_NDELAY)) == -1) {
-#ifdef DEBUG
-		printf("\nERROR: Opeing port: (%d) \n", errno);
-#endif
+		cerr << "\nSerialport:\tERROR: Opening port: (" << errno << ")" << endl;
 		portopen = 0;
 	} else {
-#ifdef DEBUG
-		printf("OK\n");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "OK" << endl;
+		#endif // DEBUGSERIALPORT
 	}
 
 	//get port attributes
-#ifdef DEBUG
-	printf("Getting Port attributes: ");
-#endif
+	#ifdef DEBUGSERIALPORT
+		cout << "Serialport:\t Getting Port attributes: ";
+	#endif // DEBUGSERIALPORT
 	if (tcgetattr(this->fd, &term_attr)) {
-#ifdef DEBUG
-		printf("\nERROR: Getting Port Attributes\n");
-#endif
+		cerr << "\nSerialport:\tERROR: Getting Port Attributes" << endl;
 		portopen = 0;
 	} else {
-#ifdef DEBUG
-		printf("OK\n");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "OK" << endl;
+		#endif // DEBUGSERIALPORT
 	}
 
-	//Next we set different port attributes to setup teh serial port
+	//Next we set different port attributes to setup the serial port
 	//set the baud rate
-#ifdef DEBUG
-	printf("Setting Baudrate RX: ");
-#endif
+	#ifdef DEBUGSERIALPORT
+		cout << "Serialport:\t Setting Baudrate RX: ";
+	#endif // DEBUGSERIALPORT
+
 	err_tst = cfsetispeed(&term_attr, B38400);
 	if (err_tst == -1) {
-#ifdef DEBUG
-		printf("\nERROR: Setting RX Baudrate\n");
-#endif
+		cerr << "\nSerialport:\tERROR: Setting RX Baudrate" << endl;
 		portopen = 0;
 	} else {
-		//maybe do getspeed
-#ifdef DEBUG
-		printf("OK\n");
-#endif
+		//TODO maybe do getspeed
+		#ifdef DEBUGSERIALPORT
+			cout << "OK" << endl;
+		#endif // DEBUGSERIALPORT
 	}
 
-#ifdef DEBUG
-	printf("Setting Baudrate TX: ");
-#endif
+	#ifdef DEBUGSERIALPORT
+		cout << "Serialport:\t Setting Baudrate TX: ";
+	#endif // DEBUGSERIALPORT
+
 	err_tst = cfsetospeed(&term_attr, B38400);
 	if (err_tst == -1) {
-#ifdef DEBUG
-		printf("\nERROR: Setting RX Baudrate\n");
-#endif
+		cerr << "\nSerialport:\tERROR: Setting RX Baudrate" << endl;
 		portopen = 0;
 	} else {
-		//maybe do getspeed
-#ifdef DEBUG
-		printf("OK\n");
-#endif
+		//TODO maybe do getspeed
+		#ifdef DEBUGSERIALPORT
+			cout << "OK" << endl;
+		#endif // DEBUGSERIALPORT
 	}
 
 	//set some flags
@@ -91,26 +76,25 @@ serialport::serialport(string port) {
 	term_attr.c_cflag &= ~PARENB;			//Clear No parity
 	term_attr.c_cflag &= ~CSTOPB;			//Clear only 1 stopbit
 	term_attr.c_cflag &= ~CSIZE;			//Clear size
-	term_attr.c_cflag |= CS8;			//Set size to 8 bit
+	term_attr.c_cflag |= CS8;				//Set size to 8 bit
 
 	//send the newly set attributes to the port to make them valid
-#ifdef DEBUG
-	printf("Setting New port attributes: ");
-#endif
+	#ifdef DEBUGSERIALPORT
+		cout << "Serialport:\t Setting New port attributes: ";
+	#endif // DEBUGSERIALPORT
 	if (tcsetattr(this->fd, TCSANOW, &term_attr)) {
-#ifdef DEBUG
-		printf("\nERROR: Setting New Attributes\n");
-#endif
+		cerr << "\nSerialport:\tERROR: Setting New Attributes" << endl;
 		portopen = 0;
 	} else {
-#ifdef DEBUG
-		printf("OK\n");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "OK" << endl;
+		#endif // DEBUGSERIALPORT
 	}
-#ifdef DEBUG	
-	printf("\nConfiguring Serial Port done\n");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "Serialport:\t Configuring Serial Port done" << endl;
+		#endif // DEBUGSERIALPORT
 
+	// TODO staat dit hier wel goed? overschrijft de 0 van hierboven en andere plaatsen?
 	portopen = 1;
 }
 
@@ -119,9 +103,7 @@ void serialport::clearBuffer() {
 		tcflush(fd, TCIFLUSH);
 		sleep(2);
 	} else {
-#ifdef DEBUG
-		printf("\nERROR: Port Not open\n");
-#endif
+		cerr << "Serialport:\tERROR: Port Not open" << endl;
 	}
 }
 
@@ -136,27 +118,24 @@ int serialport::sWrite(string command) {
 		temp = command.c_str();
 		strncpy(cmd, temp, 12);	//never copy more than the destination can carry
 		len = strlen(cmd);
-		cmd[len] = 13;		//add CR
+		cmd[len] = 13;			//add CR
 		cmd[len + 1] = '\0';	//restore '\0' to complete string
 
 		byteswritten = write(this->fd, cmd, strlen(cmd));
-#ifdef DEBUG
-		printf("Write Command to serial port: ");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "Serialport:\t Write Command to serial port: ";
+		#endif // DEBUGSERIALPORT
 		if (byteswritten <= 0) {
-#ifdef DEBUG
-			printf("ERROR: Only %d bytes written\n", byteswritten);
-#endif
+			cerr << "Serialport:\tERROR: Only " << byteswritten << " bytes written" << endl;
 			return -1;
 		} else {
-#ifdef DEBUG
-			printf("OK: command '' sent (%d bytes) \n", byteswritten);
-#endif
+			#ifdef DEBUGSERIALPORT
+				// TODO: goed dat ik command hier tussen de '' heb gezet?
+				cout << "Serialport:\t OK: command '" << command << "' sent (" << byteswritten << " bytes)" << endl;
+			#endif // DEBUGSERIALPORT
 		}
 	} else {
-#ifdef DEBUG
-		printf("\nERROR: Port Not open\n");
-#endif
+		cerr << "Serialport:\tERROR: Port Not open" << endl;
 		return -1;
 	}
 	return 0;
@@ -168,24 +147,21 @@ int serialport::sRead(char *bufferstring) {
 
 	if (1 == portopen) {
 		fcntl(this->fd, F_SETFL, O_NONBLOCK);//don't block the reading from the port
-#ifdef DEBUG	
-				printf("Read Values From Serial port: ");
-#endif
+		#ifdef DEBUGSERIALPORT
+			cout << "Serialport:\t Read Values From Serial port:" << endl;
+		#endif // DEBUGSERIALPORT
 		bytesread = read(this->fd, bufferstring, SERIAL_BUF_LEN);
+
 		if (bytesread < 0) {
-#ifdef DEBUG
-			printf("ERROR: can't read from serial!\n");
-#endif
+			cerr << "Serialport:\tERROR: can't read from serial!" << endl;
 			return 0;
 		} else {
-#ifdef DEBUG
-			printf("OK: read %d bytes ''\n", bytesread);
-#endif
+			#ifdef DEBUGSERIALPORT
+				cout << "Serialport:\t OK: read " << bytesread << " bytes" << endl;
+			#endif // DEBUGSERIALPORT
 		}
 	} else {
-#ifdef DEBUG
-		printf("\nERROR: Port Not open\n");
-#endif
+		cerr << "Serialport:\tERROR: Port Not open" << endl;
 		return -1;
 	}
 	return bytesread;

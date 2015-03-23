@@ -4,9 +4,38 @@
 
 #include "Robot.h"
 
-Robot::Robot()
+Robot::Robot(int udpPoort,string serialPoort, char groep) : Server(udpPoort, groep), robotcommand(serialPoort)
 {
+}
 
+void Robot::updatePosities()
+{
+	if (this->dataValid())
+	{
+		this->setPositieRobot(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
+		this->setPositieBlikje(this->getInfo().blikx, this->getInfo().bliky);
+		this->setPositieGarage(this->getInfo().garagex, this->getInfo().garagey);
+	}
+}
+
+void Robot::bepaalHoekBlikje()
+{
+	Hoek::BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->angle);
+}
+
+void Robot::bepaalHoekGarage()
+{
+	Hoek::BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY(),this->angle);
+}
+
+void Robot::bepaalAfstandBlikje()
+{
+	Hoek::BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY());
+}
+
+void Robot::bepaalAfstandGarage()
+{
+	Hoek::BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY());
 }
 
 Positie Robot::getPositieRobot() {
@@ -47,44 +76,6 @@ void Robot::setPositieGarage(Positie val) {
 void Robot::setPositieGarage(int x, int y) {
 	this->posGarage.setX(x);
 	this->posGarage.setY(y);
-}
-
-/* Driving */
-
-void Robot::vooruit(double speed) {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot rijdt vooruit met snelheid:" << speed << std::endl;
-	#endif // DEBUGROBOT
-}
-
-void Robot::achteruit(double speed) {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot rijdt achteruit met snelheid:" << speed << std::endl;
-	#endif // DEBUGROBOT
-}
-
-void Robot::turnClock(double corner) {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot draait clockwise over " << corner << " graden" << std::endl;
-	#endif // DEBUGROBOT
-}
-
-void Robot::turnAntiClock(double corner) {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot draait anticlockwise over " << corner << " graden" << std::endl;
-	#endif // DEBUGROBOT
-}
-
-void Robot::stop() {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot stopt" << std::endl;
-	#endif // DEBUGROBOT
-}
-
-void Robot::grab() {
-	#ifdef DEBUGROBOT
-		std::cout << "Robot:\t Robot neemt blikje vast" << std::endl;
-	#endif // DEBUGROBOT
 }
 
 void Robot::print() {
