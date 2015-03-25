@@ -7,20 +7,13 @@ robotcommand::~robotcommand() {
 	//delete RobotSerialPort;
 }
 
-robotcommand::robotcommand() {
-	//Open the serialport via the dedicated class
-	RobotSerialPort = new serialport();
-
-	gripOpen();	//Init Grip
-	//gripstate = 0; //TODO: Gebeurt al in gripOpen()
-
-	stop();
-	//drivestate = 0; // TODO: Gebeurt al in stop();
-}
-
-// TODO: Verschil tussen deze 2 constructors ?
 robotcommand::robotcommand(string port) {
 	RobotSerialPort = new serialport(port);
+
+	gripstate = true; 	// grip is zogezegd dicht
+	gripOpen();		// grip opendoen
+
+	stop();
 }
 
 // TODO: Wordt dit nog gebruikt?
@@ -179,7 +172,7 @@ int robotcommand::getDriveState() {
 }
 
 int robotcommand::gripOpen() {
-	if (gripstate != 0)
+	if (gripstate)
 	{
 		string strCmd = "g 0";
 
@@ -201,7 +194,7 @@ int robotcommand::gripOpen() {
 }
 
 int robotcommand::gripClose() {
-	if (gripstate != 0)
+	if (!gripstate)
 	{
 		string strCmd = "g 1";
 

@@ -32,7 +32,6 @@ class Robot: public Server, public robotcommand, public Hoek
         void			bepaalAfstandGarage();
 
     private:
-        int      		angle;
         Positie     	posRobot;
         Positie			posBlikje;
         Positie			posGarage;

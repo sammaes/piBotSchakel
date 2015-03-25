@@ -17,10 +17,10 @@
 		/* Hier aan en uit zetten door in commentaar te zetten wat niet nodig is */
 		//#define DEBUGSERVER
 		//#define DEBUGSERIALPORT
-		#define DEBUGROBOTCOMMAND
+		//#define DEBUGROBOTCOMMAND
 		//#define DEBUGROBOT
 		//#define DEBUGPOSITIE
 		//#define DEBUGHOEK
-		#define DEBUGMAIN
+		//#define DEBUGMAIN
 	#endif //DEBUG
 #endif // DEBUG_H_

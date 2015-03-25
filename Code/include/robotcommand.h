@@ -16,6 +16,7 @@
 #define 		TURNSPEED	100
 #define 		DEGMULT		100
 #define 		DEGPERSEC 	4500
+#define			SERIALPORT	"/dev/ttyUSB0"
 
 using namespace std;
 
@@ -24,7 +25,7 @@ class robotcommand {
 private:
 	//Vars
 	serialport 	*RobotSerialPort;
-	int 		gripstate;			//0 - grip open, 1 - grip closed
+	bool 		gripstate;			//0 - grip open, 1 - grip closed
 	int 		drivestate;			//0 - nop, 1 forwarddrive, 2 reverse, 3 turnroundownaxis
 
 	//Funcs
@@ -35,7 +36,7 @@ private:
 public:
 				~robotcommand();
 				robotcommand();
-				robotcommand(string port);
+				robotcommand(string port = SERIALPORT);
 
 	int 		turnRoundOwnAxis(char direction, int angle);
 	int 		turnDirection(char direction, int speed);

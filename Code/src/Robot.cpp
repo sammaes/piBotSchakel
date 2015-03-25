@@ -20,22 +20,22 @@ void Robot::updatePosities()
 
 void Robot::bepaalHoekBlikje()
 {
-	Hoek::BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->angle);
+	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->getPositieRobot().getAngle());
 }
 
 void Robot::bepaalHoekGarage()
 {
-	Hoek::BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY(),this->angle);
+	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY(),this->getPositieRobot().getAngle());
 }
 
 void Robot::bepaalAfstandBlikje()
 {
-	Hoek::BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY());
+	this->BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY());
 }
 
 void Robot::bepaalAfstandGarage()
 {
-	Hoek::BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY());
+	this->BepaalAfstand(this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY());
 }
 
 Positie Robot::getPositieRobot() {

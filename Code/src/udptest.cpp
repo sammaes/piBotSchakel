@@ -40,16 +40,25 @@ int main() {
 	bool missionPhase = true; 	// True: naar blikje rijden, False: naar garage rijden
 	int hoek;
 	int afstand;
+	unsigned long int i=0;
+
+
+
+	t.gripOpen();
+	sleep(1);
+	t.gripClose();
+	sleep(1);
+	t.gripOpen();
+	sleep(1);
 
 	for (;;) {
 		t.listen();
 		if (t.dataValid()) {
 			t.updatePosities();
 
-			#ifdef DEBUGMAIN
-				std::cout << "Main:\t" << (missionPhase ? " Naar blikje rijden" : " Naar garage rijden") << std::endl;
-			#endif // DEBUGMAIN
+			std::cout << "Main:\t" << (missionPhase ? " Naar blikje rijden" : " Naar garage rijden") << std::endl;
 
+			cout << i++ << "start berekening" << std::endl;
 			if (missionPhase)
 			{
 				t.bepaalHoekBlikje();
@@ -64,6 +73,7 @@ int main() {
 				hoek = t.getAngle();
 				afstand = t.getAfstand();
 			}
+			std::cout << "stop berekening" << std::endl;
 
 			#ifdef DEBUGMAIN
 				std::cout << "Main:\t Main waarden:" << std::endl;
@@ -82,15 +92,19 @@ int main() {
 					sleep(1); 				   // Even rusten
 					missionPhase = !missionPhase;
 				}
-				else if ( (afstand <= 40) && (!missionPhase) ) { // Bij garage -> blikje afzetten
+				else if ( (afstand <= 10) && (!missionPhase) ) { // Bij garage -> blikje afzetten
 					t.stop();
 					t.gripOpen(); // Blikje open
-					t.driveReverse(40);
 					#ifdef DEBUGMAIN
 						std::cout << "Main:\t Blikje afgeleverd" << std::endl;
 					#endif // DEBUGMAIN
-					sleep(5); 				   // Even rusten
+					t.driveReverse(40);
+					sleep(3);
+					t.stop();
 					missionPhase = !missionPhase;
+					cout << "Druk op enter om terug naar blikje te rijden:" << endl;
+					cin.ignore();
+
 				}
 				else { // We zijn er nog niet.
 					if (afstand >= GROTEAFSTAND) {
