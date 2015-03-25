@@ -18,6 +18,8 @@ class Positie
                 void        newPosition(int newX,int newY, int cor);
                 bool        operator==(const Positie &rhs) const;
                 bool        operator!=(const Positie &rhs) const;
+
+                void		print();
     private:
                 int      	x;
                 int      	y;

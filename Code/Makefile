@@ -34,9 +34,9 @@ clean:
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 
 # Tests
-#tester:
-#  $(CC) $(CFLAGS) test/tester.cpp $(INC) $(LIB) -o bin/tester
-
+testavg:
+	g++ test/testAverage.cpp src/Average.cpp src/Positie.cpp $(INC) -o test/testavg
+	
 # Spikes
 #ticket:
 #  $(CC) $(CFLAGS) spikes/ticket.cpp $(INC) $(LIB) -o bin/ticket

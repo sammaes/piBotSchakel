@@ -1,5 +1,10 @@
 #include "Positie.h"
 
+#ifdef DEBUGPOSITIE
+		#include <iostream>
+#endif // DEBUGPOSITIE
+
+
 Positie::Positie() {
 	this->newPosition(0, 0, 0);
 }
@@ -49,4 +54,12 @@ int Positie::getAngle() const {
 
 void Positie::setAngle(int ang) {
 	this->angle = ang;
+}
+
+void Positie::print() {
+	#ifdef DEBUGPOSITIE
+		std::cout << "x:" << this->getX() << std::endl;
+		std::cout << "y:" << this->getY() << std::endl;
+		std::cout << "hoek:" << this->getAngle()	<< std::endl;
+	#endif // DEBUGPOSITIE
 }

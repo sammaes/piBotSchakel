@@ -13,14 +13,16 @@
 		#define DEBUGPOSITIE
 		#define DEBUGHOEK
 		#define DEBUGMAIN
+		#define DEBUGAVERAGE
 	#else
 		/* Hier aan en uit zetten door in commentaar te zetten wat niet nodig is */
 		//#define DEBUGSERVER
 		//#define DEBUGSERIALPORT
 		//#define DEBUGROBOTCOMMAND
 		//#define DEBUGROBOT
-		//#define DEBUGPOSITIE
+		#define DEBUGPOSITIE
 		//#define DEBUGHOEK
 		//#define DEBUGMAIN
+		#define DEBUGAVERAGE
 	#endif //DEBUG
 #endif // DEBUG_H_

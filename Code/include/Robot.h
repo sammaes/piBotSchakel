@@ -7,6 +7,7 @@
 #include				"Server.h"
 #include				"robotcommand.h"
 #include				"Hoek.h"
+#include				"Average.h"
 
 class Robot: public Server, public robotcommand, public Hoek
 {

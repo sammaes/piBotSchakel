@@ -42,8 +42,6 @@ int main() {
 	int afstand;
 	unsigned long int i=0;
 
-
-
 	t.gripOpen();
 	sleep(1);
 	t.gripClose();

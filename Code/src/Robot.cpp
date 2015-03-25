@@ -1,8 +1,9 @@
+#include "Robot.h"
+
 #ifdef DEBUGROBOT
 		#include <iostream>
 #endif // DEBUGROBOT
 
-#include "Robot.h"
 
 Robot::Robot(int udpPoort,string serialPoort, char groep) : Server(udpPoort, groep), robotcommand(serialPoort)
 {
@@ -12,9 +13,26 @@ void Robot::updatePosities()
 {
 	if (this->dataValid())
 	{
+		Positie positierobot, positieblikje, positiegarage;
+		Average avgposrobot, avgposblikje, avgposgarage;
+
+		positierobot.newPosition(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
+		positieblikje.newPosition(this->getInfo().blikx, this->getInfo().bliky, 0);		//0 toegevoegd omdat average op positie
+		positiegarage.newPosition(this->getInfo().garagex, this->getInfo().garagey, 0); //objecten werkt....
+
+		positierobot 	= avgposrobot.getCalcAverage(positierobot);
+		positieblikje 	= avgposblikje.getCalcAverage(positieblikje);
+		positiegarage 	= avgposgarage.getCalcAverage(positiegarage);
+
+		this->setPositieRobot(positierobot);
+		this->setPositieBlikje(positieblikje);
+		this->setPositieGarage(positieblikje);
+
+		/* OUDE code in commentaar tot nieuwe code werkt
 		this->setPositieRobot(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
 		this->setPositieBlikje(this->getInfo().blikx, this->getInfo().bliky);
 		this->setPositieGarage(this->getInfo().garagex, this->getInfo().garagey);
+		*/
 	}
 }
 
