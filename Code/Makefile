@@ -1,9 +1,11 @@
 #
 # MakeFile for the project....
 #
+
+CROSS_CC_PREFIX=arm-linux-gnueabihf-
  
 ifdef CROSS_COMPILE
-  CROSS_CC_PREFIX=arm-linux-gnueabihf-
+  
 endif
  
 CC 	:= $(CROSS_CC_PREFIX)g++ # This is the main compiler

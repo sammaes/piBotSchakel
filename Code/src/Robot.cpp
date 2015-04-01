@@ -14,7 +14,7 @@ void Robot::updatePosities()
 	if (this->dataValid())
 	{
 		Positie positierobot, positieblikje, positiegarage;
-		Average avgposrobot, avgposblikje, avgposgarage;
+
 
 		positierobot.newPosition(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
 		positieblikje.newPosition(this->getInfo().blikx, this->getInfo().bliky, 0);		//0 toegevoegd omdat average op positie

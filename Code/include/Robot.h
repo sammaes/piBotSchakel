@@ -36,6 +36,9 @@ class Robot: public Server, public robotcommand, public Hoek
         Positie     	posRobot;
         Positie			posBlikje;
         Positie			posGarage;
+        Average 		avgposrobot;
+        Average			avgposblikje;
+        Average			avgposgarage;
 };
 
 #endif // ROBOT_H
