@@ -1,16 +1,14 @@
 //============================================================================
-// Name        : UDP.cpp
-// Author      : Sam
-// Version     :
-// Copyright   : copyright
+// Name : UDP.cpp
+// Author : Sam
+// Version :
+// Copyright : copyright
 // Description : Hello World in C++, Ansi-style
 //============================================================================
-
 #include <iostream>
 #include <csignal>
 #include <cstdlib>
 #include <math.h>
-
 #include "debug.h"
 #include "Server.h"
 #include "Robot.h"
@@ -18,133 +16,148 @@
 #include "robotcommand.h"
 #define SPEED 10
 #define GROTEAFSTAND 70
-Robot t(3200,"/dev/ttyUSB0",'b');
 
+
+
+
+enum Phases{
+		InitRobot,
+		DraaiNaarBlik,
+		RijNaarBlik,
+		BijsturenNaarBlik,
+		GrijpBlik,
+		DraaiNaarGarage,
+		RijNaarGarage,
+		BijsturenNaarGarage,
+		BlikjeLoslaten,
+		RijVooruitWegVanBlik,
+		RijAchteruitWegVanBlik
+};
+
+Phases InitRobot();
+Phases RijVooruitWegVanBlik();
+Phases RijAchteruitWegVanBlik();
+void functie();
+
+Robot t(3200,"/dev/ttyUSB0",'b');
 void stopRobot(int signum) {
 	#ifdef DEBUGMAIN
-		std::cout << "\nSignaal (" << signum << ") ontvangen" << std::endl;
+	std::cout << "\nSignaal (" << signum << ") ontvangen" << std::endl;
 	#endif // DEBUGMAIN
 	sleep(2);
 	t.stop();
-
 	exit(signum);
 }
 
 int main() {
-
 	signal(SIGQUIT, stopRobot);
-	signal(SIGINT, stopRobot);  // CTRL+C ingedrukt
-	signal(SIGHUP, stopRobot);  // Terminal disconnected
+	signal(SIGINT, stopRobot); // CTRL+C ingedrukt
+	signal(SIGHUP, stopRobot); // Terminal disconnected
 	signal(SIGTERM, stopRobot); // Termination request sent to the program
-
-	bool missionPhase = true; 	// True: naar blikje rijden, False: naar garage rijden
+	//bool missionPhase = true; // True: naar blikje rijden, False: naar garage rijden
 	int hoek;
 	int afstand;
 	unsigned long int i=0;
 
+	
+	Phases fase = initRobot;	//init afhankelijk van positie en hoek
 	t.gripOpen();
 	sleep(1);
 	t.gripClose();
 	sleep(1);
 	t.gripOpen();
-	sleep(1);
 
-	for (;;) {
-		t.listen();
-		if (t.dataValid()) {
-			t.updatePosities();
 
-			std::cout << "Main:\t" << (missionPhase ? " Naar blikje rijden" : " Naar garage rijden") << std::endl;
-
-			cout << i++ << "start berekening" << std::endl;
-			if (missionPhase)
-			{
-				t.bepaalHoekBlikje();
-				t.bepaalAfstandBlikje();
-				hoek = t.getAngle();		//TODO: Mogelijk om afstand en hoek te laten returnen door de bepaalfuncties?
-				afstand = t.getAfstand();
+	//Begin: hoek niet goed, en grote afstand
+	for(;;){
+		
+		
+			switch(fase){
+					case 'InitRobot': 		fase = InitRobot();	//0
+									break;
+					case 'DraaiNaarBlik' : 		fase = DraaiNaarBlik();	//1
+									break;
+					case 'RijNaarBlik' :		functie();		//2
+									break;
+					case 'BijsturenNaarBlik' : 	functie();		//3
+									break;
+					case 'GrijpBlik' :		functie();		//4
+									break;
+					case 'DraaiNaarGarage' :	functie();		//5
+									break;
+					case 'RijNaarGarage' :		functie();		//6
+									break;
+					case 'BijsturenNaarGarage' :	functie();		//7
+									break;
+					case 'BlikjeLoslaten' :		functie();		//8
+									break;
+					case 'RijVooruitWegVanBlik' : 	fase = RijVooruitWegVanBlik();		//9
+									break;
+					case 'RijAchteruitWegVanBlik' :	fase = RijAchteruitWegVanBlik();		//10
+									break;
 			}
-			else
-			{
-				t.bepaalHoekGarage();
-				t.bepaalAfstandGarage();
-				hoek = t.getAngle();
-				afstand = t.getAfstand();
-			}
-			std::cout << "stop berekening" << std::endl;
+		
+			
 
-			#ifdef DEBUGMAIN
-				std::cout << "Main:\t Main waarden:" << std::endl;
-				std::cout << "     \t Hoek = " << hoek << std::endl;
-				std::cout << "     \t Afstand = " << afstand <<endl;
-			#endif // DEBUGMAIN
-
-			if (hoek == 0) {
-
-				if ( (afstand <= 40) && (missionPhase) ) { // Blikje zit in de grijper -> grijp!
-					t.stop();
-					t.gripClose(); // Blikje vast
-					#ifdef DEBUGMAIN
-						std::cout << "Main:\t Blikje vastgegrepen" << std::endl;
-					#endif // DEBUGMAIN
-					sleep(1); 				   // Even rusten
-					missionPhase = !missionPhase;
-				}
-				else if ( (afstand <= 10) && (!missionPhase) ) { // Bij garage -> blikje afzetten
-					t.stop();
-					t.gripOpen(); // Blikje open
-					#ifdef DEBUGMAIN
-						std::cout << "Main:\t Blikje afgeleverd" << std::endl;
-					#endif // DEBUGMAIN
-					t.driveReverse(40);
-					sleep(3);
-					t.stop();
-					missionPhase = !missionPhase;
-					cout << "Druk op enter om terug naar blikje te rijden:" << endl;
-					cin.ignore();
-
-				}
-				else { // We zijn er nog niet.
-					if (afstand >= GROTEAFSTAND) {
-						t.driveForward(MAXSPEED);
-						#ifdef DEBUGMAIN
-							std::cout << "Main:\t Ver weg van blikje met 0 hoek -> MAXSPEED vooruit" << std::endl;
-						#endif // DEBUGMAIN
-					} else {
-						t.driveForward(MINSPEED);
-						#ifdef DEBUGMAIN
-							std::cout << "Main:\t Vlakbij blikje met 0 hoek -> MINSPEED vooruit" << std::endl;
-						#endif // DEBUGMAIN
-					}
-				}
-			} else { // Hoek != 0 -> draaien
-				if ( afstand < GROTEAFSTAND) // We zijn er bijna maar gaan blikje omver rijden
-				{
-					t.driveReverse(MINSPEED);
-					#ifdef DEBUGMAIN
-						std::cout << "Main:\t Vlakbij blikje met hoek != 0 -> MINSPEED achteruit" << std::endl;
-					#endif // DEBUGMAIN
-				}
-				else // We zijn er nog niet bijna
-				{
-					if (hoek > 10)
-					{
-						t.turnDirection(t.getDirection(),40);
-						#ifdef DEBUGMAIN
-							std::cout << "Main:\t Ver weg van blikje met GROTE hoek -> snel draaien" << std::endl;
-						#endif // DEBUGMAIN
-					}
-					else
-					{
-						#ifdef DEBUGMAIN
-							std::cout << "Main:\t Ver weg van blikje met KLEINE hoek -> traag draaien" << std::endl;
-						#endif // DEBUGMAIN
-						t.turnDirection(t.getDirection(),SPEED);
-					}
-				}
-			}
-		}
+	}
+}
+Phases InitRobot(){
+	int hoek,afstand;
+	t.listen();
+	if(t.dataValid()){
+		t.bepaalHoekBlikje();
+		t.bepaalAfstandBlikje();
+		hoek = t.getAngle(); 
+		afstand = t.getAfstand();
+		if(afstand <= 40 && (hoek > 90 && hoek < 270 ))		//blikje staat vlak achter robot --> vooruit r
+			return Phases.RijVooruitWegVanBlik;
+		else if(afstand <= 40 && !(hoek > 90 && hoek < 270))	//achteruit wegrijden van blikje
+			return Phases.RijAchteruitWegVanBlik;
+		else
+			return Phases.DraaiNaarBlik;
 	}
 
-	return 0;
+}
+Phases DraaiNaarBlik(){
+	t.turnDirection(t.getDirection(),40);
+	while(t.getHoek() != 0){
+		t.listen();
+		if(t.dataValid()){
+			t.bepaalHoekBlikje();
+		}
+	}
+	t.stop();
+	
+	std::cout << "Robot is gedraaid" << std::endl;
+	return Phases.RijNaarBlik;
+}
+
+Phases RijVooruitWegVanBlik(){
+	t.driveForward(MINSPEED);
+	while(t.getAfstand() <= 80){
+		t.listen();
+		if(t.dataValid()){
+			t.bepaalAfstandBlikje();
+		}
+	}
+	t.stop();
+	
+	std::cout << "Robot is weggereden van blikje" << std::endl;
+	return Phases.DraaiNaarBlik;
+}
+Phases RijAchteruitWegVanBlik(){
+	t.driveReverse(MINSPEED);
+	while(t.getAfstand() <= 80){
+		t.listen();
+		if(t.dataValid()){
+			t.bepaalAfstandBlikje();
+		}
+	}
+	t.stop();
+	
+	std::cout << "Robot is weggereden van blikje" << std::endl;
+	return Phases.DraaiNaarBlik;
+}
+void functie(){
+	stopRobot();	
 }
