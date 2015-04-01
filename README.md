@@ -9,7 +9,7 @@ In de praktijk zie je deze mappen niet en werk je altijd in 1 branch.
 Standaard is er maar 1 branch die de master branch genoemd wordt.
 De master branch is de branch waar de code inzit waar we nu mee bezig zijn en die werkt.
 
-Als er een wijziging aan de code moet gebeuren maak je een nieuwe branch aan (git checkout -b naamVanEenNieuweBrach).
+Als er een wijziging aan de code moet gebeuren maak je een nieuwe branch aan (git checkout -b naamVanEenNieuweBrach gevolgd door git push -u origin naamVanEenNieuweBranch).
 Je kan dit simplistisch gezien vergelijken met het kopieren van de code naar een nieuwe map. In die nieuwe map ga je dan wijzigingen doen aan de code.
 
 Vanaf het moment dat je klaar bent met het wijzigen van de code (het programma compileert en werkt zoals verwacht) kan de code terug gekopieerd worden naar de master branch (de map waar de originele code staat).
