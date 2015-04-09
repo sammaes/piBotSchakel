@@ -35,9 +35,10 @@ public:
 	void 	setAngle(int Angle);
 	void 	setDirection(char Direction);
 	void 	setSpeed(int Speed);
+	void 	BepaalHoek(int Rx, int Ry, int Ox, int Oy, int Bx, int By, int Beta);
 	void 	BepaalHoek(int Xr,int Yr,int Xb,int Yb,int Beta);
-    void 	BepaalSnelheid();
-    void 	BepaalAfstand(int Xr,int Yr,int Xb,int Yb);
+    	void 	BepaalSnelheid();
+    	void 	BepaalAfstand(int Xr,int Yr,int Xb,int Yb);
 };
 
 #endif
