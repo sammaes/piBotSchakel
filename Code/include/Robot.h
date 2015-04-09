@@ -23,8 +23,10 @@ class Robot: public Server, public robotcommand, public Hoek
         Positie         getPositieGarage();
         void            setPositieGarage(Positie val);
         void            setPositieGarage(int x, int y);
+        void			setInitielePosBlikjeGeset(bool b);
 
         void			print();
+        bool			blikjeVerplaatst();
 
         void			updatePosities();
         void			bepaalHoekBlikje();
@@ -33,6 +35,8 @@ class Robot: public Server, public robotcommand, public Hoek
         void			bepaalAfstandGarage();
 
     private:
+        bool			initielePosBlikjeGeset;
+        Positie			initielePosBlikje;
         Positie     	posRobot;
         Positie			posBlikje;
         Positie			posGarage;

@@ -2,6 +2,7 @@
 #define POSITIE_H
 
 #include "debug.h"
+#include "Hoek.h"
 
 class Positie
 {

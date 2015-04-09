@@ -7,6 +7,17 @@
 
 Robot::Robot(int udpPoort,string serialPoort, char groep) : Server(udpPoort, groep), robotcommand(serialPoort)
 {
+	this->initielePosBlikjeGeset = false;
+}
+
+void Robot::setInitielePosBlikjeGeset(bool b)
+{
+	this->initielePosBlikjeGeset = b;
+}
+
+bool Robot::blikjeVerplaatst()
+{
+	return (this->initielePosBlikje!=this->posBlikje);
 }
 
 void Robot::updatePosities()
@@ -15,24 +26,31 @@ void Robot::updatePosities()
 	{
 		Positie positierobot, positieblikje, positiegarage;
 
-
+		/*
 		positierobot.newPosition(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
 		positieblikje.newPosition(this->getInfo().blikx, this->getInfo().bliky, 0);		//0 toegevoegd omdat average op positie
 		positiegarage.newPosition(this->getInfo().garagex, this->getInfo().garagey, 0); //objecten werkt....
+		*/
 
-		positierobot 	= avgposrobot.getCalcAverage(positierobot);
+		/*positierobot 	= avgposrobot.getCalcAverage(positierobot);
 		positieblikje 	= avgposblikje.getCalcAverage(positieblikje);
 		positiegarage 	= avgposgarage.getCalcAverage(positiegarage);
 
 		this->setPositieRobot(positierobot);
 		this->setPositieBlikje(positieblikje);
 		this->setPositieGarage(positieblikje);
+		*/
 
-		/* OUDE code in commentaar tot nieuwe code werkt
+		/* OUDE code in commentaar tot nieuwe code werkt */
 		this->setPositieRobot(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
 		this->setPositieBlikje(this->getInfo().blikx, this->getInfo().bliky);
 		this->setPositieGarage(this->getInfo().garagex, this->getInfo().garagey);
-		*/
+
+		if (!this->initielePosBlikjeGeset)
+		{
+			this->initielePosBlikje = this->posBlikje;
+			this->initielePosBlikjeGeset = true;
+		}
 	}
 }
 

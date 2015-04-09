@@ -1,4 +1,5 @@
 #include "Positie.h"
+#define TRESHOLDEQUAL 20
 
 #ifdef DEBUGPOSITIE
 		#include <iostream>
@@ -22,8 +23,8 @@ bool Positie::operator!=(const Positie &rhs) const {
 }
 
 bool Positie::helperEqualOperator(const Positie &rhs) const {
-	return ((this->getX() == rhs.getX()) && (this->getY() == rhs.getY())
-			&& (this->getAngle() == rhs.getAngle()));
+	return ( (abs(this->getX()-rhs.getX()) < TRESHOLDEQUAL) && (abs(this->getY()-rhs.getY()) < TRESHOLDEQUAL)
+			&& (abs(this->getAngle()-rhs.getAngle()) < TRESLOW));
 }
 
 void Positie::newPosition(int x, int y, int ang) {

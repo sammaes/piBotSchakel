@@ -122,6 +122,7 @@ int serialport::sWrite(string command) {
 		cmd[len + 1] = '\0';	//restore '\0' to complete string
 
 		byteswritten = write(this->fd, cmd, strlen(cmd));
+		tcdrain(fd);
 		#ifdef DEBUGSERIALPORT
 			cout << "Serialport:\t Write Command to serial port: ";
 		#endif // DEBUGSERIALPORT

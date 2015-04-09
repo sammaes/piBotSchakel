@@ -20,9 +20,9 @@
 		//#define DEBUGSERIALPORT
 		//#define DEBUGROBOTCOMMAND
 		//#define DEBUGROBOT
-		#define DEBUGPOSITIE
+		//#define DEBUGPOSITIE
 		//#define DEBUGHOEK
 		//#define DEBUGMAIN
-		#define DEBUGAVERAGE
+		//#define DEBUGAVERAGE
 	#endif //DEBUG
 #endif // DEBUG_H_
