@@ -24,13 +24,15 @@ class Server
         void 			setPoort(int port);
         void 			setGroep(char c);
         char 			getGroep();
-        Info 			getInfo();
+        Info 			getInfoEigen();
+        Info			getInfoObstakel();
         bool 			dataValid();
 
     private:
         int 			sockfd;
         int 			udp_port;
-        Info 			info;
+        Info 			infoEigen;
+        Info			infoObstakel;
         char 			groep;
         struct 			sockaddr_in serveraddr;
         struct 			sockaddr_in clientaddr;

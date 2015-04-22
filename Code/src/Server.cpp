@@ -41,22 +41,28 @@ void Server::listen() {
 	if (recvfrom(sockfd, &pakket, sizeof(struct Udp_package), 0,(struct sockaddr *) &clientaddr, &len) > 0) {
 
 		if (this->getGroep() != 'b')
-			info = pakket.info_a;
+		{
+			infoEigen = pakket.info_a;
+			infoObstakel = pakket.info_b;
+		}
 		else
-			info = pakket.info_b;
+		{
+			infoEigen = pakket.info_b;
+			infoObstakel = pakket.info_a;
+		}
 
 		#ifdef DEBUGSERVER
 			if (this->dataValid())
 			{
 				std::cout << "=================" << this->getGroep() << "=================" << std::endl;
-				std::cout << "Server: UDP package received" << std::endl;
-				std::cout << "Robotx:" << info.robotx << std::endl;
-				std::cout << "roboty:" << info.roboty << std::endl;
-				std::cout << "robothoek:" << info.robothoek << std::endl;
-				std::cout << "blikx:" << info.blikx << std::endl;
-				std::cout << "bliky:" << info.bliky << std::endl;
-				std::cout << "garagex:" << info.garagex << std::endl;
-				std::cout << "garagey:" << info.garagey << std::endl;
+				std::cout << "Server: UDP package eigen received" << std::endl;
+				std::cout << "Robotx:" << infoEigen.robotx << std::endl;
+				std::cout << "roboty:" << infoEigen.roboty << std::endl;
+				std::cout << "robothoek:" << infoEigen.robothoek << std::endl;
+				std::cout << "blikx:" << infoEigen.blikx << std::endl;
+				std::cout << "bliky:" << infoEigen.bliky << std::endl;
+				std::cout << "garagex:" << infoEigen.garagex << std::endl;
+				std::cout << "garagey:" << infoEigen.garagey << std::endl;
 				std::cout << "===================================" << std::endl;
 			}
 			else
@@ -67,11 +73,18 @@ void Server::listen() {
 
 // Vanaf dat een van de ontvangen gelijk zijn aan -1 is data in info niet meer valid.
 bool Server::dataValid() {
-	return !((info.robotx == -1) || (info.roboty == -1) || (info.robothoek == -1) || (info.blikx == -1) || (info.bliky == -1) || (info.garagex == -1) || (info.garagey == -1));
+	return !((infoEigen.robotx == -1) || (infoEigen.roboty == -1) || (infoEigen.robothoek == -1) || (infoEigen.blikx == -1) ||
+			(infoEigen.bliky == -1) || (infoEigen.garagex == -1) || (infoEigen.garagey == -1) || (infoObstakel.robotx == -1) ||
+			(infoObstakel.roboty == -1) || (infoObstakel.robothoek == -1) || (infoObstakel.blikx == -1) ||
+			(infoObstakel.bliky == -1) || (infoObstakel.garagex == -1) || (infoObstakel.garagey == -1));
 }
 
-Info Server::getInfo() {
-	return this->info;
+Info Server::getInfoEigen() {
+	return this->infoEigen;
+}
+
+Info Server::getInfoObstakel() {
+	return this->infoObstakel;
 }
 
 void Server::setGroep(char c) {

@@ -17,6 +17,9 @@ class Robot: public Server, public robotcommand, public Hoek
         Positie         getPositieRobot();
         void            setPositieRobot(Positie val);
         void            setPositieRobot(int x, int y, int angle);
+        Positie         getPositieObstakel();
+        void            setPositieObstakel(Positie val);
+        void            setPositieObstakel(int x, int y, int angle);
         Positie         getPositieBlikje();
         void            setPositieBlikje(Positie val);
         void            setPositieBlikje(int x, int y);
@@ -40,6 +43,7 @@ class Robot: public Server, public robotcommand, public Hoek
         Positie     	posRobot;
         Positie			posBlikje;
         Positie			posGarage;
+        Positie			posObstakel;
         Average 		avgposrobot;
         Average			avgposblikje;
         Average			avgposgarage;
