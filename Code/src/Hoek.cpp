@@ -73,119 +73,17 @@ void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen w
 	setAngle(Hoek);
     setDirection(richting);
 
-    /*
-	if (Xr < Xb) // Rechterkant cirkel
-			{
-		if (Yr < Yb) // Vierde kwadrant, Indien Y1 < Y2 ligt de hoek in het eerste kwadrant en moet er niets gebeuren
-				{
-			KwadrantA = 1;
-		} else {
-			Alpha = 360 - Alpha;
-			KwadrantA = 4;
-		}
-	} else // Linkerkant cirkel
-	{
-		if (Yr < Yb) // Tweede kwadrant
-				{
-			Alpha = 180 - Alpha;
-			KwadrantA = 2;
-		} else // Derde kwadrant
-		{
-			Alpha = Alpha + 180;
-			KwadrantA = 3;
-		}
-	}*/
 	#ifdef DEBUGHOEK
 		cout<<"Hoek:\t Alpha = "<<Alpha<<endl;
 		cout<<"Hoek:\t Kwadrant Alpha = "<<KwadrantA<<endl;
 	#endif // DEBUGHOEK
-
-
-	// Kwadrant voor beta bepalen
-
-	/*if (Beta >= 0 && Beta <= 90) {
-		KwadrantB = 1;
-	}
-	if (Beta >= 91 && Beta <= 180) {
-		KwadrantB = 2;
-	}
-	if (Beta >= 181 && Beta <= 270) {
-		KwadrantB = 3;
-	}
-	if (Beta >= 270 && Beta <= 360) {
-		KwadrantB = 4;
-	}*/
-
-
-/*
-	#ifdef DEBUGHOEK
-		cout<<"Hoek:\t Kwadrant Beta = "<<KwadrantB<<endl;
-		cout<<"Hoek:\t Verschil = "<<Verschil<<endl;
-	#endif// DEBUGHOEK
 
 	if ( (abs(Verschil) <= TRESLOW) || (abs(Verschil) >= (360-TRESLOW)) ) {
 		#ifdef DEBUGHOEK
 			cout<<"Hoek:\t Hoek gelijk, stoppen"<<endl;
 		#endif //DEBUGHOEK
 		setAngle(0);
-	} else {
-		if ((Verschil < 0) && (abs(Verschil) > 180)) // De positieve hoek nemen
-				{
-			Verschil = 360 + Verschil;
-		}
-		// Dezelfde kwadranten
-		if (KwadrantA == KwadrantB) {
-			if (Verschil < 0) {
-				//Draai naar links onder hoek van Verschil
-				#ifdef DEBUGHOEK
-					cout<<"Hoek:\t Draai links, draaihoek = "<<abs(Verschil)<<endl;
-				#endif //DEBUGHOEK
-				setAngle(abs(Verschil));
-				setDirection('l');
-			} else {
-				//Draai naar rechts onder hoek van Verschil
-				#ifdef DEBUGHOEK
-					cout<<"Hoek:\t Draai rechts, draaihoek = "<<Verschil<<endl;
-				#endif //DEBUGHOEK
-				setAngle(Verschil);
-				setDirection('r');
-			}
-		} else {
-			if (Verschil < 0) {
-				if (abs(Verschil) < 180) {
-					//Draai links onder hoek van abs(Verschil)
-					#ifdef DEBUGHOEK
-						cout<<"Hoek:\t Draai links, draaihoek = "<<abs(Verschil)<<endl;
-					#endif //DEBUGHOEK
-					setAngle(abs(Verschil));
-					setDirection('l');
-				} else {
-					//Draai rechts onder hoek van Verschil + 360
-					#ifdef DEBUGHOEK
-						cout<<"Hoek:\t Draai rechts, draaihoek = "<<Verschil + 360<<endl;
-					#endif //DEBUGHOEK
-					setAngle(Verschil + 360);
-					setDirection('r');
-				}
-			} else {
-				if (Verschil > 180) {
-					//Draai links onder hoek van 360 - Verschil
-					#ifdef DEBUGHOEK
-						cout<<"Hoek:\t Draai links, draaihoek = "<<360-Verschil<<endl;
-					#endif //DEBUGHOEK
-					setAngle(360 - Verschil);
-					setDirection('l');
-				} else {
-					// Draai rechts onder hoek van Verschil
-					#ifdef DEBUGHOEK
-						cout<<"Hoek:\t Draai rechts, draaihoek = "<<Verschil<<endl;
-					#endif //DEBUGHOEK
-					setAngle(Verschil);
-					setDirection('r');
-				}
-			}
-		}
-	}*/
+	}
 }
 
 void Hoek::BepaalAfstand(int Xr, int Yr, int Xb, int Yb) {
