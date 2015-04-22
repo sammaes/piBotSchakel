@@ -16,26 +16,64 @@ Hoek::Hoek() {
 
 void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen we binnen
 {
-	int KwadrantA = 0;
-	int KwadrantB = 0;
-	float Aanliggende = 0;
-	float Overstaande = 0;
+	int Aanliggende = 0;
+	int Overstaande = 0;
 	int Verschil = 0;
 	int Alpha = 0;
+	int Hoek = 0;
+	char richting = 'l';
 
-	Aanliggende = abs(Xr - Xb);
-	Overstaande = abs(Yr - Yb);
+	Aanliggende = Xr - Xb;
+	Overstaande = Yr - Yb;
 
-	#ifdef DEBUGHOEK
-		cout<<"Hoek:\t Hoek bepalen:"<<endl;
-		cout<<"Hoek:\t Aanliggende = "<<Aanliggende<<endl;
-		cout<<"Hoek:\t Overstaande = "<<Overstaande<<endl;
-	#endif //DEBUGHOEK
+    cout<<"Hoek:\t Hoek bepalen:"<<endl;
+    cout<<"Hoek:\t Aanliggende = "<<Aanliggende<<endl;
+	cout<<"Hoek:\t Overstaande = "<<Overstaande<<endl;
 
 	// Hoek alpha bepalen
-	Alpha = round(((atan(Overstaande / Aanliggende) * 180) / PI));
-	//cout<<"Alpha = "<<Alpha<<endl;
+	Alpha = round(((atan((float)Overstaande/(float)Aanliggende) * 180) / PI));
 
+    if(Aanliggende > 0)
+    {
+        Alpha += 180;
+    }
+    else if((Aanliggende < 0) && (Overstaande > 0))
+    {
+        Alpha += 360;
+    }
+    cout<<"Berekende hoek = "<<Alpha<<endl;
+
+    Verschil = Beta - Alpha;
+    cout<<"Verschil = "<<Verschil<<endl;
+
+    if (Verschil < 0)
+    {
+        richting = 'l';
+    }
+    else
+    {
+        richting = 'r';
+    }
+
+    Verschil = abs(Verschil);
+
+    if (Verschil > 180) // De positieve hoek nemen
+    {
+		Verschil = 360 - Verschil;
+		if (richting == 'l')
+		{
+		    richting = 'r';
+		}
+		else
+		{
+		    richting = 'l';
+		}
+	}
+	Hoek = abs(Verschil);
+	setAngle(Hoek);
+    setDirection(richting);
+
+    /*
 	if (Xr < Xb) // Rechterkant cirkel
 			{
 		if (Yr < Yb) // Vierde kwadrant, Indien Y1 < Y2 ligt de hoek in het eerste kwadrant en moet er niets gebeuren
@@ -56,7 +94,7 @@ void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen w
 			Alpha = Alpha + 180;
 			KwadrantA = 3;
 		}
-	}
+	}*/
 	#ifdef DEBUGHOEK
 		cout<<"Hoek:\t Alpha = "<<Alpha<<endl;
 		cout<<"Hoek:\t Kwadrant Alpha = "<<KwadrantA<<endl;
@@ -64,7 +102,7 @@ void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen w
 
 
 	// Kwadrant voor beta bepalen
-	KwadrantB = Beta/90 + 1;
+
 	/*if (Beta >= 0 && Beta <= 90) {
 		KwadrantB = 1;
 	}
@@ -78,8 +116,8 @@ void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen w
 		KwadrantB = 4;
 	}*/
 
-	Verschil = Beta - Alpha;
 
+/*
 	#ifdef DEBUGHOEK
 		cout<<"Hoek:\t Kwadrant Beta = "<<KwadrantB<<endl;
 		cout<<"Hoek:\t Verschil = "<<Verschil<<endl;
@@ -147,7 +185,7 @@ void Hoek::BepaalHoek(int Xr, int Yr, int Xb, int Yb, int Beta) // Dit krijgen w
 				}
 			}
 		}
-	}
+	}*/
 }
 
 void Hoek::BepaalAfstand(int Xr, int Yr, int Xb, int Yb) {
