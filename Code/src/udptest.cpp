@@ -23,6 +23,7 @@
 #define GROTEAFSTAND 			70
 #define CIRKELTRESHOLDVANBLIK 	100
 #define CIRKELTRESHOLDVANGARAGE	100
+#define AFSTANDTRESHOLDBLIKJEROBOT	45
 
 #define INITROBOT 				0
 #define DRAAINAARBLIK 			1
@@ -329,7 +330,7 @@ int BijsturenNaarBlik() {
 
 	t.driveForward(MINSPEED);
 	std::cout << "Afstand voor:" << t.getAfstand() << std::endl;
-	while(t.getAfstand() >= 40){
+	while(t.getAfstand() >= AFSTANDTRESHOLDBLIKJEROBOT){
 
 		t.listen();
 		if(t.dataValid()){
