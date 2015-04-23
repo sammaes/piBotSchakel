@@ -1,0 +1,5952 @@
+Server:	 Server is ready
+0
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 246
+Hoek:	 Overstaande = 312
+Kleine Alpha = 52
+Berekende hoek Alpha = 232
+Modulus Alpha = 52
+X Object = 284
+Y Object = 284
+Sin Hoek = 0.615662
+Cos Hoek = 0.788011
+Verschil 1 = 31
+Verschil 2 = 39
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 245
+Hoek:	 YCoord = 315
+Berekende hoek Alpha 1= 204
+Hoek:	 Aanliggende 1= 227
+Hoek:	 Overstaande 1= 99
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 323
+Hoek:	 YCoord = 253
+Berekende hoek Alpha 2 = 227
+Hoek:	 Aanliggende 2= 149
+Hoek:	 Overstaande 2= 161
+Verschil = 0
+afstand:397 hoek:0
+DRAAINAARBLIK
+1
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 248
+Hoek:	 Overstaande = 314
+Kleine Alpha = 52
+Berekende hoek Alpha = 232
+Modulus Alpha = 52
+X Object = 284
+Y Object = 284
+Sin Hoek = 0.615662
+Cos Hoek = 0.788011
+Verschil 1 = 31
+Verschil 2 = 39
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 245
+Hoek:	 YCoord = 315
+Berekende hoek Alpha 1= 204
+Hoek:	 Aanliggende 1= 227
+Hoek:	 Overstaande 1= 99
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 323
+Hoek:	 YCoord = 253
+Berekende hoek Alpha 2 = 227
+Hoek:	 Aanliggende 2= 149
+Hoek:	 Overstaande 2= 161
+Verschil = -3
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 246
+Hoek:	 Overstaande = 312
+Kleine Alpha = 52
+Berekende hoek Alpha = 232
+Modulus Alpha = 52
+X Object = 284
+Y Object = 284
+Sin Hoek = 0.615662
+Cos Hoek = 0.788011
+Verschil 1 = 31
+Verschil 2 = 39
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 245
+Hoek:	 YCoord = 315
+Berekende hoek Alpha 1= 204
+Hoek:	 Aanliggende 1= 227
+Hoek:	 Overstaande 1= 99
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 323
+Hoek:	 YCoord = 253
+Berekende hoek Alpha 2 = 227
+Hoek:	 Aanliggende 2= 149
+Hoek:	 Overstaande 2= 161
+Verschil = -3
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 246
+Hoek:	 Overstaande = 312
+Kleine Alpha = 52
+Berekende hoek Alpha = 232
+Modulus Alpha = 52
+X Object = 284
+Y Object = 284
+Sin Hoek = 0.615662
+Cos Hoek = 0.788011
+Verschil 1 = 31
+Verschil 2 = 39
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 245
+Hoek:	 YCoord = 315
+Berekende hoek Alpha 1= 204
+Hoek:	 Aanliggende 1= 227
+Hoek:	 Overstaande 1= 99
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 323
+Hoek:	 YCoord = 253
+Berekende hoek Alpha 2 = 227
+Hoek:	 Aanliggende 2= 149
+Hoek:	 Overstaande 2= 161
+Verschil = 0
+Robot is gedraaid naar blik
+2
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 248
+Hoek:	 Overstaande = 314
+Kleine Alpha = 52
+Berekende hoek Alpha = 232
+Modulus Alpha = 52
+X Object = 284
+Y Object = 284
+Sin Hoek = 0.615662
+Cos Hoek = 0.788011
+Verschil 1 = 31
+Verschil 2 = 39
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 245
+Hoek:	 YCoord = 315
+Berekende hoek Alpha 1= 204
+Hoek:	 Aanliggende 1= 227
+Hoek:	 Overstaande 1= 99
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 323
+Hoek:	 YCoord = 253
+Berekende hoek Alpha 2 = 227
+Hoek:	 Aanliggende 2= 149
+Hoek:	 Overstaande 2= 161
+Verschil = -3
+RNB: Afstand voor:400
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:400
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:231
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:400
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:224
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:398
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:400
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:400
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:224
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:398
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:470
+roboty:414
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:396
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:472
+roboty:414
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:470
+roboty:412
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:397
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:468
+roboty:410
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:394
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:468
+roboty:410
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:391
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:466
+roboty:408
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:391
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:464
+roboty:406
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:388
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:460
+roboty:400
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:386
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:458
+roboty:398
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:378
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:456
+roboty:396
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:376
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:454
+roboty:394
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:373
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:452
+roboty:392
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:373
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:450
+roboty:390
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:367
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:450
+roboty:388
+robothoek:232
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:364
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:448
+roboty:386
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:363
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:446
+roboty:384
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:360
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:444
+roboty:382
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:357
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:440
+roboty:378
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:354
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:440
+roboty:378
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:349
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:438
+roboty:374
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:349
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:436
+roboty:374
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:344
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:434
+roboty:372
+robothoek:227
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:343
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:434
+roboty:370
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:343
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:432
+roboty:368
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:339
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:430
+roboty:366
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:339
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:428
+roboty:364
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:333
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:426
+roboty:362
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:330
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:426
+roboty:360
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:328
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:424
+roboty:358
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:326
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:422
+roboty:356
+robothoek:231
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:323
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:420
+roboty:354
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:323
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:418
+roboty:352
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:318
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:418
+roboty:350
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:315
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:416
+roboty:348
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:313
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:414
+roboty:348
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:310
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:412
+roboty:344
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:312
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:410
+roboty:342
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:305
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:408
+roboty:342
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:302
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:408
+roboty:340
+robothoek:230
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:304
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:404
+roboty:336
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:299
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:402
+roboty:334
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:294
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:400
+roboty:332
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:291
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:400
+roboty:330
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:288
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:398
+roboty:328
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:286
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:396
+roboty:326
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:284
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:394
+roboty:324
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:281
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:392
+roboty:322
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:278
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:392
+roboty:320
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:275
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:390
+roboty:318
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:274
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:388
+roboty:316
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:271
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:386
+roboty:314
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:268
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:384
+roboty:314
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:265
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:382
+roboty:310
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:264
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:380
+roboty:308
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:260
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:378
+roboty:306
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:257
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:376
+roboty:304
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:254
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:374
+roboty:302
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:251
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:374
+roboty:300
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:248
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:372
+roboty:298
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:247
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:364
+roboty:290
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:244
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:362
+roboty:288
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:233
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:360
+roboty:286
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:230
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:360
+roboty:284
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:227
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:358
+roboty:282
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:226
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:356
+roboty:280
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:223
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:354
+roboty:278
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:220
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:352
+roboty:276
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:217
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:352
+roboty:274
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:214
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:350
+roboty:272
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:213
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:348
+roboty:272
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:210
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:346
+roboty:268
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:209
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:344
+roboty:268
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:204
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:344
+roboty:266
+robothoek:234
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:203
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:342
+roboty:264
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:202
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:340
+roboty:262
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:199
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:338
+roboty:260
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:196
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:338
+roboty:258
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:193
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:336
+roboty:256
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:192
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:334
+roboty:254
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:189
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:334
+roboty:252
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:186
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:332
+roboty:250
+robothoek:350
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:184
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:330
+roboty:248
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:182
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:328
+roboty:246
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:179
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:326
+roboty:244
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:176
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:324
+roboty:242
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:173
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:320
+roboty:238
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:170
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:318
+roboty:236
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:165
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:316
+roboty:234
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:162
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:316
+roboty:232
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:159
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:314
+roboty:230
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:158
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:306
+roboty:220
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:155
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:304
+roboty:218
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:142
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:302
+roboty:216
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:139
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:298
+roboty:212
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:137
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:296
+roboty:210
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:131
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:294
+roboty:208
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:128
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:292
+roboty:206
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:125
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:290
+roboty:204
+robothoek:227
+blikx:308
+bliky:372
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:123
+Blikje verplaatst!
+0
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:288
+roboty:202
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 62
+Hoek:	 Overstaande = 100
+Kleine Alpha = 58
+Berekende hoek Alpha = 238
+Verschil = 0
+afstand:117 hoek:0
+DRAAINAARBLIK
+1
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:296
+roboty:256
+robothoek:180
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 70
+Hoek:	 Overstaande = 154
+Kleine Alpha = 66
+Berekende hoek Alpha = 246
+Verschil = 0
+Robot is gedraaid naar blik
+2
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:282
+roboty:196
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 56
+Hoek:	 Overstaande = 94
+Kleine Alpha = 59
+Berekende hoek Alpha = 239
+Verschil = 0
+RNB: Afstand voor:109
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:282
+roboty:194
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:109
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:280
+roboty:194
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:107
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:280
+roboty:194
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:106
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:280
+roboty:192
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:106
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:278
+roboty:192
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:104
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:278
+roboty:190
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:103
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:276
+roboty:188
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+RNB: Afstand in while:102
+RNB: Robot is aangekomen bij blikje
+3
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:274
+roboty:188
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 48
+Hoek:	 Overstaande = 86
+Kleine Alpha = 61
+Berekende hoek Alpha = 241
+Verschil = 0
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:274
+roboty:186
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = 48
+Hoek:	 Overstaande = 84
+Kleine Alpha = 60
+Berekende hoek Alpha = 240
+Verschil = 0
+Afstand voor:98
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:272
+roboty:184
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:94
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:270
+roboty:182
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:91
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:268
+roboty:180
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:88
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:266
+roboty:178
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:85
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:266
+roboty:176
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:84
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:264
+roboty:174
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:81
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:264
+roboty:174
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:81
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:262
+roboty:172
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:78
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:262
+roboty:172
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:78
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:260
+roboty:170
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:76
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:260
+roboty:170
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:76
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:260
+roboty:170
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:76
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:168
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:73
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:168
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:73
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:166
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:71
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:164
+robothoek:231
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:68
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:254
+roboty:164
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:68
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:254
+roboty:164
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:68
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:162
+robothoek:227
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:65
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:162
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:65
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:160
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:63
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:250
+roboty:160
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:62
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:250
+roboty:158
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:248
+roboty:158
+robothoek:229
+blikx:226
+bliky:102
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:248
+roboty:156
+robothoek:229
+blikx:224
+bliky:100
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:246
+roboty:154
+robothoek:229
+blikx:224
+bliky:98
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:246
+roboty:154
+robothoek:229
+blikx:222
+bliky:98
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:244
+roboty:152
+robothoek:227
+blikx:220
+bliky:98
+garagex:459
+garagey:128
+===================================
+Afstand in while:59
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:244
+roboty:152
+robothoek:229
+blikx:220
+bliky:96
+garagex:459
+garagey:128
+===================================
+Afstand in while:60
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:150
+robothoek:231
+blikx:218
+bliky:98
+garagex:459
+garagey:128
+===================================
+Afstand in while:57
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:150
+robothoek:229
+blikx:218
+bliky:96
+garagex:459
+garagey:128
+===================================
+Afstand in while:59
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:148
+robothoek:231
+blikx:218
+bliky:96
+garagex:459
+garagey:128
+===================================
+Afstand in while:57
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:240
+roboty:148
+robothoek:229
+blikx:216
+bliky:96
+garagex:459
+garagey:128
+===================================
+Afstand in while:57
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:240
+roboty:146
+robothoek:231
+blikx:214
+bliky:96
+garagex:459
+garagey:128
+===================================
+Afstand in while:56
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:238
+roboty:146
+robothoek:229
+blikx:214
+bliky:94
+garagex:459
+garagey:128
+===================================
+Afstand in while:57
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:238
+roboty:144
+robothoek:229
+blikx:212
+bliky:94
+garagex:459
+garagey:128
+===================================
+Afstand in while:56
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:144
+robothoek:229
+blikx:212
+bliky:94
+garagex:459
+garagey:128
+===================================
+Afstand in while:55
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:142
+robothoek:229
+blikx:210
+bliky:94
+garagex:459
+garagey:128
+===================================
+Afstand in while:54
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:142
+robothoek:232
+blikx:210
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:56
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:234
+roboty:140
+robothoek:229
+blikx:210
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:53
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:234
+roboty:140
+robothoek:229
+blikx:208
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:54
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:232
+roboty:138
+robothoek:227
+blikx:206
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:52
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:232
+roboty:138
+robothoek:229
+blikx:204
+bliky:94
+garagex:459
+garagey:128
+===================================
+Afstand in while:52
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:230
+roboty:136
+robothoek:229
+blikx:206
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:50
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:230
+roboty:136
+robothoek:229
+blikx:204
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:52
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:230
+roboty:134
+robothoek:231
+blikx:204
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:51
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:134
+robothoek:229
+blikx:204
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:50
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:132
+robothoek:231
+blikx:202
+bliky:92
+garagex:459
+garagey:128
+===================================
+Afstand in while:47
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:226
+roboty:132
+robothoek:229
+blikx:202
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:48
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:130
+robothoek:227
+blikx:200
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:46
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:130
+robothoek:229
+blikx:200
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:46
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:128
+robothoek:229
+blikx:200
+bliky:90
+garagex:459
+garagey:128
+===================================
+Afstand in while:44
+Robot is bijgestuurd en grijper is dicht
+5
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:128
+robothoek:229
+blikx:200
+bliky:88
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = 0
+Kleine Alpha = 0
+Berekende hoek Alpha = 0
+Modulus Alpha = 0
+X Object = 284
+Y Object = 282
+Sin Hoek = 0
+Cos Hoek = 1
+Verschil 1 = 0
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -62
+Hoek:	 Overstaande 1= -104
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -62
+Hoek:	 Overstaande 2= -204
+Verschil = 229
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:126
+robothoek:229
+blikx:200
+bliky:88
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -2
+Kleine Alpha = 0
+Berekende hoek Alpha = 0
+Modulus Alpha = 0
+X Object = 284
+Y Object = 282
+Sin Hoek = 0
+Cos Hoek = 1
+Verschil 1 = 0
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 60
+Hoek:	 Aanliggende 1= -62
+Hoek:	 Overstaande 1= -106
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -62
+Hoek:	 Overstaande 2= -206
+Verschil = 229
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:126
+robothoek:229
+blikx:200
+bliky:90
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -2
+Kleine Alpha = 0
+Berekende hoek Alpha = 0
+Modulus Alpha = 0
+X Object = 284
+Y Object = 282
+Sin Hoek = 0
+Cos Hoek = 1
+Verschil 1 = 0
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -64
+Hoek:	 Overstaande 1= -106
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 284
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -64
+Hoek:	 Overstaande 2= -206
+Verschil = 229
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:124
+robothoek:232
+blikx:200
+bliky:90
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -4
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -108
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -63
+Hoek:	 Overstaande 2= -208
+Verschil = 231
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:124
+robothoek:227
+blikx:196
+bliky:94
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -4
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 58
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -108
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -208
+Verschil = 226
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:194
+bliky:94
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:194
+bliky:94
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:194
+bliky:94
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:198
+bliky:94
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:229
+blikx:196
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 228
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:122
+robothoek:232
+blikx:198
+bliky:92
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -6
+Kleine Alpha = 1
+Berekende hoek Alpha = 1
+Modulus Alpha = 1
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0174524
+Cos Hoek = 0.999848
+Verschil 1 = 1
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 285
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -110
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 283
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -65
+Hoek:	 Overstaande 2= -210
+Verschil = 231
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:120
+robothoek:234
+blikx:196
+bliky:90
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -8
+Kleine Alpha = 2
+Berekende hoek Alpha = 2
+Modulus Alpha = 2
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0348995
+Cos Hoek = 0.999391
+Verschil 1 = 2
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 286
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -68
+Hoek:	 Overstaande 1= -112
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 282
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -64
+Hoek:	 Overstaande 2= -212
+Verschil = 232
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:120
+robothoek:232
+blikx:196
+bliky:90
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -8
+Kleine Alpha = 2
+Berekende hoek Alpha = 2
+Modulus Alpha = 2
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0348995
+Cos Hoek = 0.999391
+Verschil 1 = 2
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 286
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -68
+Hoek:	 Overstaande 1= -112
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 282
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -64
+Hoek:	 Overstaande 2= -212
+Verschil = 230
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:118
+robothoek:234
+blikx:194
+bliky:96
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -10
+Kleine Alpha = 2
+Berekende hoek Alpha = 2
+Modulus Alpha = 2
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0348995
+Cos Hoek = 0.999391
+Verschil 1 = 2
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 286
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -68
+Hoek:	 Overstaande 1= -114
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 282
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -64
+Hoek:	 Overstaande 2= -214
+Verschil = 232
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:118
+robothoek:234
+blikx:198
+bliky:88
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -10
+Kleine Alpha = 2
+Berekende hoek Alpha = 2
+Modulus Alpha = 2
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0348995
+Cos Hoek = 0.999391
+Verschil 1 = 2
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 286
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -68
+Hoek:	 Overstaande 1= -114
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 282
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 73
+Hoek:	 Aanliggende 2= -64
+Hoek:	 Overstaande 2= -214
+Verschil = 232
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:116
+robothoek:239
+blikx:200
+bliky:86
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -12
+Kleine Alpha = 3
+Berekende hoek Alpha = 3
+Modulus Alpha = 3
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.052336
+Cos Hoek = 0.99863
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -69
+Hoek:	 Overstaande 1= -116
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 74
+Hoek:	 Aanliggende 2= -63
+Hoek:	 Overstaande 2= -216
+Verschil = 236
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:218
+roboty:116
+robothoek:237
+blikx:198
+bliky:84
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -241
+Hoek:	 Overstaande = -12
+Kleine Alpha = 3
+Berekende hoek Alpha = 3
+Modulus Alpha = 3
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.052336
+Cos Hoek = 0.99863
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 59
+Hoek:	 Aanliggende 1= -69
+Hoek:	 Overstaande 1= -116
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 74
+Hoek:	 Aanliggende 2= -63
+Hoek:	 Overstaande 2= -216
+Verschil = 234
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:114
+robothoek:241
+blikx:202
+bliky:82
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -14
+Kleine Alpha = 3
+Berekende hoek Alpha = 3
+Modulus Alpha = 3
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.052336
+Cos Hoek = 0.99863
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 60
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -118
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 74
+Hoek:	 Aanliggende 2= -61
+Hoek:	 Overstaande 2= -218
+Verschil = 238
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:114
+robothoek:241
+blikx:202
+bliky:82
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -14
+Kleine Alpha = 3
+Berekende hoek Alpha = 3
+Modulus Alpha = 3
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.052336
+Cos Hoek = 0.99863
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 60
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -118
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 74
+Hoek:	 Aanliggende 2= -61
+Hoek:	 Overstaande 2= -218
+Verschil = 238
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:112
+robothoek:246
+blikx:204
+bliky:80
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -16
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 61
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -120
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -61
+Hoek:	 Overstaande 2= -220
+Verschil = 242
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:220
+roboty:112
+robothoek:245
+blikx:206
+bliky:78
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -239
+Hoek:	 Overstaande = -16
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 61
+Hoek:	 Aanliggende 1= -67
+Hoek:	 Overstaande 1= -120
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -61
+Hoek:	 Overstaande 2= -220
+Verschil = 241
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:112
+robothoek:248
+blikx:204
+bliky:84
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -16
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -120
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -59
+Hoek:	 Overstaande 2= -220
+Verschil = 244
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:110
+robothoek:249
+blikx:208
+bliky:76
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -18
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -122
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -59
+Hoek:	 Overstaande 2= -222
+Verschil = 245
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:110
+robothoek:249
+blikx:210
+bliky:74
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -18
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -122
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -59
+Hoek:	 Overstaande 2= -222
+Verschil = 245
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:110
+robothoek:249
+blikx:210
+bliky:74
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -18
+Kleine Alpha = 4
+Berekende hoek Alpha = 4
+Modulus Alpha = 4
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0697565
+Cos Hoek = 0.997564
+Verschil 1 = 3
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 287
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -122
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 281
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -59
+Hoek:	 Overstaande 2= -222
+Verschil = 245
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:108
+robothoek:252
+blikx:208
+bliky:80
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -20
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -66
+Hoek:	 Overstaande 1= -124
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -58
+Hoek:	 Overstaande 2= -224
+Verschil = 247
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:222
+roboty:108
+robothoek:252
+blikx:212
+bliky:76
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -237
+Hoek:	 Overstaande = -20
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 62
+Hoek:	 Aanliggende 1= -66
+Hoek:	 Overstaande 1= -124
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 75
+Hoek:	 Aanliggende 2= -58
+Hoek:	 Overstaande 2= -224
+Verschil = 247
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:108
+robothoek:256
+blikx:212
+bliky:74
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -235
+Hoek:	 Overstaande = -20
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 63
+Hoek:	 Aanliggende 1= -64
+Hoek:	 Overstaande 1= -124
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 76
+Hoek:	 Aanliggende 2= -56
+Hoek:	 Overstaande 2= -224
+Verschil = 251
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:106
+robothoek:256
+blikx:214
+bliky:72
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -235
+Hoek:	 Overstaande = -22
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 63
+Hoek:	 Aanliggende 1= -64
+Hoek:	 Overstaande 1= -126
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 76
+Hoek:	 Aanliggende 2= -56
+Hoek:	 Overstaande 2= -226
+Verschil = 251
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:106
+robothoek:260
+blikx:216
+bliky:74
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -235
+Hoek:	 Overstaande = -22
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 63
+Hoek:	 Aanliggende 1= -64
+Hoek:	 Overstaande 1= -126
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 76
+Hoek:	 Aanliggende 2= -56
+Hoek:	 Overstaande 2= -226
+Verschil = 255
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:106
+robothoek:256
+blikx:218
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -235
+Hoek:	 Overstaande = -22
+Kleine Alpha = 5
+Berekende hoek Alpha = 5
+Modulus Alpha = 5
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.0871557
+Cos Hoek = 0.996195
+Verschil 1 = 4
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 288
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 63
+Hoek:	 Aanliggende 1= -64
+Hoek:	 Overstaande 1= -126
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 280
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 76
+Hoek:	 Aanliggende 2= -56
+Hoek:	 Overstaande 2= -226
+Verschil = 251
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:224
+roboty:104
+robothoek:260
+blikx:218
+bliky:68
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -235
+Hoek:	 Overstaande = -24
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 63
+Hoek:	 Aanliggende 1= -65
+Hoek:	 Overstaande 1= -128
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 76
+Hoek:	 Aanliggende 2= -55
+Hoek:	 Overstaande 2= -228
+Verschil = 254
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:226
+roboty:104
+robothoek:260
+blikx:216
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -233
+Hoek:	 Overstaande = -24
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 64
+Hoek:	 Aanliggende 1= -63
+Hoek:	 Overstaande 1= -128
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -53
+Hoek:	 Overstaande 2= -228
+Verschil = 254
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:226
+roboty:104
+robothoek:262
+blikx:220
+bliky:68
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -233
+Hoek:	 Overstaande = -24
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 64
+Hoek:	 Aanliggende 1= -63
+Hoek:	 Overstaande 1= -128
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -53
+Hoek:	 Overstaande 2= -228
+Verschil = 256
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:226
+roboty:104
+robothoek:262
+blikx:220
+bliky:68
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -233
+Hoek:	 Overstaande = -24
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 64
+Hoek:	 Aanliggende 1= -63
+Hoek:	 Overstaande 1= -128
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -53
+Hoek:	 Overstaande 2= -228
+Verschil = 256
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:102
+robothoek:266
+blikx:224
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -231
+Hoek:	 Overstaande = -26
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 65
+Hoek:	 Aanliggende 1= -61
+Hoek:	 Overstaande 1= -130
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -51
+Hoek:	 Overstaande 2= -230
+Verschil = 260
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:102
+robothoek:266
+blikx:226
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -231
+Hoek:	 Overstaande = -26
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 65
+Hoek:	 Aanliggende 1= -61
+Hoek:	 Overstaande 1= -130
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -51
+Hoek:	 Overstaande 2= -230
+Verschil = 260
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:102
+robothoek:266
+blikx:226
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -231
+Hoek:	 Overstaande = -26
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 65
+Hoek:	 Aanliggende 1= -61
+Hoek:	 Overstaande 1= -130
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -51
+Hoek:	 Overstaande 2= -230
+Verschil = 260
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:228
+roboty:102
+robothoek:266
+blikx:228
+bliky:68
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -231
+Hoek:	 Overstaande = -26
+Kleine Alpha = 6
+Berekende hoek Alpha = 6
+Modulus Alpha = 6
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.104528
+Cos Hoek = 0.994522
+Verschil 1 = 5
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 289
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 65
+Hoek:	 Aanliggende 1= -61
+Hoek:	 Overstaande 1= -130
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 279
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 77
+Hoek:	 Aanliggende 2= -51
+Hoek:	 Overstaande 2= -230
+Verschil = 260
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:232
+roboty:100
+robothoek:277
+blikx:236
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -227
+Hoek:	 Overstaande = -28
+Kleine Alpha = 7
+Berekende hoek Alpha = 7
+Modulus Alpha = 7
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.121869
+Cos Hoek = 0.992546
+Verschil 1 = 6
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 290
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 66
+Hoek:	 Aanliggende 1= -58
+Hoek:	 Overstaande 1= -132
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 278
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 79
+Hoek:	 Aanliggende 2= -46
+Hoek:	 Overstaande 2= -232
+Verschil = 270
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:234
+roboty:98
+robothoek:280
+blikx:240
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -225
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 67
+Hoek:	 Aanliggende 1= -57
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 80
+Hoek:	 Aanliggende 2= -43
+Hoek:	 Overstaande 2= -234
+Verschil = 272
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:234
+roboty:98
+robothoek:280
+blikx:242
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -225
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 67
+Hoek:	 Aanliggende 1= -57
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 80
+Hoek:	 Aanliggende 2= -43
+Hoek:	 Overstaande 2= -234
+Verschil = 272
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:98
+robothoek:284
+blikx:244
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -223
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -55
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 80
+Hoek:	 Aanliggende 2= -41
+Hoek:	 Overstaande 2= -234
+Verschil = 276
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:98
+robothoek:284
+blikx:246
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -223
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -55
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 80
+Hoek:	 Aanliggende 2= -41
+Hoek:	 Overstaande 2= -234
+Verschil = 276
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:236
+roboty:98
+robothoek:284
+blikx:246
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -223
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -55
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 80
+Hoek:	 Aanliggende 2= -41
+Hoek:	 Overstaande 2= -234
+Verschil = 276
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:238
+roboty:98
+robothoek:291
+blikx:248
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -221
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -53
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -39
+Hoek:	 Overstaande 2= -234
+Verschil = 283
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:238
+roboty:98
+robothoek:287
+blikx:250
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -221
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -53
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -39
+Hoek:	 Overstaande 2= -234
+Verschil = 279
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:238
+roboty:98
+robothoek:291
+blikx:250
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -221
+Hoek:	 Overstaande = -30
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 68
+Hoek:	 Aanliggende 1= -53
+Hoek:	 Overstaande 1= -134
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -39
+Hoek:	 Overstaande 2= -234
+Verschil = 283
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:240
+roboty:96
+robothoek:293
+blikx:252
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -219
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 69
+Hoek:	 Aanliggende 1= -51
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -37
+Hoek:	 Overstaande 2= -236
+Verschil = 285
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:240
+roboty:96
+robothoek:293
+blikx:252
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -219
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 69
+Hoek:	 Aanliggende 1= -51
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -37
+Hoek:	 Overstaande 2= -236
+Verschil = 285
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:240
+roboty:96
+robothoek:295
+blikx:254
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -219
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 69
+Hoek:	 Aanliggende 1= -51
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 81
+Hoek:	 Aanliggende 2= -37
+Hoek:	 Overstaande 2= -236
+Verschil = 287
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:96
+robothoek:298
+blikx:254
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -217
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 70
+Hoek:	 Aanliggende 1= -49
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 82
+Hoek:	 Aanliggende 2= -35
+Hoek:	 Overstaande 2= -236
+Verschil = 290
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:96
+robothoek:298
+blikx:258
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -217
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 70
+Hoek:	 Aanliggende 1= -49
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 82
+Hoek:	 Aanliggende 2= -35
+Hoek:	 Overstaande 2= -236
+Verschil = 290
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:242
+roboty:96
+robothoek:298
+blikx:260
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -217
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 70
+Hoek:	 Aanliggende 1= -49
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 82
+Hoek:	 Aanliggende 2= -35
+Hoek:	 Overstaande 2= -236
+Verschil = 290
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:244
+roboty:96
+robothoek:302
+blikx:260
+bliky:62
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -215
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 71
+Hoek:	 Aanliggende 1= -47
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 82
+Hoek:	 Aanliggende 2= -33
+Hoek:	 Overstaande 2= -236
+Verschil = 294
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:244
+roboty:96
+robothoek:302
+blikx:260
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -215
+Hoek:	 Overstaande = -32
+Kleine Alpha = 8
+Berekende hoek Alpha = 8
+Modulus Alpha = 8
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.139173
+Cos Hoek = 0.990268
+Verschil 1 = 7
+Verschil 2 = 50
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 291
+Hoek:	 YCoord = 232
+Berekende hoek Alpha 1= 71
+Hoek:	 Aanliggende 1= -47
+Hoek:	 Overstaande 1= -136
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 277
+Hoek:	 YCoord = 332
+Berekende hoek Alpha 2 = 82
+Hoek:	 Aanliggende 2= -33
+Hoek:	 Overstaande 2= -236
+Verschil = 294
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:246
+roboty:96
+robothoek:305
+blikx:262
+bliky:64
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -213
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 71
+Hoek:	 Aanliggende 1= -46
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -30
+Hoek:	 Overstaande 2= -235
+Verschil = 296
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:246
+roboty:96
+robothoek:303
+blikx:264
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -213
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 71
+Hoek:	 Aanliggende 1= -46
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -30
+Hoek:	 Overstaande 2= -235
+Verschil = 294
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:246
+roboty:96
+robothoek:304
+blikx:266
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -213
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 71
+Hoek:	 Aanliggende 1= -46
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -30
+Hoek:	 Overstaande 2= -235
+Verschil = 295
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:248
+roboty:96
+robothoek:307
+blikx:266
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -211
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 72
+Hoek:	 Aanliggende 1= -44
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -28
+Hoek:	 Overstaande 2= -235
+Verschil = 298
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:248
+roboty:96
+robothoek:307
+blikx:270
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -211
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 72
+Hoek:	 Aanliggende 1= -44
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -28
+Hoek:	 Overstaande 2= -235
+Verschil = 298
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:248
+roboty:96
+robothoek:310
+blikx:272
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -211
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 72
+Hoek:	 Aanliggende 1= -44
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 83
+Hoek:	 Aanliggende 2= -28
+Hoek:	 Overstaande 2= -235
+Verschil = 301
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:250
+roboty:96
+robothoek:312
+blikx:272
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -209
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 73
+Hoek:	 Aanliggende 1= -42
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 84
+Hoek:	 Aanliggende 2= -26
+Hoek:	 Overstaande 2= -235
+Verschil = 303
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:250
+roboty:96
+robothoek:312
+blikx:272
+bliky:66
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -209
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 73
+Hoek:	 Aanliggende 1= -42
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 84
+Hoek:	 Aanliggende 2= -26
+Hoek:	 Overstaande 2= -235
+Verschil = 303
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:96
+robothoek:315
+blikx:276
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -207
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 74
+Hoek:	 Aanliggende 1= -40
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 84
+Hoek:	 Aanliggende 2= -24
+Hoek:	 Overstaande 2= -235
+Verschil = 306
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:96
+robothoek:315
+blikx:276
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -207
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 74
+Hoek:	 Aanliggende 1= -40
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 84
+Hoek:	 Aanliggende 2= -24
+Hoek:	 Overstaande 2= -235
+Verschil = 306
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:252
+roboty:96
+robothoek:317
+blikx:276
+bliky:68
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -207
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 74
+Hoek:	 Aanliggende 1= -40
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 84
+Hoek:	 Aanliggende 2= -24
+Hoek:	 Overstaande 2= -235
+Verschil = 308
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:254
+roboty:96
+robothoek:319
+blikx:280
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -205
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Modulus Alpha = 9
+X Object = 284
+Y Object = 282
+Sin Hoek = 0.156434
+Cos Hoek = 0.987688
+Verschil 1 = 8
+Verschil 2 = 49
+Hoek:	 Kleine hoek voor botsing bepalen:
+Hoek:	 XCoord = 292
+Hoek:	 YCoord = 233
+Berekende hoek Alpha 1= 74
+Hoek:	 Aanliggende 1= -38
+Hoek:	 Overstaande 1= -137
+Hoek:	 Grote hoek voor botsing bepalen:
+Hoek:	 XCoord = 276
+Hoek:	 YCoord = 331
+Berekende hoek Alpha 2 = 85
+Hoek:	 Aanliggende 2= -22
+Hoek:	 Overstaande 2= -235
+Verschil = 310
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:254
+roboty:96
+robothoek:319
+blikx:282
+bliky:72
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -205
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Verschil = 0
+Robot is gedraaid naar garage
+6
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:254
+roboty:96
+robothoek:319
+blikx:280
+bliky:70
+garagex:459
+garagey:128
+===================================
+Hoek:	 Hoek bepalen tussen x-as en blik:
+Hoek:	 Aanliggende = -205
+Hoek:	 Overstaande = -32
+Kleine Alpha = 9
+Berekende hoek Alpha = 9
+Verschil = 0
+RNG: Afstand voor:188
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:98
+robothoek:327
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:188
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:98
+robothoek:327
+blikx:286
+bliky:76
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:98
+robothoek:329
+blikx:286
+bliky:78
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:180
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:98
+robothoek:327
+blikx:286
+bliky:78
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:180
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:98
+robothoek:326
+blikx:286
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:180
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:96
+robothoek:322
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:181
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:96
+robothoek:322
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:96
+robothoek:324
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:96
+robothoek:322
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:96
+robothoek:325
+blikx:284
+bliky:76
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:98
+robothoek:327
+blikx:284
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:182
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:256
+roboty:96
+robothoek:322
+blikx:288
+bliky:76
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:183
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:258
+roboty:96
+robothoek:324
+blikx:286
+bliky:74
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:178
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:260
+roboty:96
+robothoek:326
+blikx:288
+bliky:72
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:181
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:260
+roboty:94
+robothoek:324
+blikx:290
+bliky:72
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:179
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:266
+roboty:90
+robothoek:323
+blikx:294
+bliky:68
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:178
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:268
+roboty:90
+robothoek:327
+blikx:294
+bliky:68
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:175
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:270
+roboty:88
+robothoek:327
+blikx:298
+bliky:64
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:175
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:272
+roboty:86
+robothoek:327
+blikx:302
+bliky:64
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:173
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:274
+roboty:84
+robothoek:324
+blikx:302
+bliky:62
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:169
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:276
+roboty:82
+robothoek:327
+blikx:306
+bliky:60
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:170
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:278
+roboty:80
+robothoek:325
+blikx:308
+bliky:58
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:167
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:284
+roboty:78
+robothoek:327
+blikx:310
+bliky:56
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:166
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:284
+roboty:76
+robothoek:325
+blikx:312
+bliky:54
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:165
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:288
+roboty:74
+robothoek:330
+blikx:316
+bliky:52
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:164
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:288
+roboty:72
+robothoek:322
+blikx:316
+bliky:52
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:161
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:292
+roboty:72
+robothoek:330
+blikx:318
+bliky:50
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:161
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:292
+roboty:70
+robothoek:328
+blikx:320
+bliky:48
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:161
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:296
+roboty:68
+robothoek:327
+blikx:324
+bliky:46
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:160
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:300
+roboty:66
+robothoek:332
+blikx:324
+bliky:46
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:157
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:304
+roboty:62
+robothoek:326
+blikx:328
+bliky:42
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:157
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:306
+roboty:60
+robothoek:322
+blikx:328
+bliky:42
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:156
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:308
+roboty:60
+robothoek:325
+blikx:334
+bliky:38
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:156
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:310
+roboty:56
+robothoek:327
+blikx:334
+bliky:38
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:154
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:312
+roboty:56
+robothoek:329
+blikx:338
+bliky:36
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:154
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:314
+roboty:54
+robothoek:326
+blikx:340
+bliky:34
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:152
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:316
+roboty:52
+robothoek:322
+blikx:344
+bliky:32
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:151
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:316
+roboty:52
+robothoek:330
+blikx:344
+bliky:32
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:149
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:324
+roboty:46
+robothoek:327
+blikx:350
+bliky:26
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:149
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:326
+roboty:44
+robothoek:325
+blikx:354
+bliky:24
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:149
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:328
+roboty:44
+robothoek:327
+blikx:356
+bliky:22
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:147
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:332
+roboty:40
+robothoek:324
+blikx:358
+bliky:22
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:147
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:336
+roboty:38
+robothoek:323
+blikx:364
+bliky:18
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:146
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:338
+roboty:36
+robothoek:328
+blikx:366
+bliky:14
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:145
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:346
+roboty:30
+robothoek:328
+blikx:374
+bliky:10
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:147
+Server:	 Waiting for package
+=================b=================
+Server: UDP package eigen received
+Robotx:348
+roboty:30
+robothoek:330
+blikx:374
+bliky:10
+garagex:459
+garagey:128
+===================================
+RNG: Afstand in while:145
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
+Server: Ingelezen data niet valid
+Server:	 Waiting for package
