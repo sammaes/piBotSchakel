@@ -16,7 +16,7 @@
 		#define DEBUGAVERAGE
 	#else
 		/* Hier aan en uit zetten door in commentaar te zetten wat niet nodig is */
-		//#define DEBUGSERVER
+		#define DEBUGSERVER
 		//#define DEBUGSERIALPORT
 		//#define DEBUGROBOTCOMMAND
 		//#define DEBUGROBOT

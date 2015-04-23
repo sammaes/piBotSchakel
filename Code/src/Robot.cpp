@@ -22,9 +22,9 @@ bool Robot::blikjeVerplaatst()
 
 void Robot::updatePosities()
 {
-	if (this->dataValid())
+	if (this->dataEigenValid())
 	{
-		Positie positierobot, positieblikje, positiegarage;
+		//Positie positierobot, positieblikje, positiegarage;
 
 		/*
 		positierobot.newPosition(this->getInfo().robotx, this->getInfo().roboty,this->getInfo().robothoek);
@@ -45,7 +45,6 @@ void Robot::updatePosities()
 		this->setPositieRobot(this->getInfoEigen().robotx, this->getInfoEigen().roboty,this->getInfoEigen().robothoek);
 		this->setPositieBlikje(this->getInfoEigen().blikx, this->getInfoEigen().bliky);
 		this->setPositieGarage(this->getInfoEigen().garagex, this->getInfoEigen().garagey);
-		this->setPositieObstakel(this->getInfoObstakel().robotx, this->getInfoObstakel().roboty,this->getInfoObstakel().robothoek)
 
 		if (!this->initielePosBlikjeGeset)
 		{
@@ -53,16 +52,31 @@ void Robot::updatePosities()
 			this->initielePosBlikjeGeset = true;
 		}
 	}
+	if (this->dataObstakelValid())
+	{
+		this->setPositieObstakel(this->getInfoObstakel().robotx, this->getInfoObstakel().roboty,this->getInfoObstakel().robothoek);
+	}
+	else
+	{
+		this->setPositieObstakel(0,0,0);
+	}
+
+	this->setPositieDestination(this->getCollisionX(),this->getCollisionY());
 }
 
 void Robot::bepaalHoekBlikje()
 {
-	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->getPositieRobot().getAngle());
+	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieObstakel().getX(),this->getPositieObstakel().getY(),this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->getPositieRobot().getAngle());
 }
 
 void Robot::bepaalHoekGarage()
 {
-	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY(),this->getPositieRobot().getAngle());
+	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieObstakel().getX(),this->getPositieObstakel().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY(),this->getPositieRobot().getAngle());
+}
+
+void Robot::bepaalHoekDestination()
+{
+	this->BepaalHoek(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieDestination().getX(),this->getPositieDestination().getY(),this->getPositieRobot().getAngle());
 }
 
 void Robot::bepaalAfstandBlikje()
@@ -73,6 +87,11 @@ void Robot::bepaalAfstandBlikje()
 void Robot::bepaalAfstandGarage()
 {
 	this->BepaalAfstand(this->getPositieBlikje().getX(),this->getPositieBlikje().getY(),this->getPositieGarage().getX(),this->getPositieGarage().getY());
+}
+
+void Robot::bepaalAfstandDestination()
+{
+	this->BepaalAfstand(this->getPositieRobot().getX(),this->getPositieRobot().getY(),this->getPositieDestination().getX(),this->getPositieDestination().getY());
 }
 
 Positie Robot::getPositieRobot() {
@@ -113,6 +132,33 @@ void Robot::setPositieGarage(Positie val) {
 void Robot::setPositieGarage(int x, int y) {
 	this->posGarage.setX(x);
 	this->posGarage.setY(y);
+}
+
+Positie Robot::getPositieObstakel() {
+	return this->posObstakel;
+}
+
+void Robot::setPositieObstakel(Positie val) {
+	this->posObstakel = val;
+}
+
+void Robot::setPositieObstakel(int x, int y,int a) {
+	this->posObstakel.setX(x);
+	this->posObstakel.setY(y);
+	this->posObstakel.setAngle(a);
+}
+
+Positie Robot::getPositieDestination() {
+	return this->posDestination;
+}
+
+void Robot::setPositieDestination(Positie val) {
+	this->posDestination = val;
+}
+
+void Robot::setPositieDestination(int x, int y) {
+	this->posDestination.setX(x);
+	this->posDestination.setY(y);
 }
 
 void Robot::print() {

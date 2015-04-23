@@ -52,7 +52,7 @@ void Server::listen() {
 		}
 
 		#ifdef DEBUGSERVER
-			if (this->dataValid())
+			if (this->dataEigenValid())
 			{
 				std::cout << "=================" << this->getGroep() << "=================" << std::endl;
 				std::cout << "Server: UDP package eigen received" << std::endl;
@@ -72,10 +72,13 @@ void Server::listen() {
 }
 
 // Vanaf dat een van de ontvangen gelijk zijn aan -1 is data in info niet meer valid.
-bool Server::dataValid() {
+bool Server::dataEigenValid() {
 	return !((infoEigen.robotx == -1) || (infoEigen.roboty == -1) || (infoEigen.robothoek == -1) || (infoEigen.blikx == -1) ||
-			(infoEigen.bliky == -1) || (infoEigen.garagex == -1) || (infoEigen.garagey == -1) || (infoObstakel.robotx == -1) ||
-			(infoObstakel.roboty == -1) || (infoObstakel.robothoek == -1) || (infoObstakel.blikx == -1) ||
+			(infoEigen.bliky == -1) || (infoEigen.garagex == -1) || (infoEigen.garagey == -1));
+}
+
+bool Server::dataObstakelValid() {
+	return !((infoObstakel.robotx == -1) || (infoObstakel.roboty == -1) || (infoObstakel.robothoek == -1) || (infoObstakel.blikx == -1) ||
 			(infoObstakel.bliky == -1) || (infoObstakel.garagex == -1) || (infoObstakel.garagey == -1));
 }
 

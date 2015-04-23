@@ -26,7 +26,8 @@ class Server
         char 			getGroep();
         Info 			getInfoEigen();
         Info			getInfoObstakel();
-        bool 			dataValid();
+        bool 			dataEigenValid();
+        bool			dataObstakelValid();
 
     private:
         int 			sockfd;

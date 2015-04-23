@@ -12,6 +12,19 @@ Hoek::Hoek() {
 	setSpeed(0);
 	setDirection('l');
 	setAfstand(0);
+	setCollision(false);
+	this->i_ColX = 0;
+	this->i_ColY = 0;
+}
+
+void Hoek::setCollision(bool c)
+{
+	this->b_Collision = c;
+}
+
+bool Hoek::botsing()
+{
+	return b_Collision;
 }
 
 void Hoek::BepaalHoek(int Xr,int Yr,int Xb,int Yb,int Beta)
@@ -42,7 +55,8 @@ void Hoek::BepaalHoek(int Rx, int Ry, int Ox, int Oy, int Bx, int By, int Beta) 
 	float SinusHoek = 0;
 	float CosHoek = 0;
 	char richting = 'l';
-	int TH = 80; // Straal cirkel
+	int TH = 50; // Straal cirkel
+	bool botsing = false;
 
     // Voor robot
 	AanliggendeRB = Rx - Bx;
@@ -67,211 +81,222 @@ void Hoek::BepaalHoek(int Rx, int Ry, int Ox, int Oy, int Bx, int By, int Beta) 
     }
     cout<<"Berekende hoek Alpha = "<<Alpha<<endl; // Hoek blikje tov oorsprong
 
-    //================================================================================================
-    // Coordinaten bepalen van de raaklijnen
+    if(Ox!= 0 && Oy != 0)
+    {
+		//================================================================================================
+		// Coordinaten bepalen van de raaklijnen
 
-    VerschilAlpha = abs(Alpha)%90;
+		VerschilAlpha = abs(Alpha)%90;
 
-    cout<<"Modulus Alpha = "<<VerschilAlpha<<endl;
+		cout<<"Modulus Alpha = "<<VerschilAlpha<<endl;
 
-    cout<<"X Object = "<<Ox<<endl;
-	cout<<"Y Object = "<<Oy<<endl;
+		cout<<"X Object = "<<Ox<<endl;
+		cout<<"Y Object = "<<Oy<<endl;
 
-	if(VerschilAlpha <= 45)
-	{
-	    SinusHoek   = sin(((VerschilAlpha*PI)/180));
-        CosHoek     = cos(((VerschilAlpha*PI)/180));
+		if(VerschilAlpha <= 45)
+		{
+			SinusHoek   = sin(((VerschilAlpha*PI)/180));
+			CosHoek     = cos(((VerschilAlpha*PI)/180));
+		}
+		else
+		{
+			SinusHoek   = sin((((90-VerschilAlpha)*PI)/180));
+			CosHoek     = cos((((90-VerschilAlpha)*PI)/180));
+		}
+
+
+		cout<<"Sin Hoek = "<<SinusHoek<<endl;
+		cout<<"Cos Hoek = "<<CosHoek<<endl;
+
+		Verschil1 = abs(round(TH*SinusHoek));
+		Verschil2 = abs(round(TH*CosHoek));
+
+		cout<<"Verschil 1 = "<<Verschil1<<endl;
+		cout<<"Verschil 2 = "<<Verschil2<<endl;
+
+		if(Alpha <= 45)
+		{
+			XCoordRO1 = Ox + Verschil1;
+			YCoordRO1 = Oy - Verschil2;
+			XCoordRO2 = Ox - Verschil1;
+			YCoordRO2 = Oy + Verschil2;
+		}
+		else if(Alpha <= 90)
+		{
+			XCoordRO1 = Ox + Verschil2;
+			YCoordRO1 = Oy - Verschil1;
+			XCoordRO2 = Ox - Verschil2;
+			YCoordRO2 = Oy + Verschil1;
+		}
+		else if(Alpha <= 135)
+		{
+			XCoordRO1 = Ox + Verschil2;
+			YCoordRO1 = Oy + Verschil1;
+			XCoordRO2 = Ox - Verschil2;
+			YCoordRO2 = Oy - Verschil1;
+		}
+		else if(Alpha <= 180)
+		{
+			XCoordRO1 = Ox + Verschil1;
+			YCoordRO1 = Oy + Verschil2;
+			XCoordRO2 = Ox - Verschil1;
+			YCoordRO2 = Oy - Verschil2;
+		}
+		else if(Alpha <= 225)
+		{
+			XCoordRO1 = Ox - Verschil1;
+			YCoordRO1 = Oy + Verschil2;
+			XCoordRO2 = Ox + Verschil1;
+			YCoordRO2 = Oy - Verschil2;
+		}
+		else if(Alpha <= 270)
+		{
+			XCoordRO1 = Ox - Verschil2;
+			YCoordRO1 = Oy + Verschil1;
+			XCoordRO2 = Ox + Verschil2;
+			YCoordRO2 = Oy - Verschil1;
+		}
+		else if(Alpha <= 315)
+		{
+			XCoordRO1 = Ox - Verschil2;
+			YCoordRO1 = Oy - Verschil1;
+			XCoordRO2 = Ox + Verschil2;
+			YCoordRO2 = Oy + Verschil1;
+		}
+		else
+		{
+			XCoordRO1 = Ox + Verschil1;
+			YCoordRO1 = Oy + Verschil2;
+			XCoordRO2 = Ox - Verschil1;
+			YCoordRO2 = Oy - Verschil2;
+		}
+
+		//================================================================================================
+		// Voor obstakel - punt 1
+
+		cout<<"Hoek:\t Kleine hoek voor botsing bepalen:"<<endl;
+		cout<<"Hoek:\t XCoord = "<<XCoordRO1<<endl;
+		cout<<"Hoek:\t YCoord = "<<YCoordRO1<<endl;
+
+		AanliggendeRO1 = Rx - XCoordRO1;
+		OverstaandeRO1 = Ry - YCoordRO1;
+
+		// Hoek alpha bepalen
+		Alpha1 = round(((atan((float)OverstaandeRO1/(float)AanliggendeRO1) * 180) / PI));
+
+		if(AanliggendeRO1 > 0)
+		{
+			Alpha1 += 180;
+		}
+		else if((AanliggendeRO1 < 0) && (OverstaandeRO1 > 0))
+		{
+			Alpha1 += 360;
+		}
+
+		cout<<"Berekende hoek Alpha 1= "<<Alpha1<<endl; // Hoek punt 1 obstakel
+		cout<<"Hoek:\t Aanliggende 1= "<<AanliggendeRO1<<endl;
+		cout<<"Hoek:\t Overstaande 1= "<<OverstaandeRO1<<endl;
+
+		//================================================================================================
+		// Voor obstakel - punt 2
+
+		cout<<"Hoek:\t Grote hoek voor botsing bepalen:"<<endl;
+		cout<<"Hoek:\t XCoord = "<<XCoordRO2<<endl;
+		cout<<"Hoek:\t YCoord = "<<YCoordRO2<<endl;
+
+		AanliggendeRO2 = Rx - XCoordRO2;
+		OverstaandeRO2 = Ry - YCoordRO2;
+
+		// Hoek alpha bepalen
+		Alpha2 = round(((atan((float)OverstaandeRO2/(float)AanliggendeRO2) * 180) / PI));
+
+		if(AanliggendeRO2 > 0)
+		{
+			Alpha2 += 180;
+		}
+		else if((AanliggendeRO2 < 0) && (OverstaandeRO2 > 0))
+		{
+			Alpha2 += 360;
+		}
+
+		cout<<"Berekende hoek Alpha 2 = "<<Alpha2<<endl; // Hoek punt 2 obstakel
+		cout<<"Hoek:\t Aanliggende 2= "<<AanliggendeRO2<<endl;
+		cout<<"Hoek:\t Overstaande 2= "<<OverstaandeRO2<<endl;
+
+		//================================================================================================
+		// Checken of we botsing hebben
+
+		Verschil = Beta - Alpha;
+
+		if((Alpha > Alpha1) && (Alpha < Alpha2))
+		{
+			botsing = true;
+			cout<<"Botsing!"<<endl;
+			if( Verschil < 0)
+			{
+				Verschil = Verschil - (Alpha1-Alpha);
+				richting = 'l';
+				this->i_ColX = XCoordRO1;
+				this->i_ColY = YCoordRO1;
+			}
+			else
+			{
+				Verschil = Verschil - (Alpha-Alpha2);
+				richting = 'r';
+				this->i_ColX = XCoordRO2;
+				this->i_ColY = YCoordRO2;
+			}
+
+		}
+		else
+			botsing = false;
 	}
-    else
+
+    if (botsing == false)
     {
-        SinusHoek   = sin((((90-VerschilAlpha)*PI)/180));
-        CosHoek     = cos((((90-VerschilAlpha)*PI)/180));
-    }
+		if (Verschil < 0)
+		{
+			richting = 'l';
+		}
+		else
+		{
+			richting = 'r';
+		}
+		cout<<"Verschil = "<<Verschil<<endl;
+	}
+	//================================================================================================
+	// Richting bepalen
 
+	Verschil = abs(Verschil);
 
-    cout<<"Sin Hoek = "<<SinusHoek<<endl;
-    cout<<"Cos Hoek = "<<CosHoek<<endl;
+	if (Verschil > 180) // De positieve hoek nemen
+	{
+		Verschil = 360 - Verschil;
+		if (richting == 'l')
+		{
+			richting = 'r';
+		}
+		else
+		{
+			richting = 'l';
+		}
+	}
 
-    Verschil1 = abs(round(TH*SinusHoek));
-    Verschil2 = abs(round(TH*CosHoek));
-
-    cout<<"Verschil 1 = "<<Verschil1<<endl;
-    cout<<"Verschil 2 = "<<Verschil2<<endl;
-
-    if(Alpha <= 45)
-    {
-        XCoordRO1 = Ox + Verschil1;
-        YCoordRO1 = Oy - Verschil2;
-        XCoordRO2 = Ox - Verschil1;
-        YCoordRO2 = Oy + Verschil2;
-    }
-    else if(Alpha <= 90)
-    {
-        XCoordRO1 = Ox + Verschil2;
-        YCoordRO1 = Oy - Verschil1;
-        XCoordRO2 = Ox - Verschil2;
-        YCoordRO2 = Oy + Verschil1;
-    }
-    else if(Alpha <= 135)
-    {
-        XCoordRO1 = Ox + Verschil2;
-        YCoordRO1 = Oy + Verschil1;
-        XCoordRO2 = Ox - Verschil2;
-        YCoordRO2 = Oy - Verschil1;
-    }
-    else if(Alpha <= 180)
-    {
-        XCoordRO1 = Ox + Verschil1;
-        YCoordRO1 = Oy + Verschil2;
-        XCoordRO2 = Ox - Verschil1;
-        YCoordRO2 = Oy - Verschil2;
-    }
-    else if(Alpha <= 225)
-    {
-        XCoordRO1 = Ox - Verschil1;
-        YCoordRO1 = Oy + Verschil2;
-        XCoordRO2 = Ox + Verschil1;
-        YCoordRO2 = Oy - Verschil2;
-    }
-    else if(Alpha <= 270)
-    {
-        XCoordRO1 = Ox - Verschil2;
-        YCoordRO1 = Oy + Verschil1;
-        XCoordRO2 = Ox + Verschil2;
-        YCoordRO2 = Oy - Verschil1;
-    }
-    else if(Alpha <= 315)
-    {
-        XCoordRO1 = Ox - Verschil2;
-        YCoordRO1 = Oy - Verschil1;
-        XCoordRO2 = Ox + Verschil2;
-        YCoordRO2 = Oy + Verschil1;
-    }
-    else
-    {
-        XCoordRO1 = Ox + Verschil1;
-        YCoordRO1 = Oy + Verschil2;
-        XCoordRO2 = Ox - Verschil1;
-        YCoordRO2 = Oy - Verschil2;
-    }
-
-    //================================================================================================
-    // Voor obstakel - punt 1
-
-    cout<<"Hoek:\t Kleine hoek voor botsing bepalen:"<<endl;
-    cout<<"Hoek:\t XCoord = "<<XCoordRO1<<endl;
-	cout<<"Hoek:\t YCoord = "<<YCoordRO1<<endl;
-
-	AanliggendeRO1 = Rx - XCoordRO1;
-	OverstaandeRO1 = Ry - YCoordRO1;
-
-	// Hoek alpha bepalen
-	Alpha1 = round(((atan((float)OverstaandeRO1/(float)AanliggendeRO1) * 180) / PI));
-
-	if(AanliggendeRO1 > 0)
-    {
-        Alpha1 += 180;
-    }
-    else if((AanliggendeRO1 < 0) && (OverstaandeRO1 > 0))
-    {
-        Alpha1 += 360;
-    }
-
-    cout<<"Berekende hoek Alpha 1= "<<Alpha1<<endl; // Hoek punt 1 obstakel
-    cout<<"Hoek:\t Aanliggende 1= "<<AanliggendeRO1<<endl;
-	cout<<"Hoek:\t Overstaande 1= "<<OverstaandeRO1<<endl;
-
-    //================================================================================================
-    // Voor obstakel - punt 2
-
-    cout<<"Hoek:\t Grote hoek voor botsing bepalen:"<<endl;
-    cout<<"Hoek:\t XCoord = "<<XCoordRO2<<endl;
-	cout<<"Hoek:\t YCoord = "<<YCoordRO2<<endl;
-
-	AanliggendeRO2 = Rx - XCoordRO2;
-	OverstaandeRO2 = Ry - YCoordRO2;
-
-	// Hoek alpha bepalen
-	Alpha2 = round(((atan((float)OverstaandeRO2/(float)AanliggendeRO2) * 180) / PI));
-
-	if(AanliggendeRO2 > 0)
-    {
-        Alpha2 += 180;
-    }
-    else if((AanliggendeRO2 < 0) && (OverstaandeRO2 > 0))
-    {
-        Alpha2 += 360;
-    }
-
-    cout<<"Berekende hoek Alpha 2 = "<<Alpha2<<endl; // Hoek punt 2 obstakel
-    cout<<"Hoek:\t Aanliggende 2= "<<AanliggendeRO2<<endl;
-	cout<<"Hoek:\t Overstaande 2= "<<OverstaandeRO2<<endl;
-
-    //================================================================================================
-    // Checken of we botsing hebben
-
-    Verschil = Beta - Alpha;
-
-    if((Alpha > Alpha1) && (Alpha < Alpha2))
-    {
-        cout<<"Botsing!"<<endl;
-        if( Verschil < 0)
-        {
-            Verschil = Verschil - (Alpha1-Alpha);
-            richting = 'l';
-        }
-        else
-        {
-            Verschil = Verschil - (Alpha-Alpha2);
-            richting = 'r';
-        }
-
-    }
-    else
-    {
-        if (Verschil < 0)
-        {
-            richting = 'l';
-        }
-        else
-        {
-            richting = 'r';
-        }
-    }
-    cout<<"Verschil = "<<Verschil<<endl;
-
-    //================================================================================================
-    // Richting bepalen
-
-    Verschil = abs(Verschil);
-
-    if (Verschil > 180) // De positieve hoek nemen
-    {
-        Verschil = 360 - Verschil;
-        if (richting == 'l')
-        {
-            richting = 'r';
-        }
-        else
-        {
-            richting = 'l';
-        }
-    }
-
-    if ( (abs(Verschil) <= TRESLOW) || (abs(Verschil) >= (360-TRESLOW)) )
-    {
-        #ifdef DEBUGHOEK
+	if ( (abs(Verschil) <= TRESLOW) || (abs(Verschil) >= (360-TRESLOW)) )
+	{
+		#ifdef DEBUGHOEK
 		cout<<"Hoek:\t Hoek gelijk, stoppen"<<endl;
 		#endif //DEBUGHOEK
 		setAngle(0);
-    }
-    else
-    {
-        Hoek = abs(Verschil);
-        setAngle(Hoek);             // Draaihoek
-    }
+	}
+	else
+	{
+		Hoek = abs(Verschil);
+		setAngle(Hoek);             // Draaihoek
+	}
 
-    setDirection(richting);
+	setCollision(botsing);
+	setDirection(richting);
 }
 
 void Hoek::BepaalAfstand(int Xr, int Yr, int Xb, int Yb) {
@@ -333,6 +358,14 @@ int Hoek::getSpeed() {
 
 int Hoek::getAfstand() {
 	return i_Distance;
+}
+
+int Hoek::getCollisionX() {
+	return i_ColX;
+}
+
+int Hoek::getCollisionY() {
+	return i_ColY;
 }
 
 void Hoek::setAngle(int i_hoek) {

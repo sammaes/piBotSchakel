@@ -23,31 +23,43 @@
 #define GROTEAFSTAND 			70
 #define CIRKELTRESHOLDVANBLIK 	100
 #define CIRKELTRESHOLDVANGARAGE	100
+#define	CIRKELTRESHOLDVANDESTINATION	100
 #define AFSTANDTUSSENROBOTBLIK	45
 
 #define INITROBOT 				0
 #define DRAAINAARBLIK 			1
-#define RIJNAARBLIK				2
-#define BIJSTURENNAARBLIK		3
 #define DRAAINAARGARAGE			5
+#define DRAAINAARDESTINATION	13
+
+#define RIJNAARBLIK				2
+#define	RIJNAARDESTINATION		4
 #define RIJNAARGARAGE			6
-#define BIJSTURENNAARGARAGE		7
 #define RIJVOORUITWEGVANBLIK	9
 #define RIJACHTERUITWEGVANBLIK	10
+
+#define BIJSTURENNAARBLIK		3
+#define BIJSTURENNAARGARAGE		7
+#define	BIJSTURENNAARDESTINATION	8
 #define IDLE					11
+#define ONTWIJKEN				12
 
 int InitRobot();
 int RijVooruitWegVanBlik();
 int RijAchteruitWegVanBlik(int afstand);
 int DraaiNaarBlik();
+int DraaiNaarDestination();
 int RijNaarBlik();
+int RijNaarDestination();
 int BijsturenNaarBlik();
 int BijsturenNaarGarage();
+int BijsturenNaarDestination();
 int DraaiNaarGarage();
 int RijNaarGarage();
 int Idle();
+int Ontwijken();
 void nieuwePositiesBlikje();
 void nieuwePositiesGarage();
+void nieuwePositiesDestination();
 
 Robot t(3200,"/dev/ttyUSB0",'b');
 void stopRobot(int signum) {
@@ -82,9 +94,13 @@ int main() {
 									break;
 					case DRAAINAARBLIK : 		fase = DraaiNaarBlik();											//1
 									break;
+					case DRAAINAARDESTINATION :	fase = DraaiNaarDestination();									//13
+									break;
 					case RIJNAARBLIK :			fase = RijNaarBlik();											//2
 									break;
 					case BIJSTURENNAARBLIK : 	fase = BijsturenNaarBlik();										//3
+									break;
+					case RIJNAARDESTINATION :	fase = RijNaarDestination();									//4
 									break;
 					case DRAAINAARGARAGE:		fase = DraaiNaarGarage();										//5
 									break;
@@ -92,9 +108,13 @@ int main() {
 									break;
 					case BIJSTURENNAARGARAGE:	fase = BijsturenNaarGarage();									//7
 									break;
+					case BIJSTURENNAARDESTINATION:	fase = BijsturenNaarDestination();							//8
+									break;
 					case RIJVOORUITWEGVANBLIK: 	fase = RijVooruitWegVanBlik();									//9
 									break;
 					case RIJACHTERUITWEGVANBLIK:fase = RijAchteruitWegVanBlik(CIRKELTRESHOLDVANBLIK/2);			//10
+									break;
+					case ONTWIJKEN :			fase = Ontwijken();												//12
 									break;
 					default:					fase = Idle();													//11
 									break;
@@ -112,6 +132,13 @@ int Idle(){
 	return INITROBOT;
 }
 
+int Ontwijken(){
+
+	nieuwePositiesDestination();
+
+	return DRAAINAARBLIK; // of naar garage
+}
+
 int InitRobot(){
 	int hoek,afstand;
 
@@ -120,6 +147,10 @@ int InitRobot(){
 	hoek = t.getAngle();
 	afstand = t.getAfstand();
 	std::cout << "afstand:" << afstand << " hoek:" << hoek << std::endl;
+	if(t.botsing())
+	{
+		return DRAAINAARDESTINATION;
+	}
 	if(afstand <= CIRKELTRESHOLDVANBLIK && (hoek > 90 && hoek < 270 ))		//blikje staat vlak achter robot --> vooruit r
 	{
 		std::cout << "RIJVOORUITWEGVANBLIK" << std::endl;
@@ -152,7 +183,7 @@ int DraaiNaarBlik(){
 	t.turnDirection(t.getDirection(),DRAAISPEEDMAX);
 	while((t.getAngle() != 0) && (!t.blikjeVerplaatst())){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekBlikje();
 		}
@@ -177,13 +208,43 @@ int DraaiNaarBlik(){
 
 }
 
+int DraaiNaarDestination() {
+	nieuwePositiesDestination();
+
+	t.turnDirection(t.getDirection(),DRAAISPEEDMAX);
+	while(t.getAngle() != 0){
+		t.listen();
+		if(t.dataEigenValid()){
+			t.updatePosities();
+			t.bepaalHoekDestination();
+		}
+	}
+	t.stop();
+	t.bepaalAfstandDestination();
+
+	std::cout << "Robot is gedraaid naar destination" << std::endl;
+	stopRobot(0);
+	return 0;
+	//return RIJNAARDESTINATION;
+	/*
+	if (t.getAfstand() > CIRKELTRESHOLDVANDESTINATION)	// Buiten cirkel van garage
+	{
+		return RIJNAARDESTINATION;
+	}
+	else		// Binnen cirkel van garage
+	{
+		return BIJSTURENNAARDESTINATION;
+	}
+	*/
+}
+
 int DraaiNaarGarage() {
 	nieuwePositiesGarage();
 
 	t.turnDirection(t.getDirection(),DRAAISPEEDMAX);
 	while(t.getAngle() != 0){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekGarage();
 		}
@@ -211,7 +272,7 @@ int RijVooruitWegVanBlik(){
 	while(t.getAfstand() <= CIRKELTRESHOLDVANBLIK){
 
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalAfstandBlikje();
 			std::cout << "Afstand in while:" << t.getAfstand() << std::endl;
@@ -227,7 +288,7 @@ int RijAchteruitWegVanBlik(int afstand){
 	t.driveReverse(MINSPEED);
 	while(t.getAfstand() <= afstand){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalAfstandBlikje();
 		}
@@ -260,7 +321,7 @@ int RijNaarBlik() {
 
 	while((t.getAfstand() >= CIRKELTRESHOLDVANBLIK) && (!t.blikjeVerplaatst())){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			std::cout << "RNB: Afstand in while:" << t.getAfstand() << std::endl;
 			t.updatePosities();
 			t.bepaalAfstandBlikje();
@@ -292,7 +353,7 @@ int RijNaarGarage() {
 
 	while(t.getAfstand() >= CIRKELTRESHOLDVANGARAGE){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			std::cout << "RNG: Afstand in while:" << t.getAfstand() << std::endl;
 			t.updatePosities();
 			t.bepaalAfstandGarage();
@@ -306,22 +367,44 @@ int RijNaarGarage() {
 	return BIJSTURENNAARGARAGE;
 }
 
+int RijNaarDestination() {
+	nieuwePositiesDestination();
+
+	if (t.getAfstand() >= CIRKELTRESHOLDVANDESTINATION)
+	t.driveForward(MAXSPEED);
+	std::cout << "RND: Afstand voor:" << t.getAfstand() << std::endl;
+
+	while(t.getAfstand() >= CIRKELTRESHOLDVANDESTINATION){
+		t.listen();
+		if(t.dataEigenValid()){
+			std::cout << "RND: Afstand in while:" << t.getAfstand() << std::endl;
+			t.updatePosities();
+			t.bepaalAfstandDestination();
+		}
+	}
+
+	t.stop();
+
+	std::cout << "RND: Robot is aangekomen bij destination" << std::endl;
+	return DRAAINAARBLIK;
+}
+
 int BijsturenNaarBlik() {
 	nieuwePositiesBlikje();
 
 	do {
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekBlikje();
 		}
-	} while(!t.dataValid());
+	} while(!t.dataEigenValid());
 
 
 	t.turnDirection(t.getDirection(),DRAAISPEEDMIN);
 	while(t.getAngle() != 0){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekBlikje();
 		}
@@ -333,7 +416,7 @@ int BijsturenNaarBlik() {
 	while(t.getAfstand() >= AFSTANDTUSSENROBOTBLIK){
 
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalAfstandBlikje();
 			std::cout << "Afstand in while:" << t.getAfstand() << std::endl;
@@ -353,17 +436,17 @@ int BijsturenNaarGarage() {
 
 	do {
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekGarage();
 		}
-	} while(!t.dataValid());
+	} while(!t.dataEigenValid());
 
 
 	t.turnDirection(t.getDirection(),DRAAISPEEDMIN);
 	while(t.getAngle() != 0){
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalHoekGarage();
 		}
@@ -375,9 +458,55 @@ int BijsturenNaarGarage() {
 	while(t.getAfstand() >= 25){
 
 		t.listen();
-		if(t.dataValid()){
+		if(t.dataEigenValid()){
 			t.updatePosities();
 			t.bepaalAfstandGarage();
+			std::cout << "Afstand in while:" << t.getAfstand() << std::endl;
+		}
+	}
+
+	t.stop();
+
+	t.gripOpen();
+
+	std::cout << "nog enkel achteruit rijden aub" << std::endl;
+	RijAchteruitWegVanBlik(CIRKELTRESHOLDVANGARAGE);
+	std::cout << "Ik ben braaf achteruit gereden" << std::endl;
+
+	std::cout << "Robot is bijgestuurd en grijper is open" << std::endl;
+
+	return IDLE;
+}
+int BijsturenNaarDestination() {
+	nieuwePositiesDestination();
+
+	do {
+		t.listen();
+		if(t.dataEigenValid()){
+			t.updatePosities();
+			t.bepaalHoekDestination();
+		}
+	} while(!t.dataEigenValid());
+
+
+	t.turnDirection(t.getDirection(),DRAAISPEEDMIN);
+	while(t.getAngle() != 0){
+		t.listen();
+		if(t.dataEigenValid()){
+			t.updatePosities();
+			t.bepaalHoekDestination();
+		}
+	}
+	t.stop();
+
+	t.driveForward(MINSPEED);
+	std::cout << "Afstand voor:" << t.getAfstand() << std::endl;
+	while(t.getAfstand() >= 25){
+
+		t.listen();
+		if(t.dataEigenValid()){
+			t.updatePosities();
+			t.bepaalAfstandDestination();
 			std::cout << "Afstand in while:" << t.getAfstand() << std::endl;
 		}
 	}
@@ -399,7 +528,7 @@ void nieuwePositiesBlikje()
 {
 	do {
 		t.listen();
-	} while(!t.dataValid());
+	} while(!t.dataEigenValid());
 	t.updatePosities();
 	t.bepaalAfstandBlikje();
 	t.bepaalHoekBlikje();
@@ -409,8 +538,18 @@ void nieuwePositiesGarage()
 {
 	do {
 		t.listen();
-	} while(!t.dataValid());
+	} while(!t.dataEigenValid());
 	t.updatePosities();
 	t.bepaalAfstandGarage();
 	t.bepaalHoekGarage();
+}
+
+void nieuwePositiesDestination()
+{
+	do {
+		t.listen();
+	} while(!t.dataEigenValid());
+	t.updatePosities();
+	t.bepaalAfstandDestination();
+	t.bepaalHoekDestination();
 }
