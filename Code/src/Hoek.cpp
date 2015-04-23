@@ -14,6 +14,11 @@ Hoek::Hoek() {
 	setAfstand(0);
 }
 
+void Hoek::BepaalHoek(int Xr,int Yr,int Xb,int Yb,int Beta)
+{
+	this->BepaalHoek(Xr,Yr,0,0,Xb,Yb,Beta);
+}
+
 void Hoek::BepaalHoek(int Rx, int Ry, int Ox, int Oy, int Bx, int By, int Beta) // Dit krijgen we binnen
 {
 	int AanliggendeRB = 0;

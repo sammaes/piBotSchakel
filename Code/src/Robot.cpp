@@ -45,7 +45,7 @@ void Robot::updatePosities()
 		this->setPositieRobot(this->getInfoEigen().robotx, this->getInfoEigen().roboty,this->getInfoEigen().robothoek);
 		this->setPositieBlikje(this->getInfoEigen().blikx, this->getInfoEigen().bliky);
 		this->setPositieGarage(this->getInfoEigen().garagex, this->getInfoEigen().garagey);
-		//this->setPositieObstakel(this->getInfoObstakel().)
+		this->setPositieObstakel(this->getInfoObstakel().robotx, this->getInfoObstakel().roboty,this->getInfoObstakel().robothoek)
 
 		if (!this->initielePosBlikjeGeset)
 		{
