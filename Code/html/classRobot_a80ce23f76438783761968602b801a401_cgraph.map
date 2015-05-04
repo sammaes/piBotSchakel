@@ -1,0 +1,5 @@
+<map id="Robot::bepaalAfstandBlikje" name="Robot::bepaalAfstandBlikje">
+<area shape="rect" id="node2" href="$classHoek.html#a7dab6f40d750f5e9d0c18ad8e1b75a91" title="Hoek::BepaalAfstand" alt="" coords="241,5,388,32"/>
+<area shape="rect" id="node3" href="$classRobot.html#a43fdd19ef403be762d659593023dda8a" title="Robot::getPositieRobot" alt="" coords="235,56,394,83"/>
+<area shape="rect" id="node4" href="$classRobot.html#abfab62ce2a3ff22f237e34ad1a6650e7" title="Robot::getPositieBlikje" alt="" coords="237,107,392,133"/>
+</map>

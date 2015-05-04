@@ -1,0 +1,232 @@
+\hypertarget{classrobotcommand}{\section{robotcommand Class Reference}
+\label{classrobotcommand}\index{robotcommand@{robotcommand}}
+}
+
+
+{\ttfamily \#include $<$robotcommand.\-h$>$}
+
+
+
+Inheritance diagram for robotcommand\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classrobotcommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for robotcommand\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classrobotcommand__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrobotcommand_aa9baff763183ccfc69757aca4e40dcd8}{$\sim$robotcommand} ()
+\item 
+\hyperlink{classrobotcommand_af19fa9cf0701a23ab114b69e756d1ab5}{robotcommand} ()
+\item 
+\hyperlink{classrobotcommand_a52e24824353237ed366fc010a2fe83f1}{robotcommand} (string port=\hyperlink{robotcommand_8h_acd526f11ce51532b8187f63bac77d87b}{S\-E\-R\-I\-A\-L\-P\-O\-R\-T})
+\item 
+int \hyperlink{classrobotcommand_a108981093dc6edff9aa95b28b2cc2333}{turn\-Round\-Own\-Axis} (char direction, int angle)
+\item 
+int \hyperlink{classrobotcommand_a0ef498eb5ba8f4b25c5623c435af6239}{turn\-Direction} (char direction, int speed)
+\item 
+int \hyperlink{classrobotcommand_a9ac4f18967d91b8e509767dc9f21cde7}{drive\-Forward} (int speed)
+\item 
+int \hyperlink{classrobotcommand_a460b1282f139510ac5347415a996d961}{drive\-Reverse} (int speed)
+\item 
+int \hyperlink{classrobotcommand_a32699ec2e45ef5e6aaaab39a51e27a63}{stop} ()
+\item 
+int \hyperlink{classrobotcommand_a4213a394de57c5c24a976cc3e8c1717a}{get\-Drive\-State} ()
+\item 
+int \hyperlink{classrobotcommand_af741cb165c3871d9d0503f56fa3c78b1}{grip\-Open} ()
+\item 
+int \hyperlink{classrobotcommand_a076218b7721984dacd431594dd03f420}{grip\-Close} ()
+\item 
+int \hyperlink{classrobotcommand_a69294589313aa0a1d7a03d9f3dc7656f}{get\-Grip\-State} ()
+\item 
+int \hyperlink{classrobotcommand_ad10998d94d1b7f378f0715b08b4efa2a}{read\-Distance} ()
+\item 
+int \hyperlink{classrobotcommand_a23fdf87741ce41a862dd0c9be64621a4}{read\-Voltage} ()
+\item 
+int \hyperlink{classrobotcommand_abe3d7070fde985f906c2f604d98ca1b2}{test\-Start\-Turn} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classrobotcommand_acedd5f9a9dc4a4a0965f46750eb8df33}{int\-To\-String} (int number)
+\item 
+int \hyperlink{classrobotcommand_a3bc304d1666269cc31f8ba929ba05d6d}{string\-To\-Int} (string txt)
+\item 
+int \hyperlink{classrobotcommand_ac254ab4292788bbf36667463dafd4c4c}{turn\-Round\-Own\-Axis} (char direction, int angle, int speed)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classserialport}{serialport} $\ast$ \hyperlink{classrobotcommand_ab4775e1be7dcbea9fcb686001e0d58a1}{Robot\-Serial\-Port}
+\item 
+bool \hyperlink{classrobotcommand_af5bfa13fcb7d45b8812e5c1f4a4cdfbb}{gripstate}
+\item 
+int \hyperlink{classrobotcommand_a4d67204c88b917ad8e395abb5f1384c7}{drivestate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrobotcommand_aa9baff763183ccfc69757aca4e40dcd8}{\index{robotcommand@{robotcommand}!$\sim$robotcommand@{$\sim$robotcommand}}
+\index{$\sim$robotcommand@{$\sim$robotcommand}!robotcommand@{robotcommand}}
+\subsubsection[{$\sim$robotcommand}]{\setlength{\rightskip}{0pt plus 5cm}robotcommand\-::$\sim$robotcommand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_aa9baff763183ccfc69757aca4e40dcd8}
+\hypertarget{classrobotcommand_af19fa9cf0701a23ab114b69e756d1ab5}{\index{robotcommand@{robotcommand}!robotcommand@{robotcommand}}
+\index{robotcommand@{robotcommand}!robotcommand@{robotcommand}}
+\subsubsection[{robotcommand}]{\setlength{\rightskip}{0pt plus 5cm}robotcommand\-::robotcommand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_af19fa9cf0701a23ab114b69e756d1ab5}
+\hypertarget{classrobotcommand_a52e24824353237ed366fc010a2fe83f1}{\index{robotcommand@{robotcommand}!robotcommand@{robotcommand}}
+\index{robotcommand@{robotcommand}!robotcommand@{robotcommand}}
+\subsubsection[{robotcommand}]{\setlength{\rightskip}{0pt plus 5cm}robotcommand\-::robotcommand (
+\begin{DoxyParamCaption}
+\item[{string}]{port = {\ttfamily {\bf S\-E\-R\-I\-A\-L\-P\-O\-R\-T}}}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a52e24824353237ed366fc010a2fe83f1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrobotcommand_a9ac4f18967d91b8e509767dc9f21cde7}{\index{robotcommand@{robotcommand}!drive\-Forward@{drive\-Forward}}
+\index{drive\-Forward@{drive\-Forward}!robotcommand@{robotcommand}}
+\subsubsection[{drive\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::drive\-Forward (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a9ac4f18967d91b8e509767dc9f21cde7}
+\hypertarget{classrobotcommand_a460b1282f139510ac5347415a996d961}{\index{robotcommand@{robotcommand}!drive\-Reverse@{drive\-Reverse}}
+\index{drive\-Reverse@{drive\-Reverse}!robotcommand@{robotcommand}}
+\subsubsection[{drive\-Reverse}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::drive\-Reverse (
+\begin{DoxyParamCaption}
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a460b1282f139510ac5347415a996d961}
+\hypertarget{classrobotcommand_a4213a394de57c5c24a976cc3e8c1717a}{\index{robotcommand@{robotcommand}!get\-Drive\-State@{get\-Drive\-State}}
+\index{get\-Drive\-State@{get\-Drive\-State}!robotcommand@{robotcommand}}
+\subsubsection[{get\-Drive\-State}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::get\-Drive\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a4213a394de57c5c24a976cc3e8c1717a}
+\hypertarget{classrobotcommand_a69294589313aa0a1d7a03d9f3dc7656f}{\index{robotcommand@{robotcommand}!get\-Grip\-State@{get\-Grip\-State}}
+\index{get\-Grip\-State@{get\-Grip\-State}!robotcommand@{robotcommand}}
+\subsubsection[{get\-Grip\-State}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::get\-Grip\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a69294589313aa0a1d7a03d9f3dc7656f}
+\hypertarget{classrobotcommand_a076218b7721984dacd431594dd03f420}{\index{robotcommand@{robotcommand}!grip\-Close@{grip\-Close}}
+\index{grip\-Close@{grip\-Close}!robotcommand@{robotcommand}}
+\subsubsection[{grip\-Close}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::grip\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a076218b7721984dacd431594dd03f420}
+\hypertarget{classrobotcommand_af741cb165c3871d9d0503f56fa3c78b1}{\index{robotcommand@{robotcommand}!grip\-Open@{grip\-Open}}
+\index{grip\-Open@{grip\-Open}!robotcommand@{robotcommand}}
+\subsubsection[{grip\-Open}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::grip\-Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_af741cb165c3871d9d0503f56fa3c78b1}
+\hypertarget{classrobotcommand_acedd5f9a9dc4a4a0965f46750eb8df33}{\index{robotcommand@{robotcommand}!int\-To\-String@{int\-To\-String}}
+\index{int\-To\-String@{int\-To\-String}!robotcommand@{robotcommand}}
+\subsubsection[{int\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}string robotcommand\-::int\-To\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_acedd5f9a9dc4a4a0965f46750eb8df33}
+\hypertarget{classrobotcommand_ad10998d94d1b7f378f0715b08b4efa2a}{\index{robotcommand@{robotcommand}!read\-Distance@{read\-Distance}}
+\index{read\-Distance@{read\-Distance}!robotcommand@{robotcommand}}
+\subsubsection[{read\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::read\-Distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_ad10998d94d1b7f378f0715b08b4efa2a}
+\hypertarget{classrobotcommand_a23fdf87741ce41a862dd0c9be64621a4}{\index{robotcommand@{robotcommand}!read\-Voltage@{read\-Voltage}}
+\index{read\-Voltage@{read\-Voltage}!robotcommand@{robotcommand}}
+\subsubsection[{read\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::read\-Voltage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a23fdf87741ce41a862dd0c9be64621a4}
+\hypertarget{classrobotcommand_a32699ec2e45ef5e6aaaab39a51e27a63}{\index{robotcommand@{robotcommand}!stop@{stop}}
+\index{stop@{stop}!robotcommand@{robotcommand}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a32699ec2e45ef5e6aaaab39a51e27a63}
+\hypertarget{classrobotcommand_a3bc304d1666269cc31f8ba929ba05d6d}{\index{robotcommand@{robotcommand}!string\-To\-Int@{string\-To\-Int}}
+\index{string\-To\-Int@{string\-To\-Int}!robotcommand@{robotcommand}}
+\subsubsection[{string\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::string\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{string}]{txt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_a3bc304d1666269cc31f8ba929ba05d6d}
+\hypertarget{classrobotcommand_abe3d7070fde985f906c2f604d98ca1b2}{\index{robotcommand@{robotcommand}!test\-Start\-Turn@{test\-Start\-Turn}}
+\index{test\-Start\-Turn@{test\-Start\-Turn}!robotcommand@{robotcommand}}
+\subsubsection[{test\-Start\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::test\-Start\-Turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_abe3d7070fde985f906c2f604d98ca1b2}
+\hypertarget{classrobotcommand_a0ef498eb5ba8f4b25c5623c435af6239}{\index{robotcommand@{robotcommand}!turn\-Direction@{turn\-Direction}}
+\index{turn\-Direction@{turn\-Direction}!robotcommand@{robotcommand}}
+\subsubsection[{turn\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::turn\-Direction (
+\begin{DoxyParamCaption}
+\item[{char}]{direction, }
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a0ef498eb5ba8f4b25c5623c435af6239}
+\hypertarget{classrobotcommand_ac254ab4292788bbf36667463dafd4c4c}{\index{robotcommand@{robotcommand}!turn\-Round\-Own\-Axis@{turn\-Round\-Own\-Axis}}
+\index{turn\-Round\-Own\-Axis@{turn\-Round\-Own\-Axis}!robotcommand@{robotcommand}}
+\subsubsection[{turn\-Round\-Own\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::turn\-Round\-Own\-Axis (
+\begin{DoxyParamCaption}
+\item[{char}]{direction, }
+\item[{int}]{angle, }
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_ac254ab4292788bbf36667463dafd4c4c}
+\hypertarget{classrobotcommand_a108981093dc6edff9aa95b28b2cc2333}{\index{robotcommand@{robotcommand}!turn\-Round\-Own\-Axis@{turn\-Round\-Own\-Axis}}
+\index{turn\-Round\-Own\-Axis@{turn\-Round\-Own\-Axis}!robotcommand@{robotcommand}}
+\subsubsection[{turn\-Round\-Own\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::turn\-Round\-Own\-Axis (
+\begin{DoxyParamCaption}
+\item[{char}]{direction, }
+\item[{int}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classrobotcommand_a108981093dc6edff9aa95b28b2cc2333}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classrobotcommand_a4d67204c88b917ad8e395abb5f1384c7}{\index{robotcommand@{robotcommand}!drivestate@{drivestate}}
+\index{drivestate@{drivestate}!robotcommand@{robotcommand}}
+\subsubsection[{drivestate}]{\setlength{\rightskip}{0pt plus 5cm}int robotcommand\-::drivestate\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_a4d67204c88b917ad8e395abb5f1384c7}
+\hypertarget{classrobotcommand_af5bfa13fcb7d45b8812e5c1f4a4cdfbb}{\index{robotcommand@{robotcommand}!gripstate@{gripstate}}
+\index{gripstate@{gripstate}!robotcommand@{robotcommand}}
+\subsubsection[{gripstate}]{\setlength{\rightskip}{0pt plus 5cm}bool robotcommand\-::gripstate\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_af5bfa13fcb7d45b8812e5c1f4a4cdfbb}
+\hypertarget{classrobotcommand_ab4775e1be7dcbea9fcb686001e0d58a1}{\index{robotcommand@{robotcommand}!Robot\-Serial\-Port@{Robot\-Serial\-Port}}
+\index{Robot\-Serial\-Port@{Robot\-Serial\-Port}!robotcommand@{robotcommand}}
+\subsubsection[{Robot\-Serial\-Port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf serialport}$\ast$ robotcommand\-::\-Robot\-Serial\-Port\hspace{0.3cm}{\ttfamily [private]}}}\label{classrobotcommand_ab4775e1be7dcbea9fcb686001e0d58a1}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{robotcommand_8h}{robotcommand.\-h}\item 
+src/\hyperlink{robotcommand_8cpp}{robotcommand.\-cpp}\end{DoxyCompactItemize}

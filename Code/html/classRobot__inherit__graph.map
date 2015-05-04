@@ -1,0 +1,5 @@
+<map id="Robot" name="Robot">
+<area shape="rect" id="node2" href="$classServer.html" title="Server" alt="" coords="5,5,64,32"/>
+<area shape="rect" id="node3" href="$classrobotcommand.html" title="robotcommand" alt="" coords="89,5,196,32"/>
+<area shape="rect" id="node4" href="$classHoek.html" title="Hoek" alt="" coords="221,5,275,32"/>
+</map>

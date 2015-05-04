@@ -1,0 +1,10 @@
+<map id="Robot" name="Robot">
+<area shape="rect" id="node2" href="$classServer.html" title="Server" alt="" coords="69,229,129,256"/>
+<area shape="rect" id="node3" href="$structUdp__package.html" title="Udp_package" alt="" coords="48,109,150,136"/>
+<area shape="rect" id="node4" href="$structInfo.html" title="Info" alt="" coords="12,5,55,32"/>
+<area shape="rect" id="node5" href="$classrobotcommand.html" title="robotcommand" alt="" coords="156,229,263,256"/>
+<area shape="rect" id="node6" href="$classserialport.html" title="serialport" alt="" coords="175,109,249,136"/>
+<area shape="rect" id="node7" href="$classHoek.html" title="Hoek" alt="" coords="289,229,342,256"/>
+<area shape="rect" id="node8" href="$classAverage.html" title="Average" alt="" coords="512,229,582,256"/>
+<area shape="rect" id="node9" href="$classPositie.html" title="Positie" alt="" coords="380,109,442,136"/>
+</map>

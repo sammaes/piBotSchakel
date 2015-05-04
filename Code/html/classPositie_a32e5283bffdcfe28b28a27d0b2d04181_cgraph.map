@@ -1,0 +1,6 @@
+<map id="Positie::Positie" name="Positie::Positie">
+<area shape="rect" id="node2" href="$classPositie.html#a6ba64177362977ad0716ad9e06648799" title="Positie::newPosition" alt="" coords="165,56,307,83"/>
+<area shape="rect" id="node3" href="$classPositie.html#a56f7076b52ce50e811ac5849f9631932" title="Positie::setX" alt="" coords="367,5,465,32"/>
+<area shape="rect" id="node4" href="$classPositie.html#ae230b789e2683561ac44f18162541da0" title="Positie::setY" alt="" coords="367,56,465,83"/>
+<area shape="rect" id="node5" href="$classPositie.html#ad6db714754c841515436dbbd73dc90ef" title="Positie::setAngle" alt="" coords="355,107,477,133"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Robot::updatePosities" name="Robot::updatePosities">
+<area shape="rect" id="node2" href="$classServer.html#a162257cf71d621f37bd2fee3d554d029" title="Server::dataValid" alt="" coords="227,5,349,32"/>
+<area shape="rect" id="node3" href="$classRobot.html#a6d3de1bc1f766693e4058a02a7744293" title="Robot::setPositieRobot" alt="" coords="209,56,367,83"/>
+<area shape="rect" id="node4" href="$classServer.html#a13eed202f15d451fa877233fcb58b5d4" title="Server::getInfo" alt="" coords="234,107,342,133"/>
+<area shape="rect" id="node5" href="$classRobot.html#ad1c9b6e11cfb97e966350162ef38c7a2" title="Robot::setPositieBlikje" alt="" coords="211,157,365,184"/>
+<area shape="rect" id="node6" href="$classRobot.html#affb796dc23ca48799c1fc9ab31f578d9" title="Robot::setPositieGarage" alt="" coords="205,208,371,235"/>
+</map>

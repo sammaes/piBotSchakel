@@ -1,0 +1,9 @@
+<map id="Average::getCalcAverage" name="Average::getCalcAverage">
+<area shape="rect" id="node2" href="$classAverage.html#a25f9ec5ac7f9f65e1d5af39b6d9626ec" title="Average::calcAverage" alt="" coords="225,132,375,159"/>
+<area shape="rect" id="node3" href="$classPositie.html#a56f7076b52ce50e811ac5849f9631932" title="Positie::setX" alt="" coords="437,5,534,32"/>
+<area shape="rect" id="node4" href="$classPositie.html#a71dc2639feac7dc8d4f6f8a43bc7c98f" title="Positie::getX" alt="" coords="437,56,534,83"/>
+<area shape="rect" id="node5" href="$classPositie.html#ae230b789e2683561ac44f18162541da0" title="Positie::setY" alt="" coords="437,107,534,133"/>
+<area shape="rect" id="node6" href="$classPositie.html#a42001a6907b4c6c360ffbf298923de75" title="Positie::getY" alt="" coords="437,157,534,184"/>
+<area shape="rect" id="node7" href="$classPositie.html#ad6db714754c841515436dbbd73dc90ef" title="Positie::setAngle" alt="" coords="425,208,546,235"/>
+<area shape="rect" id="node8" href="$classPositie.html#a2b5bedcfc88cb380b8acb8dc27cb64e7" title="Positie::getAngle" alt="" coords="425,259,546,285"/>
+</map>

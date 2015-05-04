@@ -1,0 +1,364 @@
+\hypertarget{classRobot}{\section{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+}
+
+
+{\ttfamily \#include $<$Robot.\-h$>$}
+
+
+
+Inheritance diagram for Robot\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot_aa269489a0691f410fb286301be6d2434}{Robot} (int udp\-Poort, string serial\-Poort, char \hyperlink{classServer_ae63c2574fcde32ea16b06b0bcb61b716}{groep})
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a43fdd19ef403be762d659593023dda8a}{get\-Positie\-Robot} ()
+\item 
+void \hyperlink{classRobot_a6d3de1bc1f766693e4058a02a7744293}{set\-Positie\-Robot} (\hyperlink{classPositie}{Positie} val)
+\item 
+void \hyperlink{classRobot_a3f35253e8b6e3810aa377c9f3c4158de}{set\-Positie\-Robot} (int x, int y, int angle)
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_abfab62ce2a3ff22f237e34ad1a6650e7}{get\-Positie\-Blikje} ()
+\item 
+void \hyperlink{classRobot_ad1c9b6e11cfb97e966350162ef38c7a2}{set\-Positie\-Blikje} (\hyperlink{classPositie}{Positie} val)
+\item 
+void \hyperlink{classRobot_a29185fbf1e17fe20b357afb1753bb29e}{set\-Positie\-Blikje} (int x, int y)
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a9301d035810174edffb769fd097f2a0c}{get\-Positie\-Garage} ()
+\item 
+void \hyperlink{classRobot_affb796dc23ca48799c1fc9ab31f578d9}{set\-Positie\-Garage} (\hyperlink{classPositie}{Positie} val)
+\item 
+void \hyperlink{classRobot_a371cff32d467a1cbaf2a8d212921845a}{set\-Positie\-Garage} (int x, int y)
+\item 
+void \hyperlink{classRobot_a17c05db895bbe8696acb2e0079f68de0}{set\-Initiele\-Pos\-Blikje\-Geset} (bool b)
+\item 
+void \hyperlink{classRobot_a4895306b538817f9044c1b9b69e89781}{print} ()
+\item 
+bool \hyperlink{classRobot_ab6fc311f9a66f524aac0757a7b2a4a57}{blikje\-Verplaatst} ()
+\item 
+void \hyperlink{classRobot_a980d1f972db40e5afcf3e2caf6ba346c}{update\-Posities} ()
+\item 
+void \hyperlink{classRobot_a1cbfcc8e3580c8ac369dc696dbdd640c}{bepaal\-Hoek\-Blikje} ()
+\item 
+void \hyperlink{classRobot_a5b40bae7bd0b458676caf2f5288d2047}{bepaal\-Hoek\-Garage} ()
+\item 
+void \hyperlink{classRobot_a80ce23f76438783761968602b801a401}{bepaal\-Afstand\-Blikje} ()
+\item 
+void \hyperlink{classRobot_a212f7383710351d161f084720aac00ad}{bepaal\-Afstand\-Garage} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRobot_a89cba58927f6471cc51991ea6d1a5009}{initiele\-Pos\-Blikje\-Geset}
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a96f64e31d55c578095db9cd225597763}{initiele\-Pos\-Blikje}
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a9d4895475ce429baafb7056bba91892d}{pos\-Robot}
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a430b77999d3080962df243cc80ff41cc}{pos\-Blikje}
+\item 
+\hyperlink{classPositie}{Positie} \hyperlink{classRobot_a65d03adc264ed54988a63793bd1ee9c5}{pos\-Garage}
+\item 
+\hyperlink{classAverage}{Average} \hyperlink{classRobot_afb0e831757aefcfe83bd3df04d8ab4e7}{avgposrobot}
+\item 
+\hyperlink{classAverage}{Average} \hyperlink{classRobot_a6914cbc8706b7a2096b39a3a059b31bf}{avgposblikje}
+\item 
+\hyperlink{classAverage}{Average} \hyperlink{classRobot_ab74847d7cebe2e6141ec9ff00745594c}{avgposgarage}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRobot_aa269489a0691f410fb286301be6d2434}{\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-::\-Robot (
+\begin{DoxyParamCaption}
+\item[{int}]{udp\-Poort, }
+\item[{string}]{serial\-Poort, }
+\item[{char}]{groep}
+\end{DoxyParamCaption}
+)}}\label{classRobot_aa269489a0691f410fb286301be6d2434}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRobot_a80ce23f76438783761968602b801a401}{\index{Robot@{Robot}!bepaal\-Afstand\-Blikje@{bepaal\-Afstand\-Blikje}}
+\index{bepaal\-Afstand\-Blikje@{bepaal\-Afstand\-Blikje}!Robot@{Robot}}
+\subsubsection[{bepaal\-Afstand\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::bepaal\-Afstand\-Blikje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a80ce23f76438783761968602b801a401}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot_a80ce23f76438783761968602b801a401_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a212f7383710351d161f084720aac00ad}{\index{Robot@{Robot}!bepaal\-Afstand\-Garage@{bepaal\-Afstand\-Garage}}
+\index{bepaal\-Afstand\-Garage@{bepaal\-Afstand\-Garage}!Robot@{Robot}}
+\subsubsection[{bepaal\-Afstand\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::bepaal\-Afstand\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a212f7383710351d161f084720aac00ad}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot_a212f7383710351d161f084720aac00ad_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a1cbfcc8e3580c8ac369dc696dbdd640c}{\index{Robot@{Robot}!bepaal\-Hoek\-Blikje@{bepaal\-Hoek\-Blikje}}
+\index{bepaal\-Hoek\-Blikje@{bepaal\-Hoek\-Blikje}!Robot@{Robot}}
+\subsubsection[{bepaal\-Hoek\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::bepaal\-Hoek\-Blikje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a1cbfcc8e3580c8ac369dc696dbdd640c}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot_a1cbfcc8e3580c8ac369dc696dbdd640c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a5b40bae7bd0b458676caf2f5288d2047}{\index{Robot@{Robot}!bepaal\-Hoek\-Garage@{bepaal\-Hoek\-Garage}}
+\index{bepaal\-Hoek\-Garage@{bepaal\-Hoek\-Garage}!Robot@{Robot}}
+\subsubsection[{bepaal\-Hoek\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::bepaal\-Hoek\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a5b40bae7bd0b458676caf2f5288d2047}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot_a5b40bae7bd0b458676caf2f5288d2047_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_ab6fc311f9a66f524aac0757a7b2a4a57}{\index{Robot@{Robot}!blikje\-Verplaatst@{blikje\-Verplaatst}}
+\index{blikje\-Verplaatst@{blikje\-Verplaatst}!Robot@{Robot}}
+\subsubsection[{blikje\-Verplaatst}]{\setlength{\rightskip}{0pt plus 5cm}bool Robot\-::blikje\-Verplaatst (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_ab6fc311f9a66f524aac0757a7b2a4a57}
+\hypertarget{classRobot_abfab62ce2a3ff22f237e34ad1a6650e7}{\index{Robot@{Robot}!get\-Positie\-Blikje@{get\-Positie\-Blikje}}
+\index{get\-Positie\-Blikje@{get\-Positie\-Blikje}!Robot@{Robot}}
+\subsubsection[{get\-Positie\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::get\-Positie\-Blikje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_abfab62ce2a3ff22f237e34ad1a6650e7}
+\hypertarget{classRobot_a9301d035810174edffb769fd097f2a0c}{\index{Robot@{Robot}!get\-Positie\-Garage@{get\-Positie\-Garage}}
+\index{get\-Positie\-Garage@{get\-Positie\-Garage}!Robot@{Robot}}
+\subsubsection[{get\-Positie\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::get\-Positie\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a9301d035810174edffb769fd097f2a0c}
+\hypertarget{classRobot_a43fdd19ef403be762d659593023dda8a}{\index{Robot@{Robot}!get\-Positie\-Robot@{get\-Positie\-Robot}}
+\index{get\-Positie\-Robot@{get\-Positie\-Robot}!Robot@{Robot}}
+\subsubsection[{get\-Positie\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::get\-Positie\-Robot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a43fdd19ef403be762d659593023dda8a}
+\hypertarget{classRobot_a4895306b538817f9044c1b9b69e89781}{\index{Robot@{Robot}!print@{print}}
+\index{print@{print}!Robot@{Robot}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a4895306b538817f9044c1b9b69e89781}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classRobot_a4895306b538817f9044c1b9b69e89781_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a17c05db895bbe8696acb2e0079f68de0}{\index{Robot@{Robot}!set\-Initiele\-Pos\-Blikje\-Geset@{set\-Initiele\-Pos\-Blikje\-Geset}}
+\index{set\-Initiele\-Pos\-Blikje\-Geset@{set\-Initiele\-Pos\-Blikje\-Geset}!Robot@{Robot}}
+\subsubsection[{set\-Initiele\-Pos\-Blikje\-Geset}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Initiele\-Pos\-Blikje\-Geset (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a17c05db895bbe8696acb2e0079f68de0}
+\hypertarget{classRobot_ad1c9b6e11cfb97e966350162ef38c7a2}{\index{Robot@{Robot}!set\-Positie\-Blikje@{set\-Positie\-Blikje}}
+\index{set\-Positie\-Blikje@{set\-Positie\-Blikje}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Blikje (
+\begin{DoxyParamCaption}
+\item[{{\bf Positie}}]{val}
+\end{DoxyParamCaption}
+)}}\label{classRobot_ad1c9b6e11cfb97e966350162ef38c7a2}
+\hypertarget{classRobot_a29185fbf1e17fe20b357afb1753bb29e}{\index{Robot@{Robot}!set\-Positie\-Blikje@{set\-Positie\-Blikje}}
+\index{set\-Positie\-Blikje@{set\-Positie\-Blikje}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Blikje (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a29185fbf1e17fe20b357afb1753bb29e}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classRobot_a29185fbf1e17fe20b357afb1753bb29e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_affb796dc23ca48799c1fc9ab31f578d9}{\index{Robot@{Robot}!set\-Positie\-Garage@{set\-Positie\-Garage}}
+\index{set\-Positie\-Garage@{set\-Positie\-Garage}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Garage (
+\begin{DoxyParamCaption}
+\item[{{\bf Positie}}]{val}
+\end{DoxyParamCaption}
+)}}\label{classRobot_affb796dc23ca48799c1fc9ab31f578d9}
+\hypertarget{classRobot_a371cff32d467a1cbaf2a8d212921845a}{\index{Robot@{Robot}!set\-Positie\-Garage@{set\-Positie\-Garage}}
+\index{set\-Positie\-Garage@{set\-Positie\-Garage}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Garage (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a371cff32d467a1cbaf2a8d212921845a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classRobot_a371cff32d467a1cbaf2a8d212921845a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a6d3de1bc1f766693e4058a02a7744293}{\index{Robot@{Robot}!set\-Positie\-Robot@{set\-Positie\-Robot}}
+\index{set\-Positie\-Robot@{set\-Positie\-Robot}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Robot (
+\begin{DoxyParamCaption}
+\item[{{\bf Positie}}]{val}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a6d3de1bc1f766693e4058a02a7744293}
+\hypertarget{classRobot_a3f35253e8b6e3810aa377c9f3c4158de}{\index{Robot@{Robot}!set\-Positie\-Robot@{set\-Positie\-Robot}}
+\index{set\-Positie\-Robot@{set\-Positie\-Robot}!Robot@{Robot}}
+\subsubsection[{set\-Positie\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Positie\-Robot (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a3f35253e8b6e3810aa377c9f3c4158de}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classRobot_a3f35253e8b6e3810aa377c9f3c4158de_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRobot_a980d1f972db40e5afcf3e2caf6ba346c}{\index{Robot@{Robot}!update\-Posities@{update\-Posities}}
+\index{update\-Posities@{update\-Posities}!Robot@{Robot}}
+\subsubsection[{update\-Posities}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::update\-Posities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a980d1f972db40e5afcf3e2caf6ba346c}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRobot_a980d1f972db40e5afcf3e2caf6ba346c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRobot_a6914cbc8706b7a2096b39a3a059b31bf}{\index{Robot@{Robot}!avgposblikje@{avgposblikje}}
+\index{avgposblikje@{avgposblikje}!Robot@{Robot}}
+\subsubsection[{avgposblikje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Average} Robot\-::avgposblikje\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a6914cbc8706b7a2096b39a3a059b31bf}
+\hypertarget{classRobot_ab74847d7cebe2e6141ec9ff00745594c}{\index{Robot@{Robot}!avgposgarage@{avgposgarage}}
+\index{avgposgarage@{avgposgarage}!Robot@{Robot}}
+\subsubsection[{avgposgarage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Average} Robot\-::avgposgarage\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_ab74847d7cebe2e6141ec9ff00745594c}
+\hypertarget{classRobot_afb0e831757aefcfe83bd3df04d8ab4e7}{\index{Robot@{Robot}!avgposrobot@{avgposrobot}}
+\index{avgposrobot@{avgposrobot}!Robot@{Robot}}
+\subsubsection[{avgposrobot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Average} Robot\-::avgposrobot\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_afb0e831757aefcfe83bd3df04d8ab4e7}
+\hypertarget{classRobot_a96f64e31d55c578095db9cd225597763}{\index{Robot@{Robot}!initiele\-Pos\-Blikje@{initiele\-Pos\-Blikje}}
+\index{initiele\-Pos\-Blikje@{initiele\-Pos\-Blikje}!Robot@{Robot}}
+\subsubsection[{initiele\-Pos\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::initiele\-Pos\-Blikje\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a96f64e31d55c578095db9cd225597763}
+\hypertarget{classRobot_a89cba58927f6471cc51991ea6d1a5009}{\index{Robot@{Robot}!initiele\-Pos\-Blikje\-Geset@{initiele\-Pos\-Blikje\-Geset}}
+\index{initiele\-Pos\-Blikje\-Geset@{initiele\-Pos\-Blikje\-Geset}!Robot@{Robot}}
+\subsubsection[{initiele\-Pos\-Blikje\-Geset}]{\setlength{\rightskip}{0pt plus 5cm}bool Robot\-::initiele\-Pos\-Blikje\-Geset\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a89cba58927f6471cc51991ea6d1a5009}
+\hypertarget{classRobot_a430b77999d3080962df243cc80ff41cc}{\index{Robot@{Robot}!pos\-Blikje@{pos\-Blikje}}
+\index{pos\-Blikje@{pos\-Blikje}!Robot@{Robot}}
+\subsubsection[{pos\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::pos\-Blikje\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a430b77999d3080962df243cc80ff41cc}
+\hypertarget{classRobot_a65d03adc264ed54988a63793bd1ee9c5}{\index{Robot@{Robot}!pos\-Garage@{pos\-Garage}}
+\index{pos\-Garage@{pos\-Garage}!Robot@{Robot}}
+\subsubsection[{pos\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::pos\-Garage\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a65d03adc264ed54988a63793bd1ee9c5}
+\hypertarget{classRobot_a9d4895475ce429baafb7056bba91892d}{\index{Robot@{Robot}!pos\-Robot@{pos\-Robot}}
+\index{pos\-Robot@{pos\-Robot}!Robot@{Robot}}
+\subsubsection[{pos\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Positie} Robot\-::pos\-Robot\hspace{0.3cm}{\ttfamily [private]}}}\label{classRobot_a9d4895475ce429baafb7056bba91892d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Robot_8h}{Robot.\-h}\item 
+src/\hyperlink{Robot_8cpp}{Robot.\-cpp}\end{DoxyCompactItemize}

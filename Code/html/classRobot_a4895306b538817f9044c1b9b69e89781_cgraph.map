@@ -1,0 +1,8 @@
+<map id="Robot::print" name="Robot::print">
+<area shape="rect" id="node2" href="$classRobot.html#a43fdd19ef403be762d659593023dda8a" title="Robot::getPositieRobot" alt="" coords="147,5,306,32"/>
+<area shape="rect" id="node3" href="$classPositie.html#a71dc2639feac7dc8d4f6f8a43bc7c98f" title="Positie::getX" alt="" coords="178,56,275,83"/>
+<area shape="rect" id="node4" href="$classPositie.html#a42001a6907b4c6c360ffbf298923de75" title="Positie::getY" alt="" coords="178,107,275,133"/>
+<area shape="rect" id="node5" href="$classPositie.html#a2b5bedcfc88cb380b8acb8dc27cb64e7" title="Positie::getAngle" alt="" coords="166,157,287,184"/>
+<area shape="rect" id="node6" href="$classRobot.html#abfab62ce2a3ff22f237e34ad1a6650e7" title="Robot::getPositieBlikje" alt="" coords="149,208,304,235"/>
+<area shape="rect" id="node7" href="$classRobot.html#a9301d035810174edffb769fd097f2a0c" title="Robot::getPositieGarage" alt="" coords="144,259,309,285"/>
+</map>

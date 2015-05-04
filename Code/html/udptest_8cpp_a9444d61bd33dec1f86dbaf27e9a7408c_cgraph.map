@@ -1,0 +1,24 @@
+<map id="BijsturenNaarBlik" name="BijsturenNaarBlik">
+<area shape="rect" id="node2" href="$udptest_8cpp.html#a5235df519c2acbebf015eedc222e0fc0" title="nieuwePositiesBlikje" alt="" coords="201,259,343,285"/>
+<area shape="rect" id="node3" href="$classServer.html#a83ae4701038e91258108a7701521cf78" title="Server::listen" alt="" coords="457,56,556,83"/>
+<area shape="rect" id="node5" href="$classServer.html#a162257cf71d621f37bd2fee3d554d029" title="Server::dataValid" alt="" coords="667,56,789,83"/>
+<area shape="rect" id="node6" href="$classRobot.html#a980d1f972db40e5afcf3e2caf6ba346c" title="Robot::updatePosities" alt="" coords="431,208,582,235"/>
+<area shape="rect" id="node11" href="$classRobot.html#a80ce23f76438783761968602b801a401" title="Robot::bepaalAfstandBlikje" alt="" coords="417,309,597,336"/>
+<area shape="rect" id="node15" href="$classRobot.html#a1cbfcc8e3580c8ac369dc696dbdd640c" title="Robot::bepaalHoekBlikje" alt="" coords="423,360,590,387"/>
+<area shape="rect" id="node17" href="$classHoek.html#a6418dc2139cedec6df600f7102ab4d95" title="Hoek::getAngle" alt="" coords="672,512,784,539"/>
+<area shape="rect" id="node18" href="$classrobotcommand.html#a0ef498eb5ba8f4b25c5623c435af6239" title="robotcommand::turnDirection" alt="" coords="177,461,367,488"/>
+<area shape="rect" id="node19" href="$classHoek.html#af74f65686c7a2e9266853fa01dd74300" title="Hoek::getDirection" alt="" coords="207,512,337,539"/>
+<area shape="rect" id="node20" href="$classrobotcommand.html#a32699ec2e45ef5e6aaaab39a51e27a63" title="robotcommand::stop" alt="" coords="201,563,343,589"/>
+<area shape="rect" id="node21" href="$classrobotcommand.html#a9ac4f18967d91b8e509767dc9f21cde7" title="robotcommand::driveForward" alt="" coords="177,613,367,640"/>
+<area shape="rect" id="node22" href="$classHoek.html#a828b6cc7d878e741f463edc6f9d9253b" title="Hoek::getAfstand" alt="" coords="210,664,334,691"/>
+<area shape="rect" id="node23" href="$classrobotcommand.html#a076218b7721984dacd431594dd03f420" title="robotcommand::gripClose" alt="" coords="187,715,357,741"/>
+<area shape="rect" id="node4" href="$classServer.html#a25fc1f6dc4bf1bf674a416022587792a" title="Server::getGroep" alt="" coords="667,5,789,32"/>
+<area shape="rect" id="node7" href="$classRobot.html#a6d3de1bc1f766693e4058a02a7744293" title="Robot::setPositieRobot" alt="" coords="649,157,807,184"/>
+<area shape="rect" id="node8" href="$classServer.html#a13eed202f15d451fa877233fcb58b5d4" title="Server::getInfo" alt="" coords="674,208,782,235"/>
+<area shape="rect" id="node9" href="$classRobot.html#ad1c9b6e11cfb97e966350162ef38c7a2" title="Robot::setPositieBlikje" alt="" coords="651,259,805,285"/>
+<area shape="rect" id="node10" href="$classRobot.html#affb796dc23ca48799c1fc9ab31f578d9" title="Robot::setPositieGarage" alt="" coords="645,107,811,133"/>
+<area shape="rect" id="node12" href="$classHoek.html#a7dab6f40d750f5e9d0c18ad8e1b75a91" title="Hoek::BepaalAfstand" alt="" coords="655,309,801,336"/>
+<area shape="rect" id="node13" href="$classRobot.html#a43fdd19ef403be762d659593023dda8a" title="Robot::getPositieRobot" alt="" coords="649,411,807,437"/>
+<area shape="rect" id="node14" href="$classRobot.html#abfab62ce2a3ff22f237e34ad1a6650e7" title="Robot::getPositieBlikje" alt="" coords="651,360,805,387"/>
+<area shape="rect" id="node16" href="$classHoek.html#a51fbe1b1eba5971727450d7880ab7422" title="Hoek::BepaalHoek" alt="" coords="662,461,794,488"/>
+</map>

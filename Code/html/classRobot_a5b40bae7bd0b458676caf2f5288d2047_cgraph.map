@@ -1,0 +1,6 @@
+<map id="Robot::bepaalHoekGarage" name="Robot::bepaalHoekGarage">
+<area shape="rect" id="node2" href="$classHoek.html#a51fbe1b1eba5971727450d7880ab7422" title="Hoek::BepaalHoek" alt="" coords="246,5,378,32"/>
+<area shape="rect" id="node3" href="$classRobot.html#a43fdd19ef403be762d659593023dda8a" title="Robot::getPositieRobot" alt="" coords="233,56,391,83"/>
+<area shape="rect" id="node4" href="$classRobot.html#a9301d035810174edffb769fd097f2a0c" title="Robot::getPositieGarage" alt="" coords="229,107,395,133"/>
+<area shape="rect" id="node5" href="$classHoek.html#a6418dc2139cedec6df600f7102ab4d95" title="Hoek::getAngle" alt="" coords="256,157,368,184"/>
+</map>

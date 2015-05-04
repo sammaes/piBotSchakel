@@ -1,0 +1,79 @@
+\hypertarget{serialport_8h}{\section{include/serialport.h File Reference}
+\label{serialport_8h}\index{include/serialport.\-h@{include/serialport.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$termios.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}debug.\-h\char`\"{}}\\*
+Include dependency graph for serialport.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classserialport}{serialport}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{serialport_8h_a614217d263be1fb1a5f76e2ff7be19a2}{P\-O\-R\-T}~\char`\"{}/dev/tty\-U\-S\-B0\char`\"{}
+\item 
+\#define \hyperlink{serialport_8h_a155a9a6160c909e29d95e7c75b79612a}{D\-A\-T\-A\-B\-I\-T\-S}~8
+\item 
+\#define \hyperlink{serialport_8h_aa5d0b84610803adad91c781c7a51be82}{S\-T\-O\-P\-B\-I\-T\-S}~1
+\item 
+\#define \hyperlink{serialport_8h_aff1f07741fbe1f53f46098687f0a05e2}{F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L}~0
+\item 
+\#define \hyperlink{serialport_8h_ac3d144aa01e765a1fae62ab5491c7cc1}{\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E}~1 /$\ast$ P\-O\-S\-I\-X compliant source $\ast$/
+\item 
+\#define \hyperlink{serialport_8h_a6f63eb988b0b1344d3a4a00adca2429b}{S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N}~100
+\item 
+\#define \hyperlink{serialport_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}~0
+\item 
+\#define \hyperlink{serialport_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\-R\-U\-E}~1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{serialport_8h_ac3d144aa01e765a1fae62ab5491c7cc1}{\index{serialport.\-h@{serialport.\-h}!\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E@{\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E}}
+\index{\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E@{\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E}!serialport.h@{serialport.\-h}}
+\subsubsection[{\-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-P\-O\-S\-I\-X\-\_\-\-S\-O\-U\-R\-C\-E~1 /$\ast$ P\-O\-S\-I\-X compliant source $\ast$/}}\label{serialport_8h_ac3d144aa01e765a1fae62ab5491c7cc1}
+\hypertarget{serialport_8h_a155a9a6160c909e29d95e7c75b79612a}{\index{serialport.\-h@{serialport.\-h}!D\-A\-T\-A\-B\-I\-T\-S@{D\-A\-T\-A\-B\-I\-T\-S}}
+\index{D\-A\-T\-A\-B\-I\-T\-S@{D\-A\-T\-A\-B\-I\-T\-S}!serialport.h@{serialport.\-h}}
+\subsubsection[{D\-A\-T\-A\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-A\-T\-A\-B\-I\-T\-S~8}}\label{serialport_8h_a155a9a6160c909e29d95e7c75b79612a}
+\hypertarget{serialport_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{serialport.\-h@{serialport.\-h}!F\-A\-L\-S\-E@{F\-A\-L\-S\-E}}
+\index{F\-A\-L\-S\-E@{F\-A\-L\-S\-E}!serialport.h@{serialport.\-h}}
+\subsubsection[{F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-L\-S\-E~0}}\label{serialport_8h_aa93f0eb578d23995850d61f7d61c55c1}
+\hypertarget{serialport_8h_aff1f07741fbe1f53f46098687f0a05e2}{\index{serialport.\-h@{serialport.\-h}!F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L@{F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L}}
+\index{F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L@{F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L}!serialport.h@{serialport.\-h}}
+\subsubsection[{F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-L\-O\-W\-C\-O\-N\-T\-R\-O\-L~0}}\label{serialport_8h_aff1f07741fbe1f53f46098687f0a05e2}
+\hypertarget{serialport_8h_a614217d263be1fb1a5f76e2ff7be19a2}{\index{serialport.\-h@{serialport.\-h}!P\-O\-R\-T@{P\-O\-R\-T}}
+\index{P\-O\-R\-T@{P\-O\-R\-T}!serialport.h@{serialport.\-h}}
+\subsubsection[{P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-O\-R\-T~\char`\"{}/dev/tty\-U\-S\-B0\char`\"{}}}\label{serialport_8h_a614217d263be1fb1a5f76e2ff7be19a2}
+\hypertarget{serialport_8h_a6f63eb988b0b1344d3a4a00adca2429b}{\index{serialport.\-h@{serialport.\-h}!S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N@{S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N}}
+\index{S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N@{S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N}!serialport.h@{serialport.\-h}}
+\subsubsection[{S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-R\-I\-A\-L\-\_\-\-B\-U\-F\-\_\-\-L\-E\-N~100}}\label{serialport_8h_a6f63eb988b0b1344d3a4a00adca2429b}
+\hypertarget{serialport_8h_aa5d0b84610803adad91c781c7a51be82}{\index{serialport.\-h@{serialport.\-h}!S\-T\-O\-P\-B\-I\-T\-S@{S\-T\-O\-P\-B\-I\-T\-S}}
+\index{S\-T\-O\-P\-B\-I\-T\-S@{S\-T\-O\-P\-B\-I\-T\-S}!serialport.h@{serialport.\-h}}
+\subsubsection[{S\-T\-O\-P\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-O\-P\-B\-I\-T\-S~1}}\label{serialport_8h_aa5d0b84610803adad91c781c7a51be82}
+\hypertarget{serialport_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{serialport.\-h@{serialport.\-h}!T\-R\-U\-E@{T\-R\-U\-E}}
+\index{T\-R\-U\-E@{T\-R\-U\-E}!serialport.h@{serialport.\-h}}
+\subsubsection[{T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-U\-E~1}}\label{serialport_8h_aa8cecfc5c5c054d2875c03e77b7be15d}

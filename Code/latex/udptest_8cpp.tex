@@ -1,0 +1,418 @@
+\hypertarget{udptest_8cpp}{\section{src/udptest.cpp File Reference}
+\label{udptest_8cpp}\index{src/udptest.\-cpp@{src/udptest.\-cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$csignal$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}debug.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Server.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Robot.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hoek.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}robotcommand.\-h\char`\"{}}\\*
+Include dependency graph for udptest.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{udptest_8cpp_ad04e024503e80de4acff2d4ea711d611}{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N}~20
+\item 
+\#define \hyperlink{udptest_8cpp_ab3ace374e857e47b2bb5005ab5bc6cc9}{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X}~40
+\item 
+\#define \hyperlink{udptest_8cpp_a16bc66c577ce5feda5f142a408c7634a}{G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D}~70
+\item 
+\#define \hyperlink{udptest_8cpp_ab6096b33a72e7b43ad4d43ba5c1fd70c}{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K}~100
+\item 
+\#define \hyperlink{udptest_8cpp_aeea05c41d6f5117ad278a01c0960922c}{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E}~100
+\item 
+\#define \hyperlink{udptest_8cpp_adce2989cfd25956296a78dacbeb04264}{A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T}~45
+\item 
+\#define \hyperlink{udptest_8cpp_a755b4f232e7b9d14bf5548785ac6cc24}{I\-N\-I\-T\-R\-O\-B\-O\-T}~0
+\item 
+\#define \hyperlink{udptest_8cpp_af849506c5c84ba63c9bf515fac73e625}{D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K}~1
+\item 
+\#define \hyperlink{udptest_8cpp_a0e4bb9102b946b174080cdf975b47af3}{R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K}~2
+\item 
+\#define \hyperlink{udptest_8cpp_a7ce3eb237ae6e9aba9674298bdebc2ef}{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K}~3
+\item 
+\#define \hyperlink{udptest_8cpp_af040c37f0d121fe9a009ddaa36f325be}{D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}~5
+\item 
+\#define \hyperlink{udptest_8cpp_a720abefb9a76fa6905692be53a99e5c8}{R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}~6
+\item 
+\#define \hyperlink{udptest_8cpp_aeea157cd3c69a48e169716e080f87c20}{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}~7
+\item 
+\#define \hyperlink{udptest_8cpp_a63ad99e607719b20d741e882787377fc}{R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}~9
+\item 
+\#define \hyperlink{udptest_8cpp_a67804e096b4359f60e6c3a79a00127a6}{R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}~10
+\item 
+\#define \hyperlink{udptest_8cpp_a9c21a7caee326d7803b94ae1952b27ca}{I\-D\-L\-E}~11
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{udptest_8cpp_af7bd21d6b089ec739ebebbe0ed843ade}{Init\-Robot} ()
+\item 
+int \hyperlink{udptest_8cpp_a9e9545e0b6d1731c10d4a9e992b0f472}{Rij\-Vooruit\-Weg\-Van\-Blik} ()
+\item 
+int \hyperlink{udptest_8cpp_a9f688b05ca2c1700206a94ecc3aeda18}{Rij\-Achteruit\-Weg\-Van\-Blik} (int afstand)
+\item 
+int \hyperlink{udptest_8cpp_a622873d00dafd817c19d08f0fe2c4528}{Draai\-Naar\-Blik} ()
+\item 
+int \hyperlink{udptest_8cpp_a0031a0cca510b23b7be75c690accf5f3}{Rij\-Naar\-Blik} ()
+\item 
+int \hyperlink{udptest_8cpp_a9444d61bd33dec1f86dbaf27e9a7408c}{Bijsturen\-Naar\-Blik} ()
+\item 
+int \hyperlink{udptest_8cpp_a9b478d1df6d2e6b9330a3b076109eb61}{Bijsturen\-Naar\-Garage} ()
+\item 
+int \hyperlink{udptest_8cpp_a64bd14505e9856275adaa75cc7d6fd71}{Draai\-Naar\-Garage} ()
+\item 
+int \hyperlink{udptest_8cpp_ac9e4bd56571d9ae2a0c0d94e0998dd34}{Rij\-Naar\-Garage} ()
+\item 
+int \hyperlink{udptest_8cpp_af13ce2704b2c312ad8c6bd06f648d965}{Idle} ()
+\item 
+void \hyperlink{udptest_8cpp_a5235df519c2acbebf015eedc222e0fc0}{nieuwe\-Posities\-Blikje} ()
+\item 
+void \hyperlink{udptest_8cpp_a69e267edcf288b7f3e2d87eed21520f7}{nieuwe\-Posities\-Garage} ()
+\item 
+void \hyperlink{udptest_8cpp_a12ff4508ad5af04630eb951d0f568577}{stop\-Robot} (int signum)
+\item 
+int \hyperlink{udptest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot}{Robot} \hyperlink{udptest_8cpp_a850a7bfeebb7a0b41f881c9a7bbdf762}{t} (3200,\char`\"{}/dev/tty\-U\-S\-B0\char`\"{},'b')
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{udptest_8cpp_adce2989cfd25956296a78dacbeb04264}{\index{udptest.\-cpp@{udptest.\-cpp}!A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T@{A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T}}
+\index{A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T@{A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-F\-S\-T\-A\-N\-D\-T\-R\-E\-S\-H\-O\-L\-D\-B\-L\-I\-K\-J\-E\-R\-O\-B\-O\-T~45}}\label{udptest_8cpp_adce2989cfd25956296a78dacbeb04264}
+\hypertarget{udptest_8cpp_a7ce3eb237ae6e9aba9674298bdebc2ef}{\index{udptest.\-cpp@{udptest.\-cpp}!B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K@{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K}}
+\index{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K@{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-B\-L\-I\-K~3}}\label{udptest_8cpp_a7ce3eb237ae6e9aba9674298bdebc2ef}
+\hypertarget{udptest_8cpp_aeea157cd3c69a48e169716e080f87c20}{\index{udptest.\-cpp@{udptest.\-cpp}!B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}}
+\index{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-I\-J\-S\-T\-U\-R\-E\-N\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E~7}}\label{udptest_8cpp_aeea157cd3c69a48e169716e080f87c20}
+\hypertarget{udptest_8cpp_ab6096b33a72e7b43ad4d43ba5c1fd70c}{\index{udptest.\-cpp@{udptest.\-cpp}!C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K@{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K}}
+\index{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K@{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-B\-L\-I\-K~100}}\label{udptest_8cpp_ab6096b33a72e7b43ad4d43ba5c1fd70c}
+\hypertarget{udptest_8cpp_aeea05c41d6f5117ad278a01c0960922c}{\index{udptest.\-cpp@{udptest.\-cpp}!C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E@{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E}}
+\index{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E@{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-I\-R\-K\-E\-L\-T\-R\-E\-S\-H\-O\-L\-D\-V\-A\-N\-G\-A\-R\-A\-G\-E~100}}\label{udptest_8cpp_aeea05c41d6f5117ad278a01c0960922c}
+\hypertarget{udptest_8cpp_af849506c5c84ba63c9bf515fac73e625}{\index{udptest.\-cpp@{udptest.\-cpp}!D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K@{D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K}}
+\index{D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K@{D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-A\-A\-I\-N\-A\-A\-R\-B\-L\-I\-K~1}}\label{udptest_8cpp_af849506c5c84ba63c9bf515fac73e625}
+\hypertarget{udptest_8cpp_af040c37f0d121fe9a009ddaa36f325be}{\index{udptest.\-cpp@{udptest.\-cpp}!D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}}
+\index{D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-A\-A\-I\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E~5}}\label{udptest_8cpp_af040c37f0d121fe9a009ddaa36f325be}
+\hypertarget{udptest_8cpp_ab3ace374e857e47b2bb5005ab5bc6cc9}{\index{udptest.\-cpp@{udptest.\-cpp}!D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X@{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X}}
+\index{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X@{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-A\-X~40}}\label{udptest_8cpp_ab3ace374e857e47b2bb5005ab5bc6cc9}
+\hypertarget{udptest_8cpp_ad04e024503e80de4acff2d4ea711d611}{\index{udptest.\-cpp@{udptest.\-cpp}!D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N@{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N}}
+\index{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N@{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-A\-A\-I\-S\-P\-E\-E\-D\-M\-I\-N~20}}\label{udptest_8cpp_ad04e024503e80de4acff2d4ea711d611}
+\hypertarget{udptest_8cpp_a16bc66c577ce5feda5f142a408c7634a}{\index{udptest.\-cpp@{udptest.\-cpp}!G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D@{G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D}}
+\index{G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D@{G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-R\-O\-T\-E\-A\-F\-S\-T\-A\-N\-D~70}}\label{udptest_8cpp_a16bc66c577ce5feda5f142a408c7634a}
+\hypertarget{udptest_8cpp_a9c21a7caee326d7803b94ae1952b27ca}{\index{udptest.\-cpp@{udptest.\-cpp}!I\-D\-L\-E@{I\-D\-L\-E}}
+\index{I\-D\-L\-E@{I\-D\-L\-E}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{I\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-D\-L\-E~11}}\label{udptest_8cpp_a9c21a7caee326d7803b94ae1952b27ca}
+\hypertarget{udptest_8cpp_a755b4f232e7b9d14bf5548785ac6cc24}{\index{udptest.\-cpp@{udptest.\-cpp}!I\-N\-I\-T\-R\-O\-B\-O\-T@{I\-N\-I\-T\-R\-O\-B\-O\-T}}
+\index{I\-N\-I\-T\-R\-O\-B\-O\-T@{I\-N\-I\-T\-R\-O\-B\-O\-T}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{I\-N\-I\-T\-R\-O\-B\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-I\-T\-R\-O\-B\-O\-T~0}}\label{udptest_8cpp_a755b4f232e7b9d14bf5548785ac6cc24}
+\hypertarget{udptest_8cpp_a67804e096b4359f60e6c3a79a00127a6}{\index{udptest.\-cpp@{udptest.\-cpp}!R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K@{R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}}
+\index{R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K@{R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-I\-J\-A\-C\-H\-T\-E\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K~10}}\label{udptest_8cpp_a67804e096b4359f60e6c3a79a00127a6}
+\hypertarget{udptest_8cpp_a0e4bb9102b946b174080cdf975b47af3}{\index{udptest.\-cpp@{udptest.\-cpp}!R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K@{R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K}}
+\index{R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K@{R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-I\-J\-N\-A\-A\-R\-B\-L\-I\-K~2}}\label{udptest_8cpp_a0e4bb9102b946b174080cdf975b47af3}
+\hypertarget{udptest_8cpp_a720abefb9a76fa6905692be53a99e5c8}{\index{udptest.\-cpp@{udptest.\-cpp}!R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}}
+\index{R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E@{R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-I\-J\-N\-A\-A\-R\-G\-A\-R\-A\-G\-E~6}}\label{udptest_8cpp_a720abefb9a76fa6905692be53a99e5c8}
+\hypertarget{udptest_8cpp_a63ad99e607719b20d741e882787377fc}{\index{udptest.\-cpp@{udptest.\-cpp}!R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K@{R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}}
+\index{R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K@{R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-I\-J\-V\-O\-O\-R\-U\-I\-T\-W\-E\-G\-V\-A\-N\-B\-L\-I\-K~9}}\label{udptest_8cpp_a63ad99e607719b20d741e882787377fc}
+
+
+\subsection{Function Documentation}
+\hypertarget{udptest_8cpp_a9444d61bd33dec1f86dbaf27e9a7408c}{\index{udptest.\-cpp@{udptest.\-cpp}!Bijsturen\-Naar\-Blik@{Bijsturen\-Naar\-Blik}}
+\index{Bijsturen\-Naar\-Blik@{Bijsturen\-Naar\-Blik}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Bijsturen\-Naar\-Blik}]{\setlength{\rightskip}{0pt plus 5cm}int Bijsturen\-Naar\-Blik (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a9444d61bd33dec1f86dbaf27e9a7408c}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a9444d61bd33dec1f86dbaf27e9a7408c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a9b478d1df6d2e6b9330a3b076109eb61}{\index{udptest.\-cpp@{udptest.\-cpp}!Bijsturen\-Naar\-Garage@{Bijsturen\-Naar\-Garage}}
+\index{Bijsturen\-Naar\-Garage@{Bijsturen\-Naar\-Garage}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Bijsturen\-Naar\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}int Bijsturen\-Naar\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a9b478d1df6d2e6b9330a3b076109eb61}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a9b478d1df6d2e6b9330a3b076109eb61_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a622873d00dafd817c19d08f0fe2c4528}{\index{udptest.\-cpp@{udptest.\-cpp}!Draai\-Naar\-Blik@{Draai\-Naar\-Blik}}
+\index{Draai\-Naar\-Blik@{Draai\-Naar\-Blik}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Draai\-Naar\-Blik}]{\setlength{\rightskip}{0pt plus 5cm}int Draai\-Naar\-Blik (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a622873d00dafd817c19d08f0fe2c4528}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a622873d00dafd817c19d08f0fe2c4528_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a64bd14505e9856275adaa75cc7d6fd71}{\index{udptest.\-cpp@{udptest.\-cpp}!Draai\-Naar\-Garage@{Draai\-Naar\-Garage}}
+\index{Draai\-Naar\-Garage@{Draai\-Naar\-Garage}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Draai\-Naar\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}int Draai\-Naar\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a64bd14505e9856275adaa75cc7d6fd71}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a64bd14505e9856275adaa75cc7d6fd71_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_af13ce2704b2c312ad8c6bd06f648d965}{\index{udptest.\-cpp@{udptest.\-cpp}!Idle@{Idle}}
+\index{Idle@{Idle}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Idle}]{\setlength{\rightskip}{0pt plus 5cm}int Idle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_af13ce2704b2c312ad8c6bd06f648d965}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{udptest_8cpp_af13ce2704b2c312ad8c6bd06f648d965_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_af7bd21d6b089ec739ebebbe0ed843ade}{\index{udptest.\-cpp@{udptest.\-cpp}!Init\-Robot@{Init\-Robot}}
+\index{Init\-Robot@{Init\-Robot}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Init\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}int Init\-Robot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_af7bd21d6b089ec739ebebbe0ed843ade}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_af7bd21d6b089ec739ebebbe0ed843ade_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{udptest.\-cpp@{udptest.\-cpp}!main@{main}}
+\index{main@{main}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{udptest_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a5235df519c2acbebf015eedc222e0fc0}{\index{udptest.\-cpp@{udptest.\-cpp}!nieuwe\-Posities\-Blikje@{nieuwe\-Posities\-Blikje}}
+\index{nieuwe\-Posities\-Blikje@{nieuwe\-Posities\-Blikje}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{nieuwe\-Posities\-Blikje}]{\setlength{\rightskip}{0pt plus 5cm}void nieuwe\-Posities\-Blikje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a5235df519c2acbebf015eedc222e0fc0}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a5235df519c2acbebf015eedc222e0fc0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a69e267edcf288b7f3e2d87eed21520f7}{\index{udptest.\-cpp@{udptest.\-cpp}!nieuwe\-Posities\-Garage@{nieuwe\-Posities\-Garage}}
+\index{nieuwe\-Posities\-Garage@{nieuwe\-Posities\-Garage}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{nieuwe\-Posities\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}void nieuwe\-Posities\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a69e267edcf288b7f3e2d87eed21520f7}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a69e267edcf288b7f3e2d87eed21520f7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a9f688b05ca2c1700206a94ecc3aeda18}{\index{udptest.\-cpp@{udptest.\-cpp}!Rij\-Achteruit\-Weg\-Van\-Blik@{Rij\-Achteruit\-Weg\-Van\-Blik}}
+\index{Rij\-Achteruit\-Weg\-Van\-Blik@{Rij\-Achteruit\-Weg\-Van\-Blik}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Rij\-Achteruit\-Weg\-Van\-Blik}]{\setlength{\rightskip}{0pt plus 5cm}int Rij\-Achteruit\-Weg\-Van\-Blik (
+\begin{DoxyParamCaption}
+\item[{int}]{afstand}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a9f688b05ca2c1700206a94ecc3aeda18}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a9f688b05ca2c1700206a94ecc3aeda18_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a0031a0cca510b23b7be75c690accf5f3}{\index{udptest.\-cpp@{udptest.\-cpp}!Rij\-Naar\-Blik@{Rij\-Naar\-Blik}}
+\index{Rij\-Naar\-Blik@{Rij\-Naar\-Blik}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Rij\-Naar\-Blik}]{\setlength{\rightskip}{0pt plus 5cm}int Rij\-Naar\-Blik (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a0031a0cca510b23b7be75c690accf5f3}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a0031a0cca510b23b7be75c690accf5f3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_ac9e4bd56571d9ae2a0c0d94e0998dd34}{\index{udptest.\-cpp@{udptest.\-cpp}!Rij\-Naar\-Garage@{Rij\-Naar\-Garage}}
+\index{Rij\-Naar\-Garage@{Rij\-Naar\-Garage}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Rij\-Naar\-Garage}]{\setlength{\rightskip}{0pt plus 5cm}int Rij\-Naar\-Garage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_ac9e4bd56571d9ae2a0c0d94e0998dd34}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_ac9e4bd56571d9ae2a0c0d94e0998dd34_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a9e9545e0b6d1731c10d4a9e992b0f472}{\index{udptest.\-cpp@{udptest.\-cpp}!Rij\-Vooruit\-Weg\-Van\-Blik@{Rij\-Vooruit\-Weg\-Van\-Blik}}
+\index{Rij\-Vooruit\-Weg\-Van\-Blik@{Rij\-Vooruit\-Weg\-Van\-Blik}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{Rij\-Vooruit\-Weg\-Van\-Blik}]{\setlength{\rightskip}{0pt plus 5cm}int Rij\-Vooruit\-Weg\-Van\-Blik (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a9e9545e0b6d1731c10d4a9e992b0f472}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{udptest_8cpp_a9e9545e0b6d1731c10d4a9e992b0f472_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{udptest_8cpp_a12ff4508ad5af04630eb951d0f568577}{\index{udptest.\-cpp@{udptest.\-cpp}!stop\-Robot@{stop\-Robot}}
+\index{stop\-Robot@{stop\-Robot}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{stop\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}void stop\-Robot (
+\begin{DoxyParamCaption}
+\item[{int}]{signum}
+\end{DoxyParamCaption}
+)}}\label{udptest_8cpp_a12ff4508ad5af04630eb951d0f568577}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{udptest_8cpp_a12ff4508ad5af04630eb951d0f568577_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{udptest_8cpp_a850a7bfeebb7a0b41f881c9a7bbdf762}{\index{udptest.\-cpp@{udptest.\-cpp}!t@{t}}
+\index{t@{t}!udptest.cpp@{udptest.\-cpp}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Robot} t(3200,\char`\"{}/dev/tty\-U\-S\-B0\char`\"{},'b')}}\label{udptest_8cpp_a850a7bfeebb7a0b41f881c9a7bbdf762}

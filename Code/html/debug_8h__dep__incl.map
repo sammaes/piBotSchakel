@@ -1,0 +1,17 @@
+<map id="include/debug.h" name="include/debug.h">
+<area shape="rect" id="node2" href="$udptest_8cpp.html" title="src/udptest.cpp" alt="" coords="531,379,641,405"/>
+<area shape="rect" id="node3" href="$Average_8h.html" title="include/Average.h" alt="" coords="5,229,131,256"/>
+<area shape="rect" id="node5" href="$Robot_8h.html" title="include/Robot.h" alt="" coords="411,304,524,331"/>
+<area shape="rect" id="node7" href="$Positie_8h.html" title="include/Positie.h" alt="" coords="89,155,207,181"/>
+<area shape="rect" id="node9" href="$Hoek_8h.html" title="include/Hoek.h" alt="" coords="315,80,424,107"/>
+<area shape="rect" id="node11" href="$Server_8h.html" title="include/Server.h" alt="" coords="789,229,904,256"/>
+<area shape="rect" id="node13" href="$robotcommand_8h.html" title="include/robotcommand.h" alt="" coords="509,155,672,181"/>
+<area shape="rect" id="node15" href="$serialport_8h.html" title="include/serialport.h" alt="" coords="559,80,688,107"/>
+<area shape="rect" id="node4" href="$Average_8cpp.html" title="src/Average.cpp" alt="" coords="9,304,125,331"/>
+<area shape="rect" id="node6" href="$Robot_8cpp.html" title="src/Robot.cpp" alt="" coords="403,379,507,405"/>
+<area shape="rect" id="node8" href="$Positie_8cpp.html" title="src/Positie.cpp" alt="" coords="207,229,316,256"/>
+<area shape="rect" id="node10" href="$Hoek_8cpp.html" title="src/Hoek.cpp" alt="" coords="231,155,331,181"/>
+<area shape="rect" id="node12" href="$Server_8cpp.html" title="src/Server.cpp" alt="" coords="703,304,809,331"/>
+<area shape="rect" id="node14" href="$robotcommand_8cpp.html" title="src/robotcommand.cpp" alt="" coords="609,229,763,256"/>
+<area shape="rect" id="node16" href="$serialport_8cpp.html" title="src/serialport.cpp" alt="" coords="697,155,820,181"/>
+</map>

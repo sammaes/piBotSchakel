@@ -1,0 +1,215 @@
+\hypertarget{classServer}{\section{Server Class Reference}
+\label{classServer}\index{Server@{Server}}
+}
+
+
+{\ttfamily \#include $<$Server.\-h$>$}
+
+
+
+Inheritance diagram for Server\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classServer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Server\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{$\sim$\-Server} ()
+\item 
+\hyperlink{classServer_a81ef5528c64630e6c63bcfec1cc42317}{Server} (int port=\hyperlink{Server_8h_aba1a0da5373c381e0ad6481f8333c08a}{S\-T\-A\-N\-D\-A\-A\-R\-D\-P\-O\-O\-R\-T}, char c=\hyperlink{Server_8h_ab52a72e164e6995d7693a24dc3c43472}{S\-T\-A\-N\-D\-A\-A\-R\-D\-G\-R\-O\-E\-P})
+\item 
+void \hyperlink{classServer_ac2cf171fbcae23064b0139707e84a67c}{setup} ()
+\item 
+void \hyperlink{classServer_a83ae4701038e91258108a7701521cf78}{listen} ()
+\item 
+void \hyperlink{classServer_a972ee33b92b171ceb776e070ad892c98}{set\-Poort} (int port)
+\item 
+void \hyperlink{classServer_a7ce1f889e537ab405ad675b67d0f5380}{set\-Groep} (char c)
+\item 
+char \hyperlink{classServer_a25fc1f6dc4bf1bf674a416022587792a}{get\-Groep} ()
+\item 
+\hyperlink{structInfo}{Info} \hyperlink{classServer_a13eed202f15d451fa877233fcb58b5d4}{get\-Info} ()
+\item 
+bool \hyperlink{classServer_a162257cf71d621f37bd2fee3d554d029}{data\-Valid} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classServer_a284abf5ae92eeed0f5e28759d382dd2d}{sockfd}
+\item 
+int \hyperlink{classServer_a60a838db7cee44ea45979e93c75137dd}{udp\-\_\-port}
+\item 
+\hyperlink{structInfo}{Info} \hyperlink{classServer_ae9d320c11dc676f6a24e41171bdd3beb}{info}
+\item 
+char \hyperlink{classServer_ae63c2574fcde32ea16b06b0bcb61b716}{groep}
+\item 
+struct sockaddr\-\_\-in \hyperlink{classServer_ac23e7b8d798bffefe61206636a8e1f57}{serveraddr}
+\item 
+struct sockaddr\-\_\-in \hyperlink{classServer_aa98c616c610a9f34a62b6c9f71ef7309}{clientaddr}
+\item 
+\hyperlink{structUdp__package}{Udp\-\_\-package} \hyperlink{classServer_a7850c5e7c92a04edbbd682d6553c18c8}{pakket}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{\index{Server@{Server}!$\sim$\-Server@{$\sim$\-Server}}
+\index{$\sim$\-Server@{$\sim$\-Server}!Server@{Server}}
+\subsubsection[{$\sim$\-Server}]{\setlength{\rightskip}{0pt plus 5cm}Server\-::$\sim$\-Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}
+Destructor van \hyperlink{classServer}{Server} \hypertarget{classServer_a81ef5528c64630e6c63bcfec1cc42317}{\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\subsubsection[{Server}]{\setlength{\rightskip}{0pt plus 5cm}Server\-::\-Server (
+\begin{DoxyParamCaption}
+\item[{int}]{port = {\ttfamily {\bf S\-T\-A\-N\-D\-A\-A\-R\-D\-P\-O\-O\-R\-T}}, }
+\item[{char}]{c = {\ttfamily {\bf S\-T\-A\-N\-D\-A\-A\-R\-D\-G\-R\-O\-E\-P}}}
+\end{DoxyParamCaption}
+)}}\label{classServer_a81ef5528c64630e6c63bcfec1cc42317}
+Constructor van \hyperlink{classServer}{Server} 
+\begin{DoxyParams}{Parameters}
+{\em port} & U\-D\-P poort \\
+\hline
+{\em c} & groepsletter \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classServer_a81ef5528c64630e6c63bcfec1cc42317_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classServer_a162257cf71d621f37bd2fee3d554d029}{\index{Server@{Server}!data\-Valid@{data\-Valid}}
+\index{data\-Valid@{data\-Valid}!Server@{Server}}
+\subsubsection[{data\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Server\-::data\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_a162257cf71d621f37bd2fee3d554d029}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classServer_a25fc1f6dc4bf1bf674a416022587792a}{\index{Server@{Server}!get\-Groep@{get\-Groep}}
+\index{get\-Groep@{get\-Groep}!Server@{Server}}
+\subsubsection[{get\-Groep}]{\setlength{\rightskip}{0pt plus 5cm}char Server\-::get\-Groep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_a25fc1f6dc4bf1bf674a416022587792a}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classServer_a13eed202f15d451fa877233fcb58b5d4}{\index{Server@{Server}!get\-Info@{get\-Info}}
+\index{get\-Info@{get\-Info}!Server@{Server}}
+\subsubsection[{get\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Info} Server\-::get\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_a13eed202f15d451fa877233fcb58b5d4}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classServer_a83ae4701038e91258108a7701521cf78}{\index{Server@{Server}!listen@{listen}}
+\index{listen@{listen}!Server@{Server}}
+\subsubsection[{listen}]{\setlength{\rightskip}{0pt plus 5cm}void Server\-::listen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_a83ae4701038e91258108a7701521cf78}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classServer_a83ae4701038e91258108a7701521cf78_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classServer_a7ce1f889e537ab405ad675b67d0f5380}{\index{Server@{Server}!set\-Groep@{set\-Groep}}
+\index{set\-Groep@{set\-Groep}!Server@{Server}}
+\subsubsection[{set\-Groep}]{\setlength{\rightskip}{0pt plus 5cm}void Server\-::set\-Groep (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classServer_a7ce1f889e537ab405ad675b67d0f5380}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classServer_a972ee33b92b171ceb776e070ad892c98}{\index{Server@{Server}!set\-Poort@{set\-Poort}}
+\index{set\-Poort@{set\-Poort}!Server@{Server}}
+\subsubsection[{set\-Poort}]{\setlength{\rightskip}{0pt plus 5cm}void Server\-::set\-Poort (
+\begin{DoxyParamCaption}
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{classServer_a972ee33b92b171ceb776e070ad892c98}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classServer_ac2cf171fbcae23064b0139707e84a67c}{\index{Server@{Server}!setup@{setup}}
+\index{setup@{setup}!Server@{Server}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}void Server\-::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classServer_ac2cf171fbcae23064b0139707e84a67c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classServer_aa98c616c610a9f34a62b6c9f71ef7309}{\index{Server@{Server}!clientaddr@{clientaddr}}
+\index{clientaddr@{clientaddr}!Server@{Server}}
+\subsubsection[{clientaddr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in Server\-::clientaddr\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_aa98c616c610a9f34a62b6c9f71ef7309}
+\hypertarget{classServer_ae63c2574fcde32ea16b06b0bcb61b716}{\index{Server@{Server}!groep@{groep}}
+\index{groep@{groep}!Server@{Server}}
+\subsubsection[{groep}]{\setlength{\rightskip}{0pt plus 5cm}char Server\-::groep\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_ae63c2574fcde32ea16b06b0bcb61b716}
+\hypertarget{classServer_ae9d320c11dc676f6a24e41171bdd3beb}{\index{Server@{Server}!info@{info}}
+\index{info@{info}!Server@{Server}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Info} Server\-::info\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_ae9d320c11dc676f6a24e41171bdd3beb}
+\hypertarget{classServer_a7850c5e7c92a04edbbd682d6553c18c8}{\index{Server@{Server}!pakket@{pakket}}
+\index{pakket@{pakket}!Server@{Server}}
+\subsubsection[{pakket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Udp\-\_\-package} Server\-::pakket\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_a7850c5e7c92a04edbbd682d6553c18c8}
+\hypertarget{classServer_ac23e7b8d798bffefe61206636a8e1f57}{\index{Server@{Server}!serveraddr@{serveraddr}}
+\index{serveraddr@{serveraddr}!Server@{Server}}
+\subsubsection[{serveraddr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in Server\-::serveraddr\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_ac23e7b8d798bffefe61206636a8e1f57}
+\hypertarget{classServer_a284abf5ae92eeed0f5e28759d382dd2d}{\index{Server@{Server}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Server@{Server}}
+\subsubsection[{sockfd}]{\setlength{\rightskip}{0pt plus 5cm}int Server\-::sockfd\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_a284abf5ae92eeed0f5e28759d382dd2d}
+\hypertarget{classServer_a60a838db7cee44ea45979e93c75137dd}{\index{Server@{Server}!udp\-\_\-port@{udp\-\_\-port}}
+\index{udp\-\_\-port@{udp\-\_\-port}!Server@{Server}}
+\subsubsection[{udp\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}int Server\-::udp\-\_\-port\hspace{0.3cm}{\ttfamily [private]}}}\label{classServer_a60a838db7cee44ea45979e93c75137dd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Server_8h}{Server.\-h}\item 
+src/\hyperlink{Server_8cpp}{Server.\-cpp}\end{DoxyCompactItemize}

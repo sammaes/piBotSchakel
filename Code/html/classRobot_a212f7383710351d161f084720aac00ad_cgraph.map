@@ -1,0 +1,5 @@
+<map id="Robot::bepaalAfstandGarage" name="Robot::bepaalAfstandGarage">
+<area shape="rect" id="node2" href="$classHoek.html#a7dab6f40d750f5e9d0c18ad8e1b75a91" title="Hoek::BepaalAfstand" alt="" coords="255,5,401,32"/>
+<area shape="rect" id="node3" href="$classRobot.html#abfab62ce2a3ff22f237e34ad1a6650e7" title="Robot::getPositieBlikje" alt="" coords="251,56,405,83"/>
+<area shape="rect" id="node4" href="$classRobot.html#a9301d035810174edffb769fd097f2a0c" title="Robot::getPositieGarage" alt="" coords="245,107,411,133"/>
+</map>

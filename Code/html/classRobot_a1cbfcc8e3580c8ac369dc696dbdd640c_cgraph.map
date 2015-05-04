@@ -1,0 +1,6 @@
+<map id="Robot::bepaalHoekBlikje" name="Robot::bepaalHoekBlikje">
+<area shape="rect" id="node2" href="$classHoek.html#a51fbe1b1eba5971727450d7880ab7422" title="Hoek::BepaalHoek" alt="" coords="235,5,367,32"/>
+<area shape="rect" id="node3" href="$classRobot.html#a43fdd19ef403be762d659593023dda8a" title="Robot::getPositieRobot" alt="" coords="222,56,381,83"/>
+<area shape="rect" id="node4" href="$classRobot.html#abfab62ce2a3ff22f237e34ad1a6650e7" title="Robot::getPositieBlikje" alt="" coords="224,107,379,133"/>
+<area shape="rect" id="node5" href="$classHoek.html#a6418dc2139cedec6df600f7102ab4d95" title="Hoek::getAngle" alt="" coords="245,157,357,184"/>
+</map>
