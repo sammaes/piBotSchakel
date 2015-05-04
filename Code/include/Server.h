@@ -16,15 +16,49 @@
 class Server
 {
     public:
+						/**
+						 * Destructor van Server
+						 */
 						~Server();
+						/**
+						 * Constructor van Server
+						 * @param port UDP poort
+						 * @param c groepsletter
+						 */
 			 	 	 	Server(int port = STANDAARDPOORT, char c = STANDAARDGROEP);
 
+		/**
+		 *
+		 */
         void 			setup();
+        /**
+         *
+         */
         void 			listen();
+        /**
+         *
+         * @param port
+         */
         void 			setPoort(int port);
+        /**
+         *
+         * @param c
+         */
         void 			setGroep(char c);
+        /**
+         *
+         * @return
+         */
         char 			getGroep();
+        /**
+         *
+         * @return
+         */
         Info 			getInfo();
+        /**
+         *
+         * @return
+         */
         bool 			dataValid();
 
     private:
